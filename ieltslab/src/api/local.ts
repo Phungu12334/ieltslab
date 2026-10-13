@@ -16,6 +16,7 @@ import {
   summarize,
 } from '../../shared/engine';
 import type { Attempt, Material, PublicUser } from '../../shared/types';
+import { newBuiltIns } from '../../shared/demoSync';
 import { validateImport, validateMaterial } from '../../shared/validate';
 import { openStore, type KvStore } from './idb';
 import { ApiError, type Api, type Health } from './types';
@@ -36,6 +37,17 @@ export async function createLocalApi(): Promise<Api> {
   if (!(await store.get('seeded'))) {
     await store.set('materials', DEMO_MATERIALS);
     await store.set('seeded', true);
+    await store.set('offeredDemoIds', DEMO_MATERIALS.map((m) => m.id));
+  } else {
+    // Add built-in materials released since this browser was first set up.
+    const offered = ((await store.get<string[]>('offeredDemoIds')) as string[] | undefined) ?? null;
+    const fresh = newBuiltIns(DEMO_MATERIALS, offered);
+    if (fresh.length) {
+      const current = ((await store.get<Material[]>('materials')) as Material[] | undefined) || [];
+      const have = new Set(current.map((m) => m.id));
+      await store.set('materials', [...current, ...fresh.filter((m) => !have.has(m.id))]);
+    }
+    if (fresh.length || !offered) await store.set('offeredDemoIds', DEMO_MATERIALS.map((m) => m.id));
   }
 
   const defaultProfile = (): PublicUser => ({
@@ -195,6 +207,7 @@ export async function createLocalApi(): Promise<Api> {
       objectUrls.clear();
       await store.set('materials', DEMO_MATERIALS);
       await store.set('seeded', true);
+      await store.set('offeredDemoIds', DEMO_MATERIALS.map((m) => m.id));
     },
   };
 }

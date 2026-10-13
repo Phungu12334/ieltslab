@@ -1,0 +1,21 @@
+# Render Blueprint (optional). Works when this file is at the root of the GitHub repository.
+# Data is kept in Turso, so the free plan's temporary disk is fine.
+services:
+  - type: web
+    name: ieltslab
+    runtime: node
+    plan: free
+    buildCommand: npm install --include=dev && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: TURSO_DATABASE_URL
+        sync: false
+      - key: TURSO_AUTH_TOKEN
+        sync: false
+      - key: ADMIN_EMAILS
+        sync: false
+      - key: FIRST_USER_ADMIN
+        value: "false"

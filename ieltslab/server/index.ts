@@ -37,10 +37,10 @@ import {
   validatePassword,
   verifyPassword,
 } from './auth';
-import { attempts, files, materials, safeJson, seedDemoContent, sessions, toPublicUser, users, type UserRow } from './db';
+import { attempts, files, initDb, materials, safeJson, seedDemoContent, sessions, sql, toPublicUser, users, type UserRow } from './db';
 import { HttpError, readBody, readJson, Router, sendJson, type Ctx } from './http';
 
-const VERSION = '1.0.0';
+const VERSION = '1.1.0';
 const DIST = path.resolve('dist');
 const api = new Router();
 
@@ -48,19 +48,19 @@ const ok = (ctx: Ctx, body: unknown, status = 200) => sendJson(ctx.res, status, 
 const ipOf = (ctx: Ctx) => String(ctx.req.headers['x-forwarded-for'] || ctx.req.socket.remoteAddress || '').split(',')[0].trim();
 
 // ---------------------------------------------------------------- health & auth
-api.get('/api/health', (ctx) => ok(ctx, { ok: true, mode: 'server', version: VERSION, google: !!config.google, ai: !!config.ai }));
+api.get('/api/health', (ctx) => ok(ctx, { ok: true, mode: 'server', version: VERSION, google: !!config.google, ai: !!config.ai, storage: sql.kind }));
 
-api.get('/api/auth/me', (ctx) => {
-  const u = currentUser(ctx.req);
+api.get('/api/auth/me', async (ctx) => {
+  const u = await currentUser(ctx.req);
   ok(ctx, { user: u ? toPublicUser(u) : null });
 });
 
-api.post('/api/auth/guest', (ctx) => {
-  const existing = currentUser(ctx.req);
+api.post('/api/auth/guest', async (ctx) => {
+  const existing = await currentUser(ctx.req);
   if (existing) return ok(ctx, { user: toPublicUser(existing) });
   rateLimit(`guest:${ipOf(ctx)}`, 30, 60 * 60_000);
-  const u = users.insert({ id: newId('usr_'), email: null, name: 'Guest', password_hash: null, google_sub: null, role: 'candidate', is_guest: 1 });
-  startSession(ctx.res, u.id);
+  const u = await users.insert({ id: newId('usr_'), email: null, name: 'Guest', password_hash: null, google_sub: null, role: 'candidate', is_guest: 1 });
+  await startSession(ctx.res, u.id);
   ok(ctx, { user: toPublicUser(u) });
 });
 
@@ -70,16 +70,16 @@ api.post('/api/auth/register', async (ctx) => {
   const password = validatePassword(body.password);
   const name = String(body.name || '').trim().slice(0, 80) || email.split('@')[0];
   rateLimit(`register:${ipOf(ctx)}`, 20, 60 * 60_000);
-  if (users.byEmail(email)) throw new HttpError(409, 'An account with this email already exists. Sign in instead.');
-  const current = currentUser(ctx.req);
+  if (await users.byEmail(email)) throw new HttpError(409, 'An account with this email already exists. Sign in instead.');
+  const current = await currentUser(ctx.req);
   let user: UserRow;
   if (current?.is_guest) {
     // Upgrade the guest account in place so saved tests are kept.
-    user = users.update(current.id, { email, name, password_hash: hashPassword(password), is_guest: 0, role: roleFor(email) });
+    user = await users.update(current.id, { email, name, password_hash: hashPassword(password), is_guest: 0, role: await roleFor(email) });
   } else {
-    user = users.insert({ id: newId('usr_'), email, name, password_hash: hashPassword(password), google_sub: null, role: roleFor(email), is_guest: 0 });
-    if (current) endSession(ctx.req, ctx.res);
-    startSession(ctx.res, user.id);
+    user = await users.insert({ id: newId('usr_'), email, name, password_hash: hashPassword(password), google_sub: null, role: await roleFor(email), is_guest: 0 });
+    if (current) await endSession(ctx.req, ctx.res);
+    await startSession(ctx.res, user.id);
   }
   ok(ctx, { user: toPublicUser(user) }, 201);
 });
@@ -88,23 +88,23 @@ api.post('/api/auth/login', async (ctx) => {
   const body = await readJson<{ email?: string; password?: string }>(ctx.req);
   const email = validateEmail(body.email);
   rateLimit(`login:${ipOf(ctx)}:${email}`);
-  const user = users.byEmail(email);
+  const user = await users.byEmail(email);
   if (!user || !verifyPassword(String(body.password || ''), user.password_hash)) {
     throw new HttpError(401, user && !user.password_hash ? 'This account uses Google sign-in. Use "Continue with Google".' : 'Email or password is incorrect.');
   }
-  const current = currentUser(ctx.req);
+  const current = await currentUser(ctx.req);
   if (current?.is_guest && current.id !== user.id) {
     // Bring the guest's tests into the signed-in account.
-    attempts.reassign(current.id, user.id);
-    endSession(ctx.req, ctx.res);
-    users.delete(current.id);
-  } else if (current) endSession(ctx.req, ctx.res);
-  startSession(ctx.res, user.id);
+    await attempts.reassign(current.id, user.id);
+    await endSession(ctx.req, ctx.res);
+    await users.delete(current.id);
+  } else if (current) await endSession(ctx.req, ctx.res);
+  await startSession(ctx.res, user.id);
   ok(ctx, { user: toPublicUser(user) });
 });
 
-api.post('/api/auth/logout', (ctx) => {
-  endSession(ctx.req, ctx.res);
+api.post('/api/auth/logout', async (ctx) => {
+  await endSession(ctx.req, ctx.res);
   ok(ctx, { ok: true });
 });
 
@@ -113,7 +113,7 @@ api.get('/api/auth/google/callback', (ctx) => googleCallback(ctx.req, ctx.res, c
 
 // ---------------------------------------------------------------- account
 api.patch('/api/account', async (ctx) => {
-  const u = requireUser(ctx.req);
+  const u = await requireUser(ctx.req);
   const body = await readJson<{ name?: string; settings?: UserSettings }>(ctx.req);
   const fields: Partial<UserRow> = {};
   if (typeof body.name === 'string') {
@@ -122,8 +122,7 @@ api.patch('/api/account', async (ctx) => {
     fields.name = name;
   }
   if (body.settings && typeof body.settings === 'object') {
-    const prev = safeJson<UserSettings>(u.settings, {});
-    const s: UserSettings = { ...prev };
+    const s: UserSettings = { ...safeJson<UserSettings>(u.settings, {}) };
     if (body.settings.targetBand !== undefined) {
       const t = Number(body.settings.targetBand);
       if (!(t >= 1 && t <= 9 && Math.round(t * 2) === t * 2)) throw new HttpError(400, 'Target band must be between 1 and 9 in half-band steps.');
@@ -133,87 +132,88 @@ api.patch('/api/account', async (ctx) => {
     if (body.settings.theme) s.theme = ['light', 'dark'].includes(body.settings.theme) ? body.settings.theme : 'system';
     fields.settings = JSON.stringify(s);
   }
-  ok(ctx, { user: toPublicUser(users.update(u.id, fields)) });
+  ok(ctx, { user: toPublicUser(await users.update(u.id, fields)) });
 });
 
 api.post('/api/account/password', async (ctx) => {
-  const u = requireUser(ctx.req);
+  const u = await requireUser(ctx.req);
   if (u.is_guest) throw new HttpError(400, 'Create an account first.');
   const body = await readJson<{ current?: string; next?: string }>(ctx.req);
   if (u.password_hash && !verifyPassword(String(body.current || ''), u.password_hash)) throw new HttpError(400, 'Your current password is incorrect.');
   const next = validatePassword(body.next);
-  users.update(u.id, { password_hash: hashPassword(next) });
-  sessions.deleteForUser(u.id, currentTokenHash(ctx.req)); // sign out other devices
+  await users.update(u.id, { password_hash: hashPassword(next) });
+  await sessions.deleteForUser(u.id, currentTokenHash(ctx.req)); // sign out other devices
   ok(ctx, { ok: true });
 });
 
 api.delete('/api/account', async (ctx) => {
-  const u = requireUser(ctx.req);
+  const u = await requireUser(ctx.req);
   const body = await readJson<{ confirm?: string }>(ctx.req);
   if (body.confirm !== 'DELETE') throw new HttpError(400, 'Type DELETE to confirm.');
-  if (u.role === 'admin' && users.adminCount() <= 1) throw new HttpError(409, 'You are the only administrator. Make someone else an admin (ADMIN_EMAILS) before deleting this account.');
-  files.removeRecordingsForOwner(u.id);
-  endSession(ctx.req, ctx.res);
-  users.delete(u.id); // attempts and sessions cascade
+  if (u.role === 'admin' && (await users.adminCount()) <= 1) {
+    throw new HttpError(409, 'You are the only administrator. Make someone else an admin (ADMIN_EMAILS) before deleting this account.');
+  }
+  await endSession(ctx.req, ctx.res);
+  await users.delete(u.id); // also removes their attempts, recordings and sessions
   ok(ctx, { ok: true });
 });
 
 // ---------------------------------------------------------------- content
-api.get('/api/content/availability', (ctx) => {
-  const all = materials.all();
+api.get('/api/content/availability', async (ctx) => {
+  const all = await materials.all();
   ok(ctx, { availability: computeAvailability(all), total: all.length, active: all.filter((m) => m.status === 'active').length });
 });
 
-api.get('/api/materials', (ctx) => {
-  requireAdmin(ctx.req);
-  ok(ctx, { materials: materials.all() });
+api.get('/api/materials', async (ctx) => {
+  await requireAdmin(ctx.req);
+  ok(ctx, { materials: await materials.all() });
 });
 
 api.post('/api/materials', async (ctx) => {
-  requireAdmin(ctx.req);
+  await requireAdmin(ctx.req);
   const r = validateMaterial(await readJson(ctx.req, 8 * 1024 * 1024));
   if (!r.ok || !r.material) throw new HttpError(422, 'Please fix the highlighted fields.', r.errors);
-  if (materials.get(r.material.id)) r.material.id = newId('mat_');
-  materials.upsert(r.material);
+  if (await materials.get(r.material.id)) r.material.id = newId('mat_');
+  await materials.upsert(r.material);
   ok(ctx, { material: r.material }, 201);
 });
 
 api.put('/api/materials/:id', async (ctx) => {
-  requireAdmin(ctx.req);
-  const existing = materials.get(ctx.params.id);
+  await requireAdmin(ctx.req);
+  const existing = await materials.get(ctx.params.id);
   if (!existing) throw new HttpError(404, 'This material no longer exists.');
   const r = validateMaterial(await readJson(ctx.req, 8 * 1024 * 1024), existing);
   if (!r.ok || !r.material) throw new HttpError(422, 'Please fix the highlighted fields.', r.errors);
-  materials.upsert(r.material);
+  await materials.upsert(r.material);
   ok(ctx, { material: r.material });
 });
 
-api.delete('/api/materials/:id', (ctx) => {
-  requireAdmin(ctx.req);
-  if (!materials.get(ctx.params.id)) throw new HttpError(404, 'This material no longer exists.');
-  materials.delete(ctx.params.id); // attempts keep their own snapshot, so past results are unaffected
+api.delete('/api/materials/:id', async (ctx) => {
+  await requireAdmin(ctx.req);
+  if (!(await materials.get(ctx.params.id))) throw new HttpError(404, 'This material no longer exists.');
+  await materials.delete(ctx.params.id); // attempts keep their own snapshot, so past results are unaffected
   ok(ctx, { ok: true });
 });
 
 api.post('/api/materials/import', async (ctx) => {
-  requireAdmin(ctx.req);
+  await requireAdmin(ctx.req);
   const report = validateImport(await readJson(ctx.req, 20 * 1024 * 1024));
-  report.imported.forEach((m) => materials.upsert(m));
+  await materials.upsertMany(report.imported);
   ok(ctx, { imported: report.imported.length, failed: report.failed });
 });
 
 api.post('/api/materials/demo', async (ctx) => {
-  requireAdmin(ctx.req);
+  await requireAdmin(ctx.req);
   const body = await readJson<{ action?: string }>(ctx.req);
-  if (body.action === 'restore') seedDemoContent(true);
-  else if (body.action === 'remove') materials.deleteDemo();
+  if (body.action === 'restore') await seedDemoContent();
+  else if (body.action === 'remove') await materials.deleteDemo();
   else throw new HttpError(400, 'Unknown action.');
   ok(ctx, { ok: true });
 });
 
 // ---------------------------------------------------------------- files
 api.post('/api/assets', async (ctx) => {
-  const u = requireAdmin(ctx.req);
+  const u = await requireAdmin(ctx.req);
   const mime = String(ctx.req.headers['content-type'] || '').split(';')[0].trim().toLowerCase();
   const isAudio = mime in AUDIO_TYPES;
   const isImage = mime in IMAGE_TYPES;
@@ -224,18 +224,18 @@ api.post('/api/assets', async (ctx) => {
   if (!data.length) throw new HttpError(400, 'The file is empty.');
   const id = newId('file_');
   const filename = decodeURIComponent(String(ctx.req.headers['x-filename'] || '')).slice(0, 200) || null;
-  files.insert({ id, owner_id: u.id, kind: 'asset', mime, size: data.length, filename, attempt_id: null }, data);
+  await files.insert({ id, owner_id: u.id, kind: 'asset', mime, size: data.length, filename, attempt_id: null }, data);
   ok(ctx, { id, url: `/api/files/${id}`, mime, size: data.length, filename }, 201);
 });
 
-api.get('/api/files/:id', (ctx) => {
-  const u = requireUser(ctx.req);
-  const f = files.get(ctx.params.id);
+api.get('/api/files/:id', async (ctx) => {
+  const u = await requireUser(ctx.req);
+  const f = await files.get(ctx.params.id);
   if (!f) throw new HttpError(404, 'File not found.');
   if (f.kind === 'recording' && f.owner_id !== u.id && u.role !== 'admin') throw new HttpError(404, 'File not found.');
-  const p = files.path(f.id);
-  if (!fs.existsSync(p)) throw new HttpError(404, 'File not found.');
-  const size = fs.statSync(p).size;
+  const data = await files.read(f.id);
+  if (!data) throw new HttpError(404, 'File not found.');
+  const size = data.length;
   const headers: Record<string, string> = {
     'Content-Type': f.mime,
     'Accept-Ranges': 'bytes',
@@ -252,79 +252,79 @@ api.get('/api/files/:id', (ctx) => {
       return ctx.res.end();
     }
     ctx.res.writeHead(206, { ...headers, 'Content-Range': `bytes ${start}-${end}/${size}`, 'Content-Length': String(end - start + 1) });
-    fs.createReadStream(p, { start, end }).pipe(ctx.res);
+    ctx.res.end(data.subarray(start, end + 1));
   } else {
     ctx.res.writeHead(200, { ...headers, 'Content-Length': String(size) });
-    fs.createReadStream(p).pipe(ctx.res);
+    ctx.res.end(data);
   }
 });
 
 // ---------------------------------------------------------------- attempts
-function loadOwned(ctx: Ctx, opts: { allowAdmin?: boolean } = {}): { attempt: Attempt; user: UserRow } {
-  const user = requireUser(ctx.req);
-  const attempt = attempts.get(ctx.params.id);
+async function loadOwned(ctx: Ctx, opts: { allowAdmin?: boolean } = {}): Promise<{ attempt: Attempt; user: UserRow }> {
+  const user = await requireUser(ctx.req);
+  const attempt = await attempts.get(ctx.params.id);
   if (!attempt || (attempt.ownerId !== user.id && !(opts.allowAdmin && user.role === 'admin'))) {
     throw new HttpError(404, 'This test could not be found. It may have been deleted.');
   }
   return { attempt, user };
 }
 
-api.get('/api/attempts', (ctx) => {
-  const u = requireUser(ctx.req);
-  ok(ctx, { attempts: attempts.forOwner(u.id).map((a) => summarize(a)) });
+api.get('/api/attempts', async (ctx) => {
+  const u = await requireUser(ctx.req);
+  ok(ctx, { attempts: (await attempts.forOwner(u.id)).map((a) => summarize(a)) });
 });
 
 api.post('/api/attempts', async (ctx) => {
-  const u = requireUser(ctx.req);
+  const u = await requireUser(ctx.req);
   const input = validateCreateInput(await readJson(ctx.req));
-  const recent = attempts.forOwner(u.id).slice(0, 5).flatMap(materialIdsOf);
-  const attempt = createAttempt(materials.all(), input, u.id, recent);
-  attempts.save(attempt);
+  const recent = (await attempts.forOwner(u.id)).slice(0, 5).flatMap(materialIdsOf);
+  const attempt = createAttempt(await materials.all(), input, u.id, recent);
+  await attempts.save(attempt);
   ok(ctx, { attempt: redactAttempt(attempt) }, 201);
 });
 
-api.get('/api/attempts/:id', (ctx) => {
-  const { attempt, user } = loadOwned(ctx, { allowAdmin: true });
-  const owner = attempt.ownerId === user.id ? null : users.byId(attempt.ownerId);
+api.get('/api/attempts/:id', async (ctx) => {
+  const { attempt, user } = await loadOwned(ctx, { allowAdmin: true });
+  const owner = attempt.ownerId === user.id ? null : await users.byId(attempt.ownerId);
   ok(ctx, { attempt: redactAttempt(attempt), ownerName: owner ? owner.name : undefined });
 });
 
 api.patch('/api/attempts/:id', async (ctx) => {
-  const { attempt } = loadOwned(ctx);
+  const { attempt } = await loadOwned(ctx);
   const patch = await readJson<ProgressPatch>(ctx.req, 1024 * 1024);
   applyProgress(attempt, patch);
-  attempts.save(attempt);
+  await attempts.save(attempt);
   const s = attempt.sections[patch.sectionIndex];
   ok(ctx, { ok: true, updatedAt: attempt.updatedAt, remainingSec: s.remainingSec, status: s.status, startedAt: s.startedAt });
 });
 
 api.post('/api/attempts/:id/submit', async (ctx) => {
-  const { attempt } = loadOwned(ctx);
+  const { attempt } = await loadOwned(ctx);
   const body = await readJson<{ sectionIndex?: number; auto?: boolean; final?: ProgressPatch }>(ctx.req, 1024 * 1024);
   if (body.final && attempt.sections[attempt.currentSection]?.status === 'active') applyProgress(attempt, body.final);
   submitSection(attempt, Number(body.sectionIndex), { auto: !!body.auto });
-  attempts.save(attempt);
+  await attempts.save(attempt);
   ok(ctx, { attempt: redactAttempt(attempt) });
 });
 
 api.post('/api/attempts/:id/end', async (ctx) => {
-  const { attempt } = loadOwned(ctx);
+  const { attempt } = await loadOwned(ctx);
   const body = await readJson<{ final?: ProgressPatch }>(ctx.req, 1024 * 1024);
   if (body.final && attempt.sections[attempt.currentSection]?.status === 'active') applyProgress(attempt, body.final);
   endTest(attempt);
-  attempts.save(attempt);
+  await attempts.save(attempt);
   ok(ctx, { attempt });
 });
 
-api.delete('/api/attempts/:id', (ctx) => {
-  const { attempt } = loadOwned(ctx);
-  files.removeForAttempt(attempt.id);
-  attempts.delete(attempt.id);
+api.delete('/api/attempts/:id', async (ctx) => {
+  const { attempt } = await loadOwned(ctx);
+  await files.removeForAttempt(attempt.id);
+  await attempts.delete(attempt.id);
   ok(ctx, { ok: true });
 });
 
 api.post('/api/attempts/:id/recordings', async (ctx) => {
-  const { attempt, user } = loadOwned(ctx);
+  const { attempt, user } = await loadOwned(ctx);
   const key = ctx.query.get('key') || '';
   const duration = Number(ctx.query.get('duration') || 0);
   const mime = String(ctx.req.headers['content-type'] || '').split(';')[0].trim().toLowerCase();
@@ -333,28 +333,28 @@ api.post('/api/attempts/:id/recordings', async (ctx) => {
   if (!data.length) throw new HttpError(400, 'The recording is empty. Check your microphone and try again.');
   const previous = attempt.sections[attempt.currentSection]?.recordings[key];
   const id = newId('rec_');
-  setRecording(attempt, key, { id, durationSec: duration, mime }); // validates before writing the file
-  files.insert({ id, owner_id: user.id, kind: 'recording', mime, size: data.length, filename: null, attempt_id: attempt.id }, data);
-  if (previous) files.remove(previous.id); // re-record replaces the old take
-  attempts.save(attempt);
+  setRecording(attempt, key, { id, durationSec: duration, mime }); // validates before storing the file
+  await files.insert({ id, owner_id: user.id, kind: 'recording', mime, size: data.length, filename: null, attempt_id: attempt.id }, data);
+  if (previous) await files.remove(previous.id); // re-record replaces the old take
+  await attempts.save(attempt);
   ok(ctx, { recording: attempt.sections[attempt.currentSection].recordings[key] }, 201);
 });
 
 api.post('/api/attempts/:id/reviews', async (ctx) => {
-  const { attempt, user } = loadOwned(ctx, { allowAdmin: true });
+  const { attempt, user } = await loadOwned(ctx, { allowAdmin: true });
   const body = await readJson<{ skill?: string; items?: Record<string, CriterionReview>; asTeacher?: boolean }>(ctx.req);
   if (body.skill !== 'writing' && body.skill !== 'speaking') throw new HttpError(400, 'Reviews are for Writing or Speaking.');
   const isOwner = attempt.ownerId === user.id;
   const teacher = user.role === 'admin' && (!isOwner || body.asTeacher === true);
   if (!isOwner && !teacher) throw new HttpError(403, 'You cannot review this test.');
   applyReview(attempt, body.skill, teacher ? 'teacher' : 'self', teacher ? user.name : 'Self-review', body.items || {});
-  attempts.save(attempt);
+  await attempts.save(attempt);
   ok(ctx, { attempt });
 });
 
 const aiUsage = new Map<string, { day: string; n: number }>();
 api.post('/api/attempts/:id/ai-review', async (ctx) => {
-  const { attempt, user } = loadOwned(ctx);
+  const { attempt, user } = await loadOwned(ctx);
   if (!config.ai) throw new HttpError(501, 'AI feedback is not configured on this server.');
   if (attempt.status !== 'submitted') throw new HttpError(409, 'Submit the test first.');
   if (attempt.reviews.writing?.source === 'teacher') throw new HttpError(409, 'A teacher has already reviewed this Writing.');
@@ -365,14 +365,16 @@ api.post('/api/attempts/:id/ai-review', async (ctx) => {
   aiUsage.set(user.id, { day, n: n + 1 });
   const items = await aiWritingReview(attempt);
   applyReview(attempt, 'writing', 'ai', `AI feedback (${config.ai.model})`, items);
-  attempts.save(attempt);
+  await attempts.save(attempt);
   ok(ctx, { attempt });
 });
 
-api.get('/api/reviews/queue', (ctx) => {
-  requireAdmin(ctx.req);
-  const list = attempts.submittedNeedingReview().map((a) => summarize(a, users.byId(a.ownerId)?.name));
-  ok(ctx, { attempts: list });
+api.get('/api/reviews/queue', async (ctx) => {
+  await requireAdmin(ctx.req);
+  const list = await attempts.submittedNeedingReview();
+  const names = new Map<string, string>();
+  for (const a of list) if (!names.has(a.ownerId)) names.set(a.ownerId, (await users.byId(a.ownerId))?.name || 'Deleted user');
+  ok(ctx, { attempts: list.map((a) => summarize(a, names.get(a.ownerId))) });
 });
 
 // ---------------------------------------------------------------- server
@@ -453,10 +455,20 @@ const server = http.createServer(async (req, res) => {
   }
 });
 
-setInterval(() => sessions.purgeExpired(), 6 * 3600_000).unref();
-
-server.listen(config.port, config.host, () => {
-  console.log(`IELTSLab running at ${config.publicUrl}`);
-  console.log(`  Google sign-in: ${config.google ? 'enabled' : 'not configured (set GOOGLE_CLIENT_ID and GOOGLE_CLIENT_SECRET)'}`);
-  console.log(`  AI writing feedback: ${config.ai ? `enabled (${config.ai.model})` : 'not configured (set ANTHROPIC_API_KEY)'}`);
-});
+async function main() {
+  try {
+    await initDb();
+  } catch (e) {
+    console.error('Could not open the database:', (e as Error).message);
+    if (sql.kind === 'turso') console.error('Check TURSO_DATABASE_URL and TURSO_AUTH_TOKEN.');
+    process.exit(1);
+  }
+  setInterval(() => void sessions.purgeExpired().catch(() => undefined), 6 * 3600_000).unref();
+  server.listen(config.port, config.host, () => {
+    console.log(`IELTSLab running at ${config.publicUrl}`);
+    console.log(`  Database: ${sql.kind === 'turso' ? 'Turso (hosted)' : 'local SQLite file'}`);
+    console.log(`  Google sign-in: ${config.google ? 'enabled' : 'not configured (set GOOGLE_CLIENT_ID and GOOGLE_CLIENT_SECRET)'}`);
+    console.log(`  AI writing feedback: ${config.ai ? `enabled (${config.ai.model})` : 'not configured (set ANTHROPIC_API_KEY)'}`);
+  });
+}
+void main();

@@ -14,7 +14,8 @@ if (fs.existsSync(envFile)) {
 }
 
 const port = Number(process.env.PORT || 8787);
-const publicUrl = (process.env.PUBLIC_URL || `http://localhost:${port}`).replace(/\/$/, '');
+// Render sets RENDER_EXTERNAL_URL automatically, so PUBLIC_URL is optional there.
+const publicUrl = (process.env.PUBLIC_URL || process.env.RENDER_EXTERNAL_URL || `http://localhost:${port}`).replace(/\/$/, '');
 const env = (k: string) => (process.env[k] || '').trim();
 
 export const config = {

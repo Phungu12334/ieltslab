@@ -1,0 +1,1336 @@
+{
+  "materials": [
+    {
+      "skill": "listening",
+      "part": 1,
+      "title": "Renting a flat",
+      "status": "active",
+      "tags": [
+        "ieltslab-set3",
+        "housing"
+      ],
+      "instructions": "You will hear a telephone conversation between a letting agent and a woman who is looking for a flat.",
+      "audioScript": "AGENT: Good afternoon, Harbour Lettings, this is Ben speaking.\nCALLER: Hello. I'm calling about the flat on Fenwick Street that's advertised on your website.\nAGENT: Ah yes, the one-bedroom flat. Can I take your name?\nCALLER: It's Sofia Lindqvist. That's L-I-N-D-Q-V-I-S-T.\nAGENT: Thanks, Sofia. So, the rent is eight hundred and fifty pounds a month, and that includes water but not electricity or internet.\nCALLER: OK. And how much is the deposit?\nAGENT: It's equal to five weeks' rent, so just under a thousand pounds.\nCALLER: Right. Is the flat furnished?\nAGENT: Partly. There's a bed, a wardrobe and a sofa, and the kitchen has a fridge and a washing machine, but there's no dishwasher.\nCALLER: That's fine. What floor is it on?\nAGENT: The third floor, and I should say there's no lift, so it's stairs only.\nCALLER: Hmm. And is there any parking?\nAGENT: Not with the flat, I'm afraid, but there's a bus stop right outside, and the train station is about a ten-minute walk.\nCALLER: Good. When would it be available?\nAGENT: From the first of March. The current tenant moves out at the end of February.\nCALLER: Could I see it this week?\nAGENT: Let me check. I could do Thursday at half past five, or Saturday morning at ten.\nCALLER: Saturday would be better.\nAGENT: Fine. When you come, please bring some photo ID. And if you decide to apply, we'll need a reference from your employer.\nCALLER: No problem. Thanks very much.",
+      "transcript": "AGENT: Good afternoon, Harbour Lettings, this is Ben speaking.\nCALLER: Hello. I'm calling about the flat on Fenwick Street that's advertised on your website.\nAGENT: Ah yes, the one-bedroom flat. Can I take your name?\nCALLER: It's Sofia Lindqvist. That's L-I-N-D-Q-V-I-S-T.\nAGENT: Thanks, Sofia. So, the rent is eight hundred and fifty pounds a month, and that includes water but not electricity or internet.\nCALLER: OK. And how much is the deposit?\nAGENT: It's equal to five weeks' rent, so just under a thousand pounds.\nCALLER: Right. Is the flat furnished?\nAGENT: Partly. There's a bed, a wardrobe and a sofa, and the kitchen has a fridge and a washing machine, but there's no dishwasher.\nCALLER: That's fine. What floor is it on?\nAGENT: The third floor, and I should say there's no lift, so it's stairs only.\nCALLER: Hmm. And is there any parking?\nAGENT: Not with the flat, I'm afraid, but there's a bus stop right outside, and the train station is about a ten-minute walk.\nCALLER: Good. When would it be available?\nAGENT: From the first of March. The current tenant moves out at the end of February.\nCALLER: Could I see it this week?\nAGENT: Let me check. I could do Thursday at half past five, or Saturday morning at ten.\nCALLER: Saturday would be better.\nAGENT: Fine. When you come, please bring some photo ID. And if you decide to apply, we'll need a reference from your employer.\nCALLER: No problem. Thanks very much.",
+      "groups": [
+        {
+          "type": "completion",
+          "maxWords": 2,
+          "instructions": "Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questions": [
+            {
+              "prompt": "Caller's surname: ______",
+              "answers": [
+                "Lindqvist"
+              ],
+              "explanation": "She spells it: L-I-N-D-Q-V-I-S-T."
+            },
+            {
+              "prompt": "Monthly rent: £______",
+              "answers": [
+                "850"
+              ],
+              "explanation": "Eight hundred and fifty pounds a month."
+            },
+            {
+              "prompt": "Rent includes: ______",
+              "answers": [
+                "water"
+              ],
+              "explanation": "Water is included; electricity and internet are not."
+            },
+            {
+              "prompt": "Deposit: equal to ______ rent",
+              "answers": [
+                "five weeks'",
+                "five weeks",
+                "5 weeks'",
+                "5 weeks"
+              ],
+              "explanation": "Equal to five weeks' rent."
+            },
+            {
+              "prompt": "Kitchen does NOT have a ______",
+              "answers": [
+                "dishwasher"
+              ],
+              "explanation": "There is a fridge and washing machine but no dishwasher."
+            },
+            {
+              "prompt": "Available from: 1st ______",
+              "answers": [
+                "March"
+              ],
+              "explanation": "The tenant leaves at the end of February."
+            },
+            {
+              "prompt": "Viewing day: ______",
+              "answers": [
+                "Saturday"
+              ],
+              "explanation": "Thursday is offered, but the caller chooses Saturday."
+            },
+            {
+              "prompt": "Bring: photo ______",
+              "answers": [
+                "ID",
+                "identification"
+              ],
+              "explanation": "\"Please bring some photo ID.\""
+            }
+          ]
+        },
+        {
+          "type": "mcq",
+          "instructions": "Choose the correct letter, A, B or C.",
+          "questions": [
+            {
+              "prompt": "Which floor is the flat on?",
+              "options": [
+                "first",
+                "second",
+                "third"
+              ],
+              "answers": [
+                "C"
+              ],
+              "explanation": "The third floor, with no lift."
+            },
+            {
+              "prompt": "What does the agent say about transport?",
+              "options": [
+                "There is a parking space.",
+                "A bus stop is very close.",
+                "The station is next door."
+              ],
+              "answers": [
+                "B"
+              ],
+              "explanation": "No parking; a bus stop right outside; the station is a ten-minute walk."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "part": 2,
+      "title": "Tour of a reopened library",
+      "status": "active",
+      "tags": [
+        "ieltslab-set3",
+        "local area"
+      ],
+      "instructions": "You will hear a guide describing the changes to a city library.",
+      "audioScript": "GUIDE: Good morning, everyone, and welcome to the newly reopened Central Library. After two years of building work, I'm delighted to show you what's changed. Let me start with a quick overview of the four floors.\nGUIDE: Here on the ground floor you'll find the main desk, where you can join the library and collect reserved books. We've also moved the café down here; it used to be on the top floor, but people found it too hard to reach. The café is open until six, an hour after most of the building closes on weekdays.\nGUIDE: The first floor is now the children's library. It has a reading garden on the balcony, which is a completely new feature, and story sessions take place there every Wednesday afternoon.\nGUIDE: On the second floor you'll find the adult lending collection and the quiet study area. Please note that phone calls aren't allowed anywhere on this floor. There are forty study desks, and these can now be booked online up to a week in advance.\nGUIDE: The third floor houses our local history archive. Visitors can look at old maps, newspapers and photographs, but you'll need to make an appointment with the archivist first, because many items are fragile.\nGUIDE: A few other changes. Membership is still free, but printing now costs ten pence per page, and you pay using your library card rather than coins. We've also installed self-service machines for returning books, so you no longer need to queue at the desk.\nGUIDE: Finally, we're looking for volunteers to help with our homework club for teenagers, which runs on Monday and Thursday evenings. If you're interested, please leave your details at the main desk.",
+      "transcript": "GUIDE: Good morning, everyone, and welcome to the newly reopened Central Library. After two years of building work, I'm delighted to show you what's changed. Let me start with a quick overview of the four floors.\nGUIDE: Here on the ground floor you'll find the main desk, where you can join the library and collect reserved books. We've also moved the café down here; it used to be on the top floor, but people found it too hard to reach. The café is open until six, an hour after most of the building closes on weekdays.\nGUIDE: The first floor is now the children's library. It has a reading garden on the balcony, which is a completely new feature, and story sessions take place there every Wednesday afternoon.\nGUIDE: On the second floor you'll find the adult lending collection and the quiet study area. Please note that phone calls aren't allowed anywhere on this floor. There are forty study desks, and these can now be booked online up to a week in advance.\nGUIDE: The third floor houses our local history archive. Visitors can look at old maps, newspapers and photographs, but you'll need to make an appointment with the archivist first, because many items are fragile.\nGUIDE: A few other changes. Membership is still free, but printing now costs ten pence per page, and you pay using your library card rather than coins. We've also installed self-service machines for returning books, so you no longer need to queue at the desk.\nGUIDE: Finally, we're looking for volunteers to help with our homework club for teenagers, which runs on Monday and Thursday evenings. If you're interested, please leave your details at the main desk.",
+      "groups": [
+        {
+          "type": "matching",
+          "options": [
+            "ground floor",
+            "first floor",
+            "second floor",
+            "third floor"
+          ],
+          "instructions": "Which floor has each of the following? Choose the correct letter, A–D. You may use any letter more than once.",
+          "questions": [
+            {
+              "prompt": "the café",
+              "answers": [
+                "A"
+              ],
+              "explanation": "Moved from the top floor to the ground floor."
+            },
+            {
+              "prompt": "a reading garden",
+              "answers": [
+                "B"
+              ],
+              "explanation": "On the balcony of the children's library."
+            },
+            {
+              "prompt": "bookable study desks",
+              "answers": [
+                "C"
+              ],
+              "explanation": "Forty desks on the second floor."
+            },
+            {
+              "prompt": "old maps and photographs",
+              "answers": [
+                "D"
+              ],
+              "explanation": "The local history archive."
+            },
+            {
+              "prompt": "a ban on phone calls",
+              "answers": [
+                "C"
+              ],
+              "explanation": "No phone calls anywhere on the second floor."
+            }
+          ]
+        },
+        {
+          "type": "mcq",
+          "instructions": "Choose the correct letter, A, B or C.",
+          "questions": [
+            {
+              "prompt": "Why was the café moved?",
+              "options": [
+                "It was too small.",
+                "It was difficult to get to.",
+                "It was too noisy for readers."
+              ],
+              "answers": [
+                "B"
+              ],
+              "explanation": "\"People found it too hard to reach.\""
+            },
+            {
+              "prompt": "What is needed to visit the archive?",
+              "options": [
+                "a library card",
+                "an appointment",
+                "a small fee"
+              ],
+              "answers": [
+                "B"
+              ],
+              "explanation": "Make an appointment with the archivist because items are fragile."
+            }
+          ]
+        },
+        {
+          "type": "completion",
+          "maxWords": 2,
+          "instructions": "Complete the sentences. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questions": [
+            {
+              "prompt": "Printing costs ______ pence per page.",
+              "answers": [
+                "10",
+                "ten"
+              ],
+              "explanation": "Ten pence per page, paid by library card."
+            },
+            {
+              "prompt": "The homework club needs ______.",
+              "answers": [
+                "volunteers"
+              ],
+              "explanation": "The library is looking for volunteers."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "part": 3,
+      "title": "Field trip report on coastal erosion",
+      "status": "active",
+      "tags": [
+        "ieltslab-set3",
+        "geography",
+        "university"
+      ],
+      "instructions": "You will hear two geography students, Hana and Marcus, discussing their field trip report with their tutor.",
+      "audioScript": "TUTOR: Come in, Hana, Marcus. How did the field trip to the coast go?\nHANA: Really well, thanks. We managed to measure the cliff at all five survey points.\nTUTOR: Good. And what did you find?\nMARCUS: The biggest surprise was the rate of erosion at the northern end. We expected it to be the fastest at the southern end, because that's where the sea defences were removed, but actually the north has lost more.\nTUTOR: Any idea why?\nHANA: We think it's because of the type of rock. The north is mostly soft clay, whereas the south is sandstone, which is much harder.\nTUTOR: That makes sense. How did you collect your data?\nMARCUS: We used tape measures to record the distance from fixed fence posts to the cliff edge, and then compared it with measurements from five years ago.\nTUTOR: Were there any problems?\nHANA: One of the fence posts had disappeared completely, so for that point we had to use aerial photographs instead.\nTUTOR: Right. You'll need to explain that in your methods section, because it affects the reliability of that figure.\nMARCUS: OK. We weren't sure whether to include photos in the report.\nTUTOR: Definitely include them, but put them in an appendix rather than the main text, otherwise the report will be too long.\nHANA: And for the conclusion, we wanted to recommend rebuilding the sea wall in the north.\nTUTOR: I'd be careful there. A sea wall can just move the erosion further along the coast. You might suggest it as one option, but compare it with others, such as planting vegetation on the cliff.\nMARCUS: That's a good idea. When's the deadline again?\nTUTOR: The end of next week, Friday. And please submit it online, not on paper.",
+      "transcript": "TUTOR: Come in, Hana, Marcus. How did the field trip to the coast go?\nHANA: Really well, thanks. We managed to measure the cliff at all five survey points.\nTUTOR: Good. And what did you find?\nMARCUS: The biggest surprise was the rate of erosion at the northern end. We expected it to be the fastest at the southern end, because that's where the sea defences were removed, but actually the north has lost more.\nTUTOR: Any idea why?\nHANA: We think it's because of the type of rock. The north is mostly soft clay, whereas the south is sandstone, which is much harder.\nTUTOR: That makes sense. How did you collect your data?\nMARCUS: We used tape measures to record the distance from fixed fence posts to the cliff edge, and then compared it with measurements from five years ago.\nTUTOR: Were there any problems?\nHANA: One of the fence posts had disappeared completely, so for that point we had to use aerial photographs instead.\nTUTOR: Right. You'll need to explain that in your methods section, because it affects the reliability of that figure.\nMARCUS: OK. We weren't sure whether to include photos in the report.\nTUTOR: Definitely include them, but put them in an appendix rather than the main text, otherwise the report will be too long.\nHANA: And for the conclusion, we wanted to recommend rebuilding the sea wall in the north.\nTUTOR: I'd be careful there. A sea wall can just move the erosion further along the coast. You might suggest it as one option, but compare it with others, such as planting vegetation on the cliff.\nMARCUS: That's a good idea. When's the deadline again?\nTUTOR: The end of next week, Friday. And please submit it online, not on paper.",
+      "groups": [
+        {
+          "type": "mcq",
+          "instructions": "Choose the correct letter, A, B or C.",
+          "questions": [
+            {
+              "prompt": "What surprised the students about their results?",
+              "options": [
+                "Erosion was fastest in the north.",
+                "Erosion had stopped in the south.",
+                "The cliff was taller than expected."
+              ],
+              "answers": [
+                "A"
+              ],
+              "explanation": "They expected the south to erode fastest, but the north lost more."
+            },
+            {
+              "prompt": "What explanation do they give for this?",
+              "options": [
+                "the removal of sea defences",
+                "differences in rock type",
+                "stronger waves in the north"
+              ],
+              "answers": [
+                "B"
+              ],
+              "explanation": "Soft clay in the north; harder sandstone in the south."
+            },
+            {
+              "prompt": "Why did they use aerial photographs for one point?",
+              "options": [
+                "It was too dangerous to measure.",
+                "A fence post was missing.",
+                "The tape measure broke."
+              ],
+              "answers": [
+                "B"
+              ],
+              "explanation": "One fence post \"had disappeared completely\"."
+            },
+            {
+              "prompt": "Where does the tutor say the photos should go?",
+              "options": [
+                "in the main text",
+                "in an appendix",
+                "in a separate file"
+              ],
+              "answers": [
+                "B"
+              ],
+              "explanation": "In an appendix, so the report is not too long."
+            },
+            {
+              "prompt": "What is the tutor's view of rebuilding the sea wall?",
+              "options": [
+                "It is the best solution.",
+                "It should be compared with other options.",
+                "It is too expensive to suggest."
+              ],
+              "answers": [
+                "B"
+              ],
+              "explanation": "A wall can move erosion along the coast; compare it with options such as planting vegetation."
+            }
+          ]
+        },
+        {
+          "type": "completion",
+          "maxWords": 1,
+          "instructions": "Complete the sentence. Write ONE WORD ONLY.",
+          "questions": [
+            {
+              "prompt": "The report must be submitted ______.",
+              "answers": [
+                "online"
+              ],
+              "explanation": "\"Please submit it online, not on paper.\""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "part": 4,
+      "title": "Lecture: how migrating birds navigate",
+      "status": "active",
+      "tags": [
+        "ieltslab-set3",
+        "biology"
+      ],
+      "instructions": "You will hear part of a lecture about bird navigation.",
+      "audioScript": "LECTURER: Today we're going to look at one of the great puzzles of biology: how migrating birds find their way. Some species fly thousands of kilometres each year and return to exactly the same nesting site, so they clearly have remarkable navigation skills.\nLECTURER: Researchers believe birds use several different methods. The first is the sun. Experiments in the 1950s showed that birds kept in cages became restless and faced the correct direction for migration when they could see the sun, but became confused when the sky was hidden. To use the sun accurately, of course, a bird must also allow for the time of day, which means it needs an internal clock.\nLECTURER: Many birds migrate at night, however, and these species appear to use the stars. In a famous series of experiments, young birds were raised in a planetarium, a building where an artificial night sky can be projected onto a ceiling. The birds learned to orient themselves around the point in the sky that appeared to rotate least, which in nature would be close to the Pole Star.\nLECTURER: A third method involves the Earth's magnetic field. It's now thought that some birds can actually sense magnetic fields, possibly through special proteins in their eyes. Interestingly, this magnetic sense seems to be disturbed by certain kinds of electronic noise, which may be a growing problem in cities.\nLECTURER: Finally, as birds get closer to their destination, they rely more on landmarks such as coastlines, rivers and mountains. Some seabirds may even use smell to locate their home island.\nLECTURER: Understanding these systems is not just of scientific interest. Light pollution from buildings can attract night-migrating birds and cause many of them to die in collisions, so some cities now encourage office buildings to switch off their lights during peak migration periods.",
+      "transcript": "LECTURER: Today we're going to look at one of the great puzzles of biology: how migrating birds find their way. Some species fly thousands of kilometres each year and return to exactly the same nesting site, so they clearly have remarkable navigation skills.\nLECTURER: Researchers believe birds use several different methods. The first is the sun. Experiments in the 1950s showed that birds kept in cages became restless and faced the correct direction for migration when they could see the sun, but became confused when the sky was hidden. To use the sun accurately, of course, a bird must also allow for the time of day, which means it needs an internal clock.\nLECTURER: Many birds migrate at night, however, and these species appear to use the stars. In a famous series of experiments, young birds were raised in a planetarium, a building where an artificial night sky can be projected onto a ceiling. The birds learned to orient themselves around the point in the sky that appeared to rotate least, which in nature would be close to the Pole Star.\nLECTURER: A third method involves the Earth's magnetic field. It's now thought that some birds can actually sense magnetic fields, possibly through special proteins in their eyes. Interestingly, this magnetic sense seems to be disturbed by certain kinds of electronic noise, which may be a growing problem in cities.\nLECTURER: Finally, as birds get closer to their destination, they rely more on landmarks such as coastlines, rivers and mountains. Some seabirds may even use smell to locate their home island.\nLECTURER: Understanding these systems is not just of scientific interest. Light pollution from buildings can attract night-migrating birds and cause many of them to die in collisions, so some cities now encourage office buildings to switch off their lights during peak migration periods.",
+      "groups": [
+        {
+          "type": "completion",
+          "maxWords": 1,
+          "instructions": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questions": [
+            {
+              "prompt": "Birds using the sun must also have an internal ______.",
+              "answers": [
+                "clock"
+              ],
+              "explanation": "They must allow for the time of day."
+            },
+            {
+              "prompt": "Night migrants appear to use the ______.",
+              "answers": [
+                "stars"
+              ],
+              "explanation": "Many birds migrate at night and use the stars."
+            },
+            {
+              "prompt": "Young birds were raised in a ______ with an artificial sky.",
+              "answers": [
+                "planetarium"
+              ],
+              "explanation": "An artificial night sky projected onto a ceiling."
+            },
+            {
+              "prompt": "Birds oriented around the point that rotated ______.",
+              "answers": [
+                "least"
+              ],
+              "explanation": "Near the Pole Star in nature."
+            },
+            {
+              "prompt": "The magnetic sense may involve proteins in the bird's ______.",
+              "answers": [
+                "eyes"
+              ],
+              "explanation": "\"Possibly through special proteins in their eyes.\""
+            },
+            {
+              "prompt": "Electronic ______ may disturb the magnetic sense.",
+              "answers": [
+                "noise"
+              ],
+              "explanation": "Certain kinds of electronic noise."
+            },
+            {
+              "prompt": "Near the destination, birds use landmarks such as coastlines, rivers and ______.",
+              "answers": [
+                "mountains"
+              ],
+              "explanation": "Landmarks listed in the lecture."
+            },
+            {
+              "prompt": "Some seabirds may find their island by ______.",
+              "answers": [
+                "smell"
+              ],
+              "explanation": "\"Some seabirds may even use smell.\""
+            },
+            {
+              "prompt": "Light ______ can cause birds to die in collisions.",
+              "answers": [
+                "pollution"
+              ],
+              "explanation": "Light pollution from buildings attracts night migrants."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "testType": "academic",
+      "part": 1,
+      "title": "The story of the pencil",
+      "status": "active",
+      "tags": [
+        "ieltslab-set3",
+        "history",
+        "science"
+      ],
+      "instructions": "You should spend about 20 minutes on the questions based on this passage.",
+      "passage": "A Few objects are as ordinary as the pencil, yet its history involves geology, chemistry and international politics. The story begins in the 1560s, when a large deposit of unusually pure graphite was discovered in Borrowdale, in the north of England. Local shepherds reportedly used it to mark their sheep, and it was soon being cut into sticks and wrapped in string or sheepskin for writing.\n\nB At the time, nobody understood what the material was. Because it left a dark mark, it was believed to be a form of lead, and the name \"lead pencil\" has survived ever since, even though pencils have never contained lead. It was not until 1779 that a Swedish chemist showed that graphite is a form of carbon.\n\nC The Borrowdale mine was so valuable that it was guarded by armed men, and at times it was flooded deliberately to prevent theft. The English government also restricted exports, which created a problem for other countries. France, cut off from English graphite during its wars with Britain in the 1790s, needed an alternative.\n\nD The solution came from a French officer and engineer, Nicolas-Jacques Conté. He mixed powdered graphite of poorer quality with clay, shaped the mixture into rods and baked them in a kiln. Conté's method had a major advantage: by changing the proportion of clay, manufacturers could control how hard or soft the pencil was. More clay produced a harder pencil and a lighter line; more graphite produced a softer pencil and a darker one. The grading system used today, from hard \"H\" pencils to soft \"B\" pencils, follows directly from this idea.\n\nE The wooden case also developed over time. Early pencils were made by cutting a groove in a piece of wood, inserting a graphite stick and gluing a second piece on top. In the nineteenth century, cedar became the preferred wood because it is soft enough to sharpen easily and does not split. Factories in Germany and the United States began producing pencils in enormous quantities, and the addition of an eraser to the end of the pencil was patented in 1858.\n\nF Despite the arrival of the ballpoint pen and the computer, billions of pencils are still made every year. They remain popular with artists, engineers and carpenters because a pencil line can be erased, works at any angle and does not smudge easily in the rain.",
+      "groups": [
+        {
+          "type": "tfng",
+          "instructions": "Do the following statements agree with the information given in the passage? Choose TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this.",
+          "questions": [
+            {
+              "prompt": "Local shepherds are said to have marked their sheep with Borrowdale graphite.",
+              "answers": [
+                "TRUE"
+              ],
+              "explanation": "Paragraph A: local shepherds \"reportedly used it to mark their sheep\"."
+            },
+            {
+              "prompt": "Pencils once contained small amounts of lead.",
+              "answers": [
+                "FALSE"
+              ],
+              "explanation": "Paragraph B: pencils have never contained lead."
+            },
+            {
+              "prompt": "The Borrowdale mine was sometimes flooded on purpose.",
+              "answers": [
+                "TRUE"
+              ],
+              "explanation": "Paragraph C: flooded deliberately to prevent theft."
+            },
+            {
+              "prompt": "Conté was paid by the French government to develop his method.",
+              "answers": [
+                "NOT GIVEN"
+              ],
+              "explanation": "The passage does not mention payment."
+            },
+            {
+              "prompt": "Adding more clay makes a pencil softer.",
+              "answers": [
+                "FALSE"
+              ],
+              "explanation": "Paragraph D: more clay produced a harder pencil."
+            }
+          ]
+        },
+        {
+          "type": "completion",
+          "maxWords": 1,
+          "instructions": "Complete the sentences. Choose ONE WORD ONLY from the passage for each answer.",
+          "questions": [
+            {
+              "prompt": "In 1779 graphite was shown to be a form of ______.",
+              "answers": [
+                "carbon"
+              ],
+              "explanation": "Paragraph B."
+            },
+            {
+              "prompt": "Conté baked his graphite and clay rods in a ______.",
+              "answers": [
+                "kiln"
+              ],
+              "explanation": "Paragraph D."
+            },
+            {
+              "prompt": "______ became the preferred wood because it sharpens easily.",
+              "answers": [
+                "cedar"
+              ],
+              "explanation": "Paragraph E."
+            },
+            {
+              "prompt": "Pencil lines do not smudge easily in the ______.",
+              "answers": [
+                "rain"
+              ],
+              "explanation": "Paragraph F."
+            }
+          ]
+        },
+        {
+          "type": "matching",
+          "options": [
+            "Paragraph A",
+            "Paragraph B",
+            "Paragraph C",
+            "Paragraph D",
+            "Paragraph E",
+            "Paragraph F"
+          ],
+          "instructions": "Which paragraph contains the following information? Choose the correct letter, A–F.",
+          "questions": [
+            {
+              "prompt": "the origin of a grading system still in use",
+              "answers": [
+                "D"
+              ],
+              "explanation": "H and B grades follow from Conté's clay proportions."
+            },
+            {
+              "prompt": "reasons why certain workers still prefer pencils",
+              "answers": [
+                "F"
+              ],
+              "explanation": "Artists, engineers and carpenters."
+            },
+            {
+              "prompt": "how a political conflict created a need for a new product",
+              "answers": [
+                "C"
+              ],
+              "explanation": "France was cut off from English graphite during the wars."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "testType": "academic",
+      "part": 2,
+      "title": "The psychology of queuing",
+      "status": "active",
+      "tags": [
+        "ieltslab-set3",
+        "psychology",
+        "business"
+      ],
+      "instructions": "You should spend about 20 minutes on the questions based on this passage.",
+      "passage": "A Most people dislike waiting in queues, but researchers who study queuing have found that our frustration depends less on the actual length of the wait than on how the wait feels. A five-minute wait can seem trivial in one situation and unbearable in another, and businesses have become increasingly interested in the reasons why.\n\nB One of the most important factors is whether time is occupied. Unoccupied time feels longer than occupied time. A frequently told story concerns an office building whose tenants complained about slow lifts. Rather than installing faster lifts, the building's managers put mirrors beside the lift doors. People spent the waiting time looking at themselves, and the complaints largely stopped, even though the wait itself was unchanged.\n\nC Uncertainty also makes waiting harder. A wait of unknown length is more stressful than one whose duration is known, which is why many transport systems now display the number of minutes until the next train. Similarly, people who are given an explanation for a delay tend to be more patient than those who are not, even when the explanation does not shorten the wait.\n\nD Fairness matters too. Customers are often more upset by seeing someone who arrived later being served first than by the wait itself. For this reason, many banks and post offices have replaced multiple lines, one in front of each counter, with a single line that feeds all counters. A single line is not necessarily faster on average, but it guarantees that people are served in order of arrival, and it removes the frustration of choosing the \"wrong\" line.\n\nE Finally, the end of a wait has a powerful effect on how it is remembered. Several studies suggest that people judge an experience largely by its final moments. Theme parks make use of this by overestimating the waiting times displayed at the entrance to their rides, so that visitors are pleasantly surprised when they reach the front sooner than expected.\n\nF Some critics argue that such techniques are simply ways of manipulating customers rather than improving service. Supporters respond that when a wait cannot be avoided, there is nothing wrong with making it less unpleasant. Either way, the psychology of queuing shows that how we feel about time is often more important than the time itself.",
+      "groups": [
+        {
+          "type": "matching",
+          "options": [
+            "Making the end of a wait feel better",
+            "Why the actual wait matters less than the experience",
+            "The cost of building faster systems",
+            "Keeping people busy while they wait",
+            "Is it right to influence customers?",
+            "Knowing how long and why",
+            "The importance of being served in order",
+            "Queues in different cultures"
+          ],
+          "instructions": "The passage has six paragraphs, A–F. Choose the correct heading for each paragraph from the list of headings.",
+          "questions": [
+            {
+              "prompt": "Paragraph A",
+              "answers": [
+                "B"
+              ],
+              "explanation": "Frustration depends on how the wait feels, not its length."
+            },
+            {
+              "prompt": "Paragraph B",
+              "answers": [
+                "D"
+              ],
+              "explanation": "Mirrors give people something to do: occupied time."
+            },
+            {
+              "prompt": "Paragraph C",
+              "answers": [
+                "F"
+              ],
+              "explanation": "Uncertainty and explanations for delays."
+            },
+            {
+              "prompt": "Paragraph D",
+              "answers": [
+                "G"
+              ],
+              "explanation": "Single lines guarantee order of arrival."
+            },
+            {
+              "prompt": "Paragraph E",
+              "answers": [
+                "A"
+              ],
+              "explanation": "Final moments shape memory; theme parks overestimate times."
+            },
+            {
+              "prompt": "Paragraph F",
+              "answers": [
+                "E"
+              ],
+              "explanation": "Critics call the techniques manipulation."
+            }
+          ]
+        },
+        {
+          "type": "tfng",
+          "instructions": "Do the following statements agree with the information given in the passage? Choose TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this.",
+          "questions": [
+            {
+              "prompt": "The office building eventually installed faster lifts.",
+              "answers": [
+                "FALSE"
+              ],
+              "explanation": "Mirrors were installed instead; the wait was unchanged."
+            },
+            {
+              "prompt": "A single queue is always faster on average than several queues.",
+              "answers": [
+                "FALSE"
+              ],
+              "explanation": "\"Not necessarily faster on average.\""
+            },
+            {
+              "prompt": "Some theme parks show waiting times that are longer than the real wait.",
+              "answers": [
+                "TRUE"
+              ],
+              "explanation": "They overestimate displayed waiting times."
+            },
+            {
+              "prompt": "Explanations for delays are more effective in banks than on trains.",
+              "answers": [
+                "NOT GIVEN"
+              ],
+              "explanation": "No such comparison is made."
+            }
+          ]
+        },
+        {
+          "type": "mcq",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            {
+              "prompt": "According to paragraph D, what upsets customers most?",
+              "options": [
+                "long queues",
+                "being served by slow staff",
+                "seeing later arrivals served first",
+                "having too few counters"
+              ],
+              "answers": [
+                "C"
+              ],
+              "explanation": "Customers are more upset by unfairness than by the wait itself."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "testType": "academic",
+      "part": 3,
+      "title": "Car-free city centres",
+      "status": "active",
+      "tags": [
+        "ieltslab-set3",
+        "cities",
+        "opinion"
+      ],
+      "instructions": "You should spend about 20 minutes on the questions based on this passage.",
+      "passage": "In the past decade, a growing number of European cities have removed private cars from their central districts. Streets once filled with traffic have been turned over to pedestrians, cyclists, trees and outdoor cafés. Supporters see these schemes as one of the most effective ways to improve urban life; opponents regard them as an attack on personal freedom that harms businesses and people who depend on their cars. Having followed several of these schemes closely, I believe the benefits clearly outweigh the costs, provided that the changes are planned carefully.\n\nThe evidence on air quality and safety is the easiest to assess. When traffic is removed from a district, levels of nitrogen dioxide usually fall sharply within months, and serious road injuries decline. Less obvious, but in my view equally important, is the effect on how people use streets. Where cars dominate, streets are places people pass through as quickly as possible. Without them, the same streets become places where people stop, meet and spend time.\n\nThe most common objection comes from shopkeepers, who fear that customers who cannot drive to their door will go elsewhere. These fears are understandable, but shopkeepers consistently overestimate how many of their customers arrive by car. In many city centres, most shoppers walk, cycle or use public transport, and studies have often found that retail spending rises after streets are pedestrianised, although the effect varies between types of business.\n\nA more serious concern, I think, is fairness. Elderly and disabled residents, as well as workers who make deliveries or carry tools, may genuinely depend on vehicles. A scheme that ignores these groups is not only unjust but likely to lose public support. The successful schemes I have seen allow access for residents, deliveries at set hours and blue-badge holders, while removing through traffic.\n\nIt is also important not to assume that what works in one city will work everywhere. Compact historic centres with good public transport are far easier to convert than sprawling cities where distances are large and buses are infrequent. In such places, improving public transport must come first; otherwise, removing cars will simply make people's lives harder.\n\nCar-free centres, then, are not a universal solution. But where they are introduced gradually, with genuine consultation and sensible exceptions, they can make cities cleaner, safer and more pleasant places to live.",
+      "groups": [
+        {
+          "type": "ynng",
+          "instructions": "Do the following statements agree with the views of the writer? Choose YES if the statement agrees with the views of the writer, NO if the statement contradicts the views of the writer, or NOT GIVEN if it is impossible to say what the writer thinks about this.",
+          "questions": [
+            {
+              "prompt": "The advantages of car-free centres are greater than the disadvantages if schemes are well planned.",
+              "answers": [
+                "YES"
+              ],
+              "explanation": "\"The benefits clearly outweigh the costs, provided that the changes are planned carefully.\""
+            },
+            {
+              "prompt": "The change in how people use streets is less important than improvements in air quality.",
+              "answers": [
+                "NO"
+              ],
+              "explanation": "The writer calls it \"equally important\"."
+            },
+            {
+              "prompt": "Shopkeepers usually underestimate how many customers arrive by car.",
+              "answers": [
+                "NO"
+              ],
+              "explanation": "They \"consistently overestimate\" it."
+            },
+            {
+              "prompt": "All types of shops benefit equally from pedestrianisation.",
+              "answers": [
+                "NO"
+              ],
+              "explanation": "\"The effect varies between types of business.\""
+            },
+            {
+              "prompt": "Car-free schemes are cheaper to introduce than new public transport.",
+              "answers": [
+                "NOT GIVEN"
+              ],
+              "explanation": "Costs of the two are not compared."
+            }
+          ]
+        },
+        {
+          "type": "matching",
+          "options": [
+            "through traffic",
+            "residents",
+            "consultation",
+            "public transport",
+            "freedom",
+            "historic",
+            "delivery drivers",
+            "pollution"
+          ],
+          "instructions": "Complete the summary using the list of words, A–H.",
+          "questions": [
+            {
+              "prompt": "Successful schemes still allow access for ______ …",
+              "answers": [
+                "B"
+              ],
+              "explanation": "Residents, deliveries at set hours and blue-badge holders."
+            },
+            {
+              "prompt": "… but remove ______.",
+              "answers": [
+                "A"
+              ],
+              "explanation": "\"While removing through traffic.\""
+            },
+            {
+              "prompt": "Compact ______ centres are easiest to convert.",
+              "answers": [
+                "F"
+              ],
+              "explanation": "\"Compact historic centres with good public transport.\""
+            },
+            {
+              "prompt": "In sprawling cities, better ______ must come first.",
+              "answers": [
+                "D"
+              ],
+              "explanation": "\"Improving public transport must come first.\""
+            }
+          ]
+        },
+        {
+          "type": "mcq",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            {
+              "prompt": "Which best describes the writer's overall position?",
+              "options": [
+                "Car-free centres should be introduced in every city.",
+                "Car-free centres can work well if introduced with care.",
+                "The problems of car-free centres outweigh the benefits.",
+                "Shopkeepers should decide whether cars are banned."
+              ],
+              "answers": [
+                "B"
+              ],
+              "explanation": "Final paragraph: not universal, but valuable when introduced gradually with consultation and exceptions."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "testType": "general",
+      "part": 1,
+      "title": "Choosing a mobile phone plan",
+      "status": "active",
+      "tags": [
+        "ieltslab-set3",
+        "everyday",
+        "advertisements"
+      ],
+      "instructions": "Read the text and answer the questions.",
+      "passage": "Choosing a mobile phone plan: five options from Townlink Mobile\n\nA Basic Talk\n£6 per month. Unlimited calls and texts, 2 GB of data. No contract: cancel at any time with one month's notice. Ideal if you mainly use your phone for calls.\n\nB Student Saver\n£10 per month. Unlimited calls and texts, 30 GB of data. Available only to full-time students with a valid student card. 12-month contract. Free access to a music streaming service for the first six months.\n\nC Family Share\n£35 per month for up to four SIM cards. Unlimited calls and texts on every SIM, with 100 GB of data shared between all users. 24-month contract. Parents can set limits on children's data use through the app.\n\nD Traveller\n£18 per month. Unlimited calls and texts, 40 GB of data, which can also be used in 50 countries at no extra cost. 12-month contract.\n\nE Unlimited Plus\n£25 per month. Unlimited calls, texts and data. 24-month contract. Includes a free phone upgrade after 12 months.",
+      "groups": [
+        {
+          "type": "matching",
+          "options": [
+            "Basic Talk",
+            "Student Saver",
+            "Family Share",
+            "Traveller",
+            "Unlimited Plus"
+          ],
+          "instructions": "Look at the five plans, A–E. Which plan matches each statement? You may use any letter more than once.",
+          "questions": [
+            {
+              "prompt": "You can leave without a long contract.",
+              "answers": [
+                "A"
+              ],
+              "explanation": "No contract; one month's notice."
+            },
+            {
+              "prompt": "You must prove your status to join.",
+              "answers": [
+                "B"
+              ],
+              "explanation": "Valid student card required."
+            },
+            {
+              "prompt": "Data can be used abroad without extra charges.",
+              "answers": [
+                "D"
+              ],
+              "explanation": "Usable in 50 countries at no extra cost."
+            },
+            {
+              "prompt": "It includes a free entertainment service for a limited time.",
+              "answers": [
+                "B"
+              ],
+              "explanation": "Music streaming for six months."
+            },
+            {
+              "prompt": "It offers a new handset partway through the contract.",
+              "answers": [
+                "E"
+              ],
+              "explanation": "Free upgrade after 12 months."
+            },
+            {
+              "prompt": "Data use can be controlled for some users.",
+              "answers": [
+                "C"
+              ],
+              "explanation": "Parents can set limits on children's data."
+            }
+          ]
+        },
+        {
+          "type": "tfng",
+          "instructions": "Do the following statements agree with the information given in the passage? Choose TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this.",
+          "questions": [
+            {
+              "prompt": "The Family Share plan costs £35 for each SIM card.",
+              "answers": [
+                "FALSE"
+              ],
+              "explanation": "£35 per month for up to four SIM cards."
+            },
+            {
+              "prompt": "The Traveller plan has a 12-month contract.",
+              "answers": [
+                "TRUE"
+              ],
+              "explanation": "Stated in plan D."
+            },
+            {
+              "prompt": "Townlink Mobile has the best network coverage in the country.",
+              "answers": [
+                "NOT GIVEN"
+              ],
+              "explanation": "Coverage is not mentioned."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "testType": "general",
+      "part": 2,
+      "title": "Information for new food bank volunteers",
+      "status": "active",
+      "tags": [
+        "ieltslab-set3",
+        "workplace",
+        "volunteering"
+      ],
+      "instructions": "Read the text and answer the questions.",
+      "passage": "Volunteering at Eastside Food Bank: information for new volunteers\n\nThank you for offering your time. Please read this information before your first session.\n\nShifts\nVolunteers usually work one three-hour shift per week. Morning shifts run from 9 a.m. to 12 noon and are mainly spent sorting donations. Afternoon shifts, from 1 p.m. to 4 p.m., involve packing food parcels and helping visitors. You can swap shifts with another volunteer, but please let the coordinator know by email at least 24 hours beforehand.\n\nBefore you start\nAll new volunteers attend a one-hour induction session, which covers food hygiene and how we treat visitors with respect and confidentiality. Volunteers who will drive our van must also hold a full driving licence and complete a short driving assessment.\n\nWhat to wear\nWear comfortable clothes and closed shoes, as boxes can be heavy and the warehouse floor can be slippery. Aprons and gloves are provided. Please do not wear jewellery when handling food.\n\nFood safety\nCheck the date on every item. Items past their \"use by\" date must be thrown away, but items past their \"best before\" date may be kept if the packaging is undamaged. If you are unsure, ask a team leader.\n\nVisitors\nMany visitors find it difficult to ask for help. Please be friendly and never ask why someone needs a food parcel. Personal information must not be discussed outside the food bank.\n\nExpenses\nWe can refund reasonable travel costs. Keep your receipts and submit them to the coordinator by the end of each month.",
+      "groups": [
+        {
+          "type": "completion",
+          "maxWords": 2,
+          "instructions": "Complete the sentences. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questions": [
+            {
+              "prompt": "Morning volunteers mainly spend their time sorting ______.",
+              "answers": [
+                "donations"
+              ],
+              "explanation": "Shifts section."
+            },
+            {
+              "prompt": "To swap a shift, email the coordinator at least ______ in advance.",
+              "answers": [
+                "24 hours",
+                "twenty-four hours"
+              ],
+              "explanation": "At least 24 hours beforehand."
+            },
+            {
+              "prompt": "The induction covers food hygiene and respect and ______ for visitors.",
+              "answers": [
+                "confidentiality"
+              ],
+              "explanation": "Before you start."
+            },
+            {
+              "prompt": "Van drivers must complete a short driving ______.",
+              "answers": [
+                "assessment"
+              ],
+              "explanation": "Before you start."
+            },
+            {
+              "prompt": "Volunteers should wear comfortable clothes and ______.",
+              "answers": [
+                "closed shoes"
+              ],
+              "explanation": "What to wear."
+            },
+            {
+              "prompt": "Travel receipts must be submitted by the end of each ______.",
+              "answers": [
+                "month"
+              ],
+              "explanation": "Expenses."
+            }
+          ]
+        },
+        {
+          "type": "tfng",
+          "instructions": "Do the following statements agree with the information given in the passage? Choose TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this.",
+          "questions": [
+            {
+              "prompt": "Volunteers must bring their own gloves.",
+              "answers": [
+                "FALSE"
+              ],
+              "explanation": "Aprons and gloves are provided."
+            },
+            {
+              "prompt": "Food past its \"best before\" date can sometimes be kept.",
+              "answers": [
+                "TRUE"
+              ],
+              "explanation": "If the packaging is undamaged."
+            },
+            {
+              "prompt": "Volunteers should ask visitors why they need help.",
+              "answers": [
+                "FALSE"
+              ],
+              "explanation": "\"Never ask why someone needs a food parcel.\""
+            },
+            {
+              "prompt": "Most volunteers work more than one shift a week.",
+              "answers": [
+                "FALSE"
+              ],
+              "explanation": "Volunteers usually work one shift per week."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "testType": "general",
+      "part": 3,
+      "title": "The working life of lighthouses",
+      "status": "active",
+      "tags": [
+        "ieltslab-set3",
+        "history",
+        "engineering"
+      ],
+      "instructions": "Read the passage and answer the questions.",
+      "passage": "A For centuries, lighthouses guided ships safely past rocks and into harbours. Their basic purpose was simple: to provide a fixed, recognisable light at night. Yet building and running them involved some of the most demanding engineering and some of the loneliest jobs ever created.\n\nB Early lighthouses burned wood or coal in open fires, and later oil lamps. The light was weak, and much of it escaped upwards or sideways. A major improvement came in the 1820s, when the French physicist Augustin Fresnel designed a lens made of many glass rings arranged around a central bulb. His lens concentrated the light into a powerful beam that could be seen more than thirty kilometres away, and versions of it were installed around the world.\n\nC To help sailors identify each lighthouse, engineers gave them different patterns of light. One might flash once every five seconds, another twice every ten seconds. Lighthouses were also painted with distinctive stripes or colours, so that they could be recognised during the day.\n\nD Building a lighthouse on a rock in the open sea was extraordinarily difficult. Workers could often reach the site only at low tide and in calm weather, sometimes for just a few hours each week. Stone blocks were shaped on land, carefully numbered and then fixed together on the rock like the pieces of a puzzle, so that the tower could resist enormous waves.\n\nE For most of their history, lighthouses needed keepers to light the lamps, wind the clockwork that rotated the lens and keep the glass clean. On remote rocks, keepers worked in teams of two or three and could be cut off for weeks by storms. The job required patience and reliability rather than physical strength, and in some countries keepers' families lived with them on shore stations.\n\nF During the twentieth century, electric lights and automatic controls gradually replaced keepers, and today almost every lighthouse is automated. Satellite navigation has also reduced the importance of lights for many ships. Some former lighthouses have been converted into museums, holiday homes or bird observatories, while others continue to operate as a back-up in case electronic systems fail.",
+      "groups": [
+        {
+          "type": "matching",
+          "options": [
+            "Telling one light from another",
+            "A better way to direct light",
+            "Lighthouse tourism today",
+            "Construction in difficult conditions",
+            "A life of isolation",
+            "Simple purpose, hard work",
+            "New roles for old towers",
+            "Famous shipwrecks"
+          ],
+          "instructions": "The passage has six paragraphs, A–F. Choose the correct heading for each paragraph from the list.",
+          "questions": [
+            {
+              "prompt": "Paragraph A",
+              "answers": [
+                "F"
+              ],
+              "explanation": "Simple purpose, but demanding engineering and lonely jobs."
+            },
+            {
+              "prompt": "Paragraph B",
+              "answers": [
+                "B"
+              ],
+              "explanation": "Fresnel's lens concentrated the light."
+            },
+            {
+              "prompt": "Paragraph C",
+              "answers": [
+                "A"
+              ],
+              "explanation": "Different light patterns and paint."
+            },
+            {
+              "prompt": "Paragraph D",
+              "answers": [
+                "D"
+              ],
+              "explanation": "Working only at low tide in calm weather."
+            },
+            {
+              "prompt": "Paragraph E",
+              "answers": [
+                "E"
+              ],
+              "explanation": "Keepers cut off for weeks by storms."
+            },
+            {
+              "prompt": "Paragraph F",
+              "answers": [
+                "G"
+              ],
+              "explanation": "Museums, holiday homes, bird observatories, back-up lights."
+            }
+          ]
+        },
+        {
+          "type": "completion",
+          "maxWords": 2,
+          "instructions": "Complete the sentences. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the passage for each answer.",
+          "questions": [
+            {
+              "prompt": "Fresnel's light could be seen more than ______ kilometres away.",
+              "answers": [
+                "thirty",
+                "30"
+              ],
+              "explanation": "Paragraph B."
+            },
+            {
+              "prompt": "Stone blocks were numbered and fitted together like a ______.",
+              "answers": [
+                "puzzle"
+              ],
+              "explanation": "Paragraph D."
+            },
+            {
+              "prompt": "Keepers wound the ______ that turned the lens.",
+              "answers": [
+                "clockwork"
+              ],
+              "explanation": "Paragraph E."
+            },
+            {
+              "prompt": "Today almost every lighthouse is ______.",
+              "answers": [
+                "automated"
+              ],
+              "explanation": "Paragraph F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "writing",
+      "testType": "academic",
+      "part": 1,
+      "title": "Public transport use in four cities (bar chart)",
+      "status": "active",
+      "tags": [
+        "ieltslab-set3",
+        "bar chart"
+      ],
+      "instructions": "You should spend about 20 minutes on this task. Write at least 150 words.",
+      "prompt": "The bar chart below shows the percentage of commuters who used public transport in four cities in 2010 and 2025.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "imageUrl": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20380%22%20font-family%3D%22Arial%2C%20Helvetica%2C%20sans-serif%22%3E%3Crect%20width%3D%22640%22%20height%3D%22380%22%20fill%3D%22%23ffffff%22%2F%3E%3Ctext%20x%3D%22320%22%20y%3D%2226%22%20font-size%3D%2215%22%20font-weight%3D%22bold%22%20text-anchor%3D%22middle%22%20fill%3D%22%2314202e%22%3EPercentage%20of%20commuters%20using%20public%20transport%3C%2Ftext%3E%3Cline%20x1%3D%2260%22%20x2%3D%22620%22%20y1%3D%22315%22%20y2%3D%22315%22%20stroke%3D%22%23d5dbe3%22%2F%3E%3Ctext%20x%3D%2250%22%20y%3D%22319%22%20font-size%3D%2212%22%20text-anchor%3D%22end%22%20fill%3D%22%233d4a5a%22%3E0%25%3C%2Ftext%3E%3Cline%20x1%3D%2260%22%20x2%3D%22620%22%20y1%3D%22263%22%20y2%3D%22263%22%20stroke%3D%22%23d5dbe3%22%2F%3E%3Ctext%20x%3D%2250%22%20y%3D%22267%22%20font-size%3D%2212%22%20text-anchor%3D%22end%22%20fill%3D%22%233d4a5a%22%3E10%25%3C%2Ftext%3E%3Cline%20x1%3D%2260%22%20x2%3D%22620%22%20y1%3D%22211%22%20y2%3D%22211%22%20stroke%3D%22%23d5dbe3%22%2F%3E%3Ctext%20x%3D%2250%22%20y%3D%22215%22%20font-size%3D%2212%22%20text-anchor%3D%22end%22%20fill%3D%22%233d4a5a%22%3E20%25%3C%2Ftext%3E%3Cline%20x1%3D%2260%22%20x2%3D%22620%22%20y1%3D%22159%22%20y2%3D%22159%22%20stroke%3D%22%23d5dbe3%22%2F%3E%3Ctext%20x%3D%2250%22%20y%3D%22163%22%20font-size%3D%2212%22%20text-anchor%3D%22end%22%20fill%3D%22%233d4a5a%22%3E30%25%3C%2Ftext%3E%3Cline%20x1%3D%2260%22%20x2%3D%22620%22%20y1%3D%22107%22%20y2%3D%22107%22%20stroke%3D%22%23d5dbe3%22%2F%3E%3Ctext%20x%3D%2250%22%20y%3D%22111%22%20font-size%3D%2212%22%20text-anchor%3D%22end%22%20fill%3D%22%233d4a5a%22%3E40%25%3C%2Ftext%3E%3Cline%20x1%3D%2260%22%20x2%3D%22620%22%20y1%3D%2255%22%20y2%3D%2255%22%20stroke%3D%22%23d5dbe3%22%2F%3E%3Ctext%20x%3D%2250%22%20y%3D%2259%22%20font-size%3D%2212%22%20text-anchor%3D%22end%22%20fill%3D%22%233d4a5a%22%3E50%25%3C%2Ftext%3E%3Crect%20x%3D%2284.75%22%20y%3D%22148.6%22%20width%3D%2240%22%20height%3D%22166.4%22%20fill%3D%22%237d93ad%22%2F%3E%3Crect%20x%3D%22130.75%22%20y%3D%22101.80000000000001%22%20width%3D%2240%22%20height%3D%22213.2%22%20fill%3D%22%231b4f8a%22%2F%3E%3Ctext%20x%3D%22104.75%22%20y%3D%22142.6%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20fill%3D%22%2314202e%22%3E32%3C%2Ftext%3E%3Ctext%20x%3D%22150.75%22%20y%3D%2295.80000000000001%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20fill%3D%22%2314202e%22%3E41%3C%2Ftext%3E%3Ctext%20x%3D%22127.75%22%20y%3D%22337%22%20font-size%3D%2213%22%20text-anchor%3D%22middle%22%20fill%3D%22%2314202e%22%3ENorthport%3C%2Ftext%3E%3Crect%20x%3D%22222.25%22%20y%3D%22221.4%22%20width%3D%2240%22%20height%3D%2293.6%22%20fill%3D%22%237d93ad%22%2F%3E%3Crect%20x%3D%22268.25%22%20y%3D%22133%22%20width%3D%2240%22%20height%3D%22182%22%20fill%3D%22%231b4f8a%22%2F%3E%3Ctext%20x%3D%22242.25%22%20y%3D%22215.4%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20fill%3D%22%2314202e%22%3E18%3C%2Ftext%3E%3Ctext%20x%3D%22288.25%22%20y%3D%22127%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20fill%3D%22%2314202e%22%3E35%3C%2Ftext%3E%3Ctext%20x%3D%22265.25%22%20y%3D%22337%22%20font-size%3D%2213%22%20text-anchor%3D%22middle%22%20fill%3D%22%2314202e%22%3ELakeside%3C%2Ftext%3E%3Crect%20x%3D%22359.75%22%20y%3D%2281%22%20width%3D%2240%22%20height%3D%22234%22%20fill%3D%22%237d93ad%22%2F%3E%3Crect%20x%3D%22405.75%22%20y%3D%2291.4%22%20width%3D%2240%22%20height%3D%22223.6%22%20fill%3D%22%231b4f8a%22%2F%3E%3Ctext%20x%3D%22379.75%22%20y%3D%2275%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20fill%3D%22%2314202e%22%3E45%3C%2Ftext%3E%3Ctext%20x%3D%22425.75%22%20y%3D%2285.4%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20fill%3D%22%2314202e%22%3E43%3C%2Ftext%3E%3Ctext%20x%3D%22402.75%22%20y%3D%22337%22%20font-size%3D%2213%22%20text-anchor%3D%22middle%22%20fill%3D%22%2314202e%22%3EHillton%3C%2Ftext%3E%3Crect%20x%3D%22497.25%22%20y%3D%22185%22%20width%3D%2240%22%20height%3D%22130%22%20fill%3D%22%237d93ad%22%2F%3E%3Crect%20x%3D%22543.25%22%20y%3D%22200.6%22%20width%3D%2240%22%20height%3D%22114.4%22%20fill%3D%22%231b4f8a%22%2F%3E%3Ctext%20x%3D%22517.25%22%20y%3D%22179%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20fill%3D%22%2314202e%22%3E25%3C%2Ftext%3E%3Ctext%20x%3D%22563.25%22%20y%3D%22194.6%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20fill%3D%22%2314202e%22%3E22%3C%2Ftext%3E%3Ctext%20x%3D%22540.25%22%20y%3D%22337%22%20font-size%3D%2213%22%20text-anchor%3D%22middle%22%20fill%3D%22%2314202e%22%3EBayview%3C%2Ftext%3E%3Crect%20x%3D%22450%22%20y%3D%22356%22%20width%3D%2212%22%20height%3D%2212%22%20fill%3D%22%237d93ad%22%2F%3E%3Ctext%20x%3D%22468%22%20y%3D%22366%22%20font-size%3D%2212%22%20fill%3D%22%2314202e%22%3E2010%3C%2Ftext%3E%3Crect%20x%3D%22520%22%20y%3D%22356%22%20width%3D%2212%22%20height%3D%2212%22%20fill%3D%22%231b4f8a%22%2F%3E%3Ctext%20x%3D%22538%22%20y%3D%22366%22%20font-size%3D%2212%22%20fill%3D%22%2314202e%22%3E2025%3C%2Ftext%3E%3C%2Fsvg%3E",
+      "imageAlt": "Bar chart of commuters using public transport. Northport: 32% in 2010, 41% in 2025. Lakeside: 18% and 35%. Hillton: 45% and 43%. Bayview: 25% and 22%.",
+      "minWords": 150,
+      "scoringGuidance": "Overview: public transport use rose clearly in Northport and Lakeside (Lakeside almost doubled, from 18% to 35%) but fell slightly in Hillton and Bayview. Hillton had the highest share in both years, although by 2025 Northport (41%) had almost caught up with it (43%), and Bayview ended with the lowest share (22%). Strong answers group the rising and falling cities rather than describing each bar separately."
+    },
+    {
+      "skill": "writing",
+      "testType": "academic",
+      "part": 1,
+      "title": "Food consumption in four countries (table)",
+      "status": "active",
+      "tags": [
+        "ieltslab-set3",
+        "table"
+      ],
+      "instructions": "You should spend about 20 minutes on this task. Write at least 150 words.",
+      "prompt": "The table below shows the average amount of four types of food consumed per person each day in four countries in 2025.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "imageUrl": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20630%20310%22%20font-family%3D%22Arial%2C%20Helvetica%2C%20sans-serif%22%3E%3Crect%20width%3D%22630%22%20height%3D%22310%22%20fill%3D%22%23ffffff%22%2F%3E%3Ctext%20x%3D%22315%22%20y%3D%2232%22%20font-size%3D%2215%22%20font-weight%3D%22bold%22%20text-anchor%3D%22middle%22%20fill%3D%22%2314202e%22%3EDaily%20food%20consumption%20per%20person%20in%20four%20countries%2C%202025%3C%2Ftext%3E%3Crect%20x%3D%2220%22%20y%3D%2260%22%20width%3D%22590%22%20height%3D%2240%22%20fill%3D%22%231b4f8a%22%20stroke%3D%22%23c9d3de%22%2F%3E%3Ctext%20x%3D%2230%22%20y%3D%2285%22%20font-size%3D%2213%22%20font-weight%3D%22bold%22%20fill%3D%22%23ffffff%22%20text-anchor%3D%22start%22%3ECountry%3C%2Ftext%3E%3Ctext%20x%3D%22220%22%20y%3D%2285%22%20font-size%3D%2213%22%20font-weight%3D%22bold%22%20fill%3D%22%23ffffff%22%20text-anchor%3D%22middle%22%3EFruit%20%26amp%3B%20vegetables%3C%2Ftext%3E%3Ctext%20x%3D%22335%22%20y%3D%2285%22%20font-size%3D%2213%22%20font-weight%3D%22bold%22%20fill%3D%22%23ffffff%22%20text-anchor%3D%22middle%22%3EMeat%3C%2Ftext%3E%3Ctext%20x%3D%22440%22%20y%3D%2285%22%20font-size%3D%2213%22%20font-weight%3D%22bold%22%20fill%3D%22%23ffffff%22%20text-anchor%3D%22middle%22%3ESugary%20drinks%3C%2Ftext%3E%3Ctext%20x%3D%22555%22%20y%3D%2285%22%20font-size%3D%2213%22%20font-weight%3D%22bold%22%20fill%3D%22%23ffffff%22%20text-anchor%3D%22middle%22%3EReady%20meals%3C%2Ftext%3E%3Crect%20x%3D%2220%22%20y%3D%22100%22%20width%3D%22590%22%20height%3D%2240%22%20fill%3D%22%23ffffff%22%20stroke%3D%22%23c9d3de%22%2F%3E%3Ctext%20x%3D%2230%22%20y%3D%22125%22%20font-size%3D%2213%22%20fill%3D%22%2314202e%22%20text-anchor%3D%22start%22%3ECountry%20A%3C%2Ftext%3E%3Ctext%20x%3D%22220%22%20y%3D%22125%22%20font-size%3D%2213%22%20fill%3D%22%2314202e%22%20text-anchor%3D%22middle%22%3E410%3C%2Ftext%3E%3Ctext%20x%3D%22335%22%20y%3D%22125%22%20font-size%3D%2213%22%20fill%3D%22%2314202e%22%20text-anchor%3D%22middle%22%3E160%3C%2Ftext%3E%3Ctext%20x%3D%22440%22%20y%3D%22125%22%20font-size%3D%2213%22%20fill%3D%22%2314202e%22%20text-anchor%3D%22middle%22%3E95%3C%2Ftext%3E%3Ctext%20x%3D%22555%22%20y%3D%22125%22%20font-size%3D%2213%22%20fill%3D%22%2314202e%22%20text-anchor%3D%22middle%22%3E60%3C%2Ftext%3E%3Crect%20x%3D%2220%22%20y%3D%22140%22%20width%3D%22590%22%20height%3D%2240%22%20fill%3D%22%23eef2f6%22%20stroke%3D%22%23c9d3de%22%2F%3E%3Ctext%20x%3D%2230%22%20y%3D%22165%22%20font-size%3D%2213%22%20fill%3D%22%2314202e%22%20text-anchor%3D%22start%22%3ECountry%20B%3C%2Ftext%3E%3Ctext%20x%3D%22220%22%20y%3D%22165%22%20font-size%3D%2213%22%20fill%3D%22%2314202e%22%20text-anchor%3D%22middle%22%3E520%3C%2Ftext%3E%3Ctext%20x%3D%22335%22%20y%3D%22165%22%20font-size%3D%2213%22%20fill%3D%22%2314202e%22%20text-anchor%3D%22middle%22%3E110%3C%2Ftext%3E%3Ctext%20x%3D%22440%22%20y%3D%22165%22%20font-size%3D%2213%22%20fill%3D%22%2314202e%22%20text-anchor%3D%22middle%22%3E40%3C%2Ftext%3E%3Ctext%20x%3D%22555%22%20y%3D%22165%22%20font-size%3D%2213%22%20fill%3D%22%2314202e%22%20text-anchor%3D%22middle%22%3E25%3C%2Ftext%3E%3Crect%20x%3D%2220%22%20y%3D%22180%22%20width%3D%22590%22%20height%3D%2240%22%20fill%3D%22%23ffffff%22%20stroke%3D%22%23c9d3de%22%2F%3E%3Ctext%20x%3D%2230%22%20y%3D%22205%22%20font-size%3D%2213%22%20fill%3D%22%2314202e%22%20text-anchor%3D%22start%22%3ECountry%20C%3C%2Ftext%3E%3Ctext%20x%3D%22220%22%20y%3D%22205%22%20font-size%3D%2213%22%20fill%3D%22%2314202e%22%20text-anchor%3D%22middle%22%3E300%3C%2Ftext%3E%3Ctext%20x%3D%22335%22%20y%3D%22205%22%20font-size%3D%2213%22%20fill%3D%22%2314202e%22%20text-anchor%3D%22middle%22%3E210%3C%2Ftext%3E%3Ctext%20x%3D%22440%22%20y%3D%22205%22%20font-size%3D%2213%22%20fill%3D%22%2314202e%22%20text-anchor%3D%22middle%22%3E150%3C%2Ftext%3E%3Ctext%20x%3D%22555%22%20y%3D%22205%22%20font-size%3D%2213%22%20fill%3D%22%2314202e%22%20text-anchor%3D%22middle%22%3E120%3C%2Ftext%3E%3Crect%20x%3D%2220%22%20y%3D%22220%22%20width%3D%22590%22%20height%3D%2240%22%20fill%3D%22%23eef2f6%22%20stroke%3D%22%23c9d3de%22%2F%3E%3Ctext%20x%3D%2230%22%20y%3D%22245%22%20font-size%3D%2213%22%20fill%3D%22%2314202e%22%20text-anchor%3D%22start%22%3ECountry%20D%3C%2Ftext%3E%3Ctext%20x%3D%22220%22%20y%3D%22245%22%20font-size%3D%2213%22%20fill%3D%22%2314202e%22%20text-anchor%3D%22middle%22%3E460%3C%2Ftext%3E%3Ctext%20x%3D%22335%22%20y%3D%22245%22%20font-size%3D%2213%22%20fill%3D%22%2314202e%22%20text-anchor%3D%22middle%22%3E140%3C%2Ftext%3E%3Ctext%20x%3D%22440%22%20y%3D%22245%22%20font-size%3D%2213%22%20fill%3D%22%2314202e%22%20text-anchor%3D%22middle%22%3E70%3C%2Ftext%3E%3Ctext%20x%3D%22555%22%20y%3D%22245%22%20font-size%3D%2213%22%20fill%3D%22%2314202e%22%20text-anchor%3D%22middle%22%3E85%3C%2Ftext%3E%3Ctext%20x%3D%2220%22%20y%3D%22292%22%20font-size%3D%2212%22%20fill%3D%22%233d4a5a%22%3EFigures%3A%20average%20grams%20per%20person%20per%20day.%3C%2Ftext%3E%3C%2Fsvg%3E",
+      "imageAlt": "Table, grams per person per day. Country A: fruit and vegetables 410, meat 160, sugary drinks 95, ready meals 60. Country B: 520, 110, 40, 25. Country C: 300, 210, 150, 120. Country D: 460, 140, 70, 85.",
+      "minWords": 150,
+      "scoringGuidance": "Key features: fruit and vegetables were the largest category everywhere; Country B had the healthiest pattern (most fruit and vegetables, least of every other category) and Country C the least healthy (least fruit and vegetables, most meat, sugary drinks and ready meals). Group A and D as intermediate. Avoid listing every number.",
+      "modelAnswer": "The table compares how much of four kinds of food people in four countries consumed on an average day in 2025.\n\nOverall, fruit and vegetables made up the largest share of the diet in every country. Country B had the healthiest pattern, with the highest intake of fruit and vegetables and the lowest figures for every other category, whereas Country C showed the opposite picture.\n\nPeople in Country B ate 520 grams of fruit and vegetables a day, compared with 460 grams in Country D and 410 grams in Country A. Country C was well behind, at just 300 grams. Meat consumption followed a different pattern: it was highest in Country C, at 210 grams, and lowest in Country B, at only 110 grams, with the other two countries in between.\n\nThe figures for less healthy foods varied even more widely. Residents of Country C drank 150 grams of sugary drinks and ate 120 grams of ready meals daily, roughly four times as much as people in Country B (40 and 25 grams respectively). Countries A and D occupied the middle ground, although Country D consumed more ready meals than Country A (85 grams versus 60) and fewer sugary drinks (70 grams versus 95)."
+    },
+    {
+      "skill": "writing",
+      "testType": "general",
+      "part": 1,
+      "title": "Letter: asking your landlord for a repair",
+      "status": "active",
+      "tags": [
+        "ieltslab-set3",
+        "letter",
+        "formal"
+      ],
+      "instructions": "You should spend about 20 minutes on this task. Write at least 150 words. You do NOT need to write any addresses. Begin your letter as follows: Dear Mr Patel,",
+      "prompt": "The heating in the flat you rent has stopped working properly.\n\nWrite a letter to your landlord, Mr Patel. In your letter:",
+      "bullets": [
+        "describe the problem with the heating",
+        "explain how it is affecting you",
+        "say what you would like him to do and when"
+      ],
+      "minWords": 150,
+      "scoringGuidance": "Polite but firm, semi-formal register (\"Yours sincerely\" because the recipient is named). The problem should be described specifically (radiators cold, boiler noise, since when), effects should be concrete (working from home, health, cold nights), and the request should include a clear timeframe."
+    },
+    {
+      "skill": "writing",
+      "testType": "general",
+      "part": 1,
+      "title": "Letter: thanking a friend for their help",
+      "status": "active",
+      "tags": [
+        "ieltslab-set3",
+        "letter",
+        "informal"
+      ],
+      "instructions": "You should spend about 20 minutes on this task. Write at least 150 words. You do NOT need to write any addresses. Begin your letter as follows: Dear …,",
+      "prompt": "A friend recently helped you when you moved to a new home.\n\nWrite a letter to your friend. In your letter:",
+      "bullets": [
+        "thank your friend for their help",
+        "describe your new home",
+        "invite your friend to visit"
+      ],
+      "minWords": 150,
+      "scoringGuidance": "Warm, informal tone with natural phrasing (I can't thank you enough, you saved the day). Each bullet should be developed with details: what exactly the friend did, specific features of the new home, and a concrete invitation with a suggested date.",
+      "modelAnswer": "Dear Jamie,\n\nI just wanted to say a huge thank you for all your help last weekend. I honestly don't know how I would have managed the move without you. Carrying that enormous sofa up three flights of stairs was no joke, and you even stayed late to help me put the bed together!\n\nThe new place is finally starting to feel like home. It's a two-bedroom flat on the top floor of an old building, so the ceilings are really high and there's loads of natural light. My favourite part is the small balcony off the kitchen, which looks over a park. I've already bought a couple of chairs and some plants, so it's the perfect spot for a morning coffee.\n\nNow that I've unpacked most of the boxes, I'd love you to come over so I can thank you properly. How about dinner here on Saturday the 14th? I'll cook that Thai curry you liked, and you're welcome to stay the night in the spare room.\n\nLet me know if that works for you.\n\nLots of love,\nMai"
+    },
+    {
+      "skill": "writing",
+      "testType": "both",
+      "part": 2,
+      "title": "Essay: advertising aimed at children",
+      "status": "active",
+      "tags": [
+        "ieltslab-set3",
+        "media",
+        "opinion"
+      ],
+      "instructions": "You should spend about 40 minutes on this task. Write at least 250 words.",
+      "prompt": "Some people believe that advertising aimed at children should be banned completely.\n\nTo what extent do you agree or disagree?\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      "minWords": 250,
+      "scoringGuidance": "A clear position on \"banned completely\" is essential; a partial agreement (restrict rather than ban) is acceptable if stated consistently. Typical ideas: children cannot recognise persuasion, unhealthy food and pressure on parents versus freedom of business, funding of children's media, and the role of parents."
+    },
+    {
+      "skill": "writing",
+      "testType": "both",
+      "part": 2,
+      "title": "Essay: studying abroad",
+      "status": "active",
+      "tags": [
+        "ieltslab-set3",
+        "education",
+        "advantages and disadvantages"
+      ],
+      "instructions": "You should spend about 40 minutes on this task. Write at least 250 words.",
+      "prompt": "More and more students choose to study at universities in other countries.\n\nDo the advantages of this outweigh the disadvantages?\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      "minWords": 250,
+      "scoringGuidance": "The question asks for a judgement, not just a list: the conclusion must say which side is stronger. Develop advantages (language, independence, career prospects, access to programmes) and disadvantages (cost, homesickness, brain drain) with examples, and keep the position consistent."
+    },
+    {
+      "skill": "writing",
+      "testType": "both",
+      "part": 2,
+      "title": "Essay: are zoos still needed?",
+      "status": "active",
+      "tags": [
+        "ieltslab-set3",
+        "animals",
+        "discuss both views"
+      ],
+      "instructions": "You should spend about 40 minutes on this task. Write at least 250 words.",
+      "prompt": "Some people think that zoos are cruel and should be closed. Others believe that zoos play an important role in protecting animals.\n\nDiscuss both these views and give your own opinion.\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      "minWords": 250,
+      "scoringGuidance": "Both views need balanced development. Strong answers distinguish between kinds of zoos (modern conservation zoos versus poorly run attractions) and support opinions with examples such as breeding programmes for endangered species or the stress of confinement for large animals."
+    },
+    {
+      "skill": "speaking",
+      "part": 1,
+      "title": "Part 1: food and cooking",
+      "status": "active",
+      "tags": [
+        "ieltslab-set3",
+        "food",
+        "familiar topics"
+      ],
+      "instructions": "The examiner asks you some questions about yourself. Answer each question in two to four sentences.",
+      "speakingQuestions": [
+        "What kind of food do you like to eat?",
+        "Do you often cook at home?",
+        "Is there any food you disliked as a child but enjoy now?",
+        "What is a traditional dish from your country?",
+        "Do you prefer eating at home or in restaurants?"
+      ],
+      "responseSeconds": 30
+    },
+    {
+      "skill": "speaking",
+      "part": 1,
+      "title": "Part 1: phones and technology",
+      "status": "active",
+      "tags": [
+        "ieltslab-set3",
+        "technology",
+        "familiar topics"
+      ],
+      "instructions": "The examiner asks you some questions about yourself. Answer each question in two to four sentences.",
+      "speakingQuestions": [
+        "How often do you use your phone each day?",
+        "What do you mainly use your phone for?",
+        "Have you ever tried to spend a day without your phone?",
+        "Do you prefer texting or calling people? Why?",
+        "Would you like to have a newer phone?"
+      ],
+      "responseSeconds": 30
+    },
+    {
+      "skill": "speaking",
+      "part": 2,
+      "title": "Part 2: a teacher who influenced you",
+      "status": "active",
+      "tags": [
+        "ieltslab-set3",
+        "topic:education"
+      ],
+      "instructions": "You will have one minute to prepare. You can make notes. Then talk for one to two minutes.",
+      "prompt": "Describe a teacher who had a strong influence on you.",
+      "bullets": [
+        "who the teacher was",
+        "what subject they taught",
+        "what they were like",
+        "and explain how they influenced you"
+      ],
+      "prepSeconds": 60,
+      "responseSeconds": 120,
+      "scoringGuidance": "A good long turn uses past tenses accurately, gives specific anecdotes (one memorable lesson or comment) and ends with reflection on the lasting effect, rather than listing adjectives."
+    },
+    {
+      "skill": "speaking",
+      "part": 2,
+      "title": "Part 2: a useful piece of technology",
+      "status": "active",
+      "tags": [
+        "ieltslab-set3",
+        "topic:technology"
+      ],
+      "instructions": "You will have one minute to prepare. You can make notes. Then talk for one to two minutes.",
+      "prompt": "Describe a piece of technology (not a phone) that you find useful.",
+      "bullets": [
+        "what it is",
+        "when you got it",
+        "how often you use it",
+        "and explain why it is useful to you"
+      ],
+      "prepSeconds": 60,
+      "responseSeconds": 120
+    },
+    {
+      "skill": "speaking",
+      "part": 3,
+      "title": "Part 3: teachers and learning",
+      "status": "active",
+      "tags": [
+        "ieltslab-set3",
+        "topic:education"
+      ],
+      "instructions": "The examiner asks you more general questions linked to the Part 2 topic. Give developed answers with reasons and examples.",
+      "speakingQuestions": [
+        "What qualities make someone a good teacher?",
+        "Do you think teachers are more or less respected than they were in the past?",
+        "Could online lessons ever completely replace classroom teachers?",
+        "Should teachers be paid according to their students' exam results?"
+      ],
+      "responseSeconds": 60
+    },
+    {
+      "skill": "speaking",
+      "part": 3,
+      "title": "Part 3: technology in daily life",
+      "status": "active",
+      "tags": [
+        "ieltslab-set3",
+        "topic:technology"
+      ],
+      "instructions": "The examiner asks you more general questions linked to the Part 2 topic. Give developed answers with reasons and examples.",
+      "speakingQuestions": [
+        "How has technology changed the way families spend time together?",
+        "Do older people find it harder to adapt to new technology? Why?",
+        "Is it possible to depend too much on technology?",
+        "What kinds of technology do you think will be common in homes in twenty years?"
+      ],
+      "responseSeconds": 60
+    }
+  ]
+}

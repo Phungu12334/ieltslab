@@ -2,6 +2,7 @@
 // but is NOT official IELTS material. Every item is marked demo: true and tagged "demo".
 import { esc, g, mat, q, svgData } from './contentKit';
 import { MORE_MATERIALS } from './demoContentMore';
+import { SET3_MATERIALS } from './demoContentSet3';
 import type { Material } from './types';
 
 // ---------- Simple chart images for Writing Task 1 (static SVG, rendered as <img>) ----------
@@ -632,4 +633,4 @@ const SPEAKING: Material[] = [
   }),
 ];
 
-export const DEMO_MATERIALS: Material[] = [...LISTENING, ...READING, ...WRITING, ...SPEAKING, ...MORE_MATERIALS];
+export const DEMO_MATERIALS: Material[] = [...LISTENING, ...READING, ...WRITING, ...SPEAKING, ...MORE_MATERIALS, ...SET3_MATERIALS];

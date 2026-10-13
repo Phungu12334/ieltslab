@@ -47,20 +47,20 @@ export function appendCookie(res: ServerResponse, value: string) {
   res.setHeader('Set-Cookie', [...list.filter((c) => c.split('=')[0] !== name), value]);
 }
 
-export function startSession(res: ServerResponse, userId: string) {
+export async function startSession(res: ServerResponse, userId: string) {
   const token = crypto.randomBytes(32).toString('base64url');
   const expires = new Date(Date.now() + SESSION_DAYS * 86400_000);
-  sessions.insert(sha256(token), userId, expires.toISOString());
+  await sessions.insert(sha256(token), userId, expires.toISOString());
   appendCookie(res, cookie(SESSION_COOKIE, token, { maxAge: SESSION_DAYS * 86400, secure: config.secureCookies }));
 }
 
-export function endSession(req: IncomingMessage, res: ServerResponse) {
+export async function endSession(req: IncomingMessage, res: ServerResponse) {
   const token = parseCookies(req)[SESSION_COOKIE];
-  if (token) sessions.delete(sha256(token));
+  if (token) await sessions.delete(sha256(token));
   appendCookie(res, cookie(SESSION_COOKIE, '', { maxAge: 0, secure: config.secureCookies }));
 }
 
-export function currentUser(req: IncomingMessage): UserRow | undefined {
+export async function currentUser(req: IncomingMessage): Promise<UserRow | undefined> {
   const token = parseCookies(req)[SESSION_COOKIE];
   return token ? sessions.userFor(sha256(token)) : undefined;
 }
@@ -70,22 +70,22 @@ export function currentTokenHash(req: IncomingMessage): string | undefined {
   return token ? sha256(token) : undefined;
 }
 
-export function requireUser(req: IncomingMessage): UserRow {
-  const u = currentUser(req);
+export async function requireUser(req: IncomingMessage): Promise<UserRow> {
+  const u = await currentUser(req);
   if (!u) throw new HttpError(401, 'Your session has ended. Sign in again, or continue as a guest.');
   return u;
 }
 
-export function requireAdmin(req: IncomingMessage): UserRow {
-  const u = requireUser(req);
+export async function requireAdmin(req: IncomingMessage): Promise<UserRow> {
+  const u = await requireUser(req);
   if (u.role !== 'admin') throw new HttpError(403, 'Only administrators can manage test content.');
   return u;
 }
 
 /** Role for a newly registered account: listed admin emails, or the first real account when no admin exists. */
-export function roleFor(email: string | null): 'admin' | 'candidate' {
+export async function roleFor(email: string | null): Promise<'admin' | 'candidate'> {
   if (email && config.adminEmails.includes(email)) return 'admin';
-  if (config.firstUserAdmin && users.adminCount() === 0) return 'admin';
+  if (config.firstUserAdmin && (await users.adminCount()) === 0) return 'admin';
   return 'candidate';
 }
 
@@ -153,23 +153,23 @@ export async function googleCallback(req: IncomingMessage, res: ServerResponse, 
     if (!info.sub || !info.email || !info.email_verified) return fail('Your Google account needs a verified email address.');
     const email = info.email.toLowerCase();
 
-    const current = currentUser(req);
-    let user = users.byGoogle(info.sub) || users.byEmail(email);
-    if (user && !user.google_sub) user = users.update(user.id, { google_sub: info.sub });
+    const current = await currentUser(req);
+    let user = (await users.byGoogle(info.sub)) || (await users.byEmail(email));
+    if (user && !user.google_sub) user = await users.update(user.id, { google_sub: info.sub });
     if (!user) {
       if (current?.is_guest) {
         // Upgrade the guest account so its saved tests are kept.
-        user = users.update(current.id, { email, name: info.name || email.split('@')[0], google_sub: info.sub, is_guest: 0, role: roleFor(email) });
+        user = await users.update(current.id, { email, name: info.name || email.split('@')[0], google_sub: info.sub, is_guest: 0, role: await roleFor(email) });
       } else {
-        user = users.insert({ id: newId('usr_'), email, name: info.name || email.split('@')[0], password_hash: null, google_sub: info.sub, role: roleFor(email), is_guest: 0 });
+        user = await users.insert({ id: newId('usr_'), email, name: info.name || email.split('@')[0], password_hash: null, google_sub: info.sub, role: await roleFor(email), is_guest: 0 });
       }
     } else if (current?.is_guest && current.id !== user.id) {
-      attempts.reassign(current.id, user.id);
-      users.delete(current.id);
+      await attempts.reassign(current.id, user.id);
+      await users.delete(current.id);
     }
     const old = currentTokenHash(req);
-    if (old) sessions.delete(old);
-    startSession(res, user.id);
+    if (old) await sessions.delete(old);
+    await startSession(res, user.id);
     res.writeHead(302, { Location: '/#/' });
     res.end();
   } catch (e) {

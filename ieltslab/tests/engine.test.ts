@@ -47,7 +47,7 @@ test('assembly is deterministic for a seed, respects test type, and never repeat
 test('assembly prefers unseen material and links Speaking Part 3 to the Part 2 topic', () => {
   for (let i = 0; i < 20; i++) {
     const r = assemble(DEMO_MATERIALS, { skills: ['listening', 'speaking'], testType: 'academic', seed: `s${i}`, recentlyUsed: ['demo-l1-sports'] });
-    assert.equal(r.sections[0].materials[0].id, 'demo-l1-college');
+    assert.notEqual(r.sections[0].materials[0].id, 'demo-l1-sports', 'recently used material is avoided');
     const sp = r.sections[1].materials;
     const topic = sp.find((m) => m.part === 2)!.tags.find((t) => t.startsWith('topic:'));
     assert.ok(sp.find((m) => m.part === 3)!.tags.includes(topic!));
@@ -137,4 +137,13 @@ test('validation reports clear errors and import skips invalid items', () => {
   assert.equal(validateImport({ nope: 1 }).failed[0].errors[0].field, 'file');
   const l = validateMaterial({ skill: 'listening', part: 1, title: 'x', status: 'active', groups: DEMO_MATERIALS[0].groups });
   assert.ok(l.errors.some((e) => e.field === 'audio'));
+});
+
+test('built-in content updates add only never-offered items', async () => {
+  const { newBuiltIns } = await import('../shared/demoSync');
+  // An install from before per-id tracking gets only the new set.
+  const legacy = newBuiltIns(DEMO_MATERIALS, null);
+  assert.ok(legacy.length > 0 && legacy.every((m) => m.id.startsWith('demo3-')));
+  // Items already offered (even if an admin deleted them) are not re-added.
+  assert.equal(newBuiltIns(DEMO_MATERIALS, DEMO_MATERIALS.map((m) => m.id)).length, 0);
 });

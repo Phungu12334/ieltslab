@@ -4,13 +4,11 @@ import { spawn, type ChildProcess } from 'node:child_process';
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
-import { after, before, test } from 'node:test';
+import { after, before, describe, test } from 'node:test';
+import { startHranaMock } from './hranaMock';
 import type { Attempt } from '../shared/types';
 
-const PORT = 8800 + Math.floor(Math.random() * 500);
-const BASE = `http://127.0.0.1:${PORT}`;
-let proc: ChildProcess;
-let dataDir: string;
+let BASE = '';
 
 class Client {
   cookie = '';
@@ -37,12 +35,22 @@ class Client {
   }
 }
 
+function apiSuite(backend: 'local' | 'turso') {
+let proc: ChildProcess;
+let dataDir: string;
+let mock: Awaited<ReturnType<typeof startHranaMock>> | undefined;
+
 before(async () => {
-  dataDir = fs.mkdtempSync(path.join(os.tmpdir(), 'bw-api-'));
-  proc = spawn(process.execPath, ['--import', 'tsx', 'server/index.ts'], {
-    env: { ...process.env, PORT: String(PORT), DATA_DIR: dataDir, HOST: '127.0.0.1', NODE_NO_WARNINGS: '1' },
-    stdio: 'pipe',
-  });
+  const PORT = 8800 + Math.floor(Math.random() * 900);
+  BASE = `http://127.0.0.1:${PORT}`;
+  dataDir = fs.mkdtempSync(path.join(os.tmpdir(), 'ieltslab-api-'));
+  const env: Record<string, string> = { ...(process.env as Record<string, string>), PORT: String(PORT), DATA_DIR: dataDir, HOST: '127.0.0.1', NODE_NO_WARNINGS: '1' };
+  if (backend === 'turso') {
+    mock = await startHranaMock('test-token');
+    env.TURSO_DATABASE_URL = mock.url;
+    env.TURSO_AUTH_TOKEN = 'test-token';
+  }
+  proc = spawn(process.execPath, ['--import', 'tsx', 'server/index.ts'], { env, stdio: 'pipe' });
   for (let i = 0; i < 50; i++) {
     try {
       if ((await fetch(BASE + '/api/health')).ok) return;
@@ -56,6 +64,7 @@ before(async () => {
 
 after(() => {
   proc?.kill();
+  mock?.close();
   fs.rmSync(dataDir, { recursive: true, force: true });
 });
 
@@ -163,3 +172,30 @@ test('full test with teacher review produces an overall band', async () => {
   assert.equal(done.json.attempt.reviews.speaking.source, 'teacher');
   assert.equal(typeof done.json.attempt.result.overall, 'number');
 });
+
+test('large uploads are stored in chunks and served intact, with range requests', async () => {
+  const admin = new Client();
+  await admin.req('POST', '/api/auth/login', { email: 'teacher@example.com', password: 'correct-horse' });
+  const bytes = new Uint8Array(700 * 1024).map((_, i) => (i * 31) % 251);
+  const up = await admin.req('POST', '/api/assets', bytes, { 'Content-Type': 'audio/mpeg', 'X-Filename': 'big.mp3' });
+  assert.equal(up.status, 201);
+  const full = await fetch(BASE + up.json.url, { headers: { Cookie: admin.cookie } });
+  assert.equal(full.status, 200);
+  assert.deepEqual(new Uint8Array(await full.arrayBuffer()), bytes);
+  const part = await fetch(BASE + up.json.url, { headers: { Cookie: admin.cookie, Range: 'bytes=300000-300009' } });
+  assert.equal(part.status, 206);
+  assert.deepEqual(new Uint8Array(await part.arrayBuffer()), bytes.slice(300000, 300010));
+});
+
+if (backend === 'turso') {
+  test('turso: data lives in the hosted database, not on local disk', async () => {
+    const health = await (await fetch(BASE + '/api/health')).json();
+    assert.equal(health.storage, 'turso');
+    assert.ok(!fs.existsSync(path.join(dataDir, 'ieltslab.sqlite')), 'no local database file');
+    assert.ok(mock!.requests() > 10);
+  });
+}
+}
+
+describe('API with local SQLite', () => apiSuite('local'));
+describe('API with Turso (HTTP protocol mock)', () => apiSuite('turso'));

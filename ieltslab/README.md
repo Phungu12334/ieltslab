@@ -1,6 +1,6 @@
 # IELTSLab — IELTS-style practice tests
 
-IELTSLab is a complete practice-test website for the four IELTS skills — **Listening, Reading, Writing and Speaking** — in both **Academic** and **General Training** formats. Content managers enter their own test material; candidates sit randomly assembled, timed tests and get a detailed results page. It ships with an original practice bank of 46 materials (at least two for every part of every skill, Academic and General Training), so it is usable straight away.
+IELTSLab is a complete practice-test website for the four IELTS skills — **Listening, Reading, Writing and Speaking** — in both **Academic** and **General Training** formats. Content managers enter their own test material; candidates sit randomly assembled, timed tests and get a detailed results page. It ships with an original practice bank of 69 materials (at least two for every part of every skill, Academic and General Training), so it is usable straight away.
 
 > **Not affiliated with IELTS.** IELTSLab is an independent practice tool. It is not connected to or endorsed by IELTS, the British Council, IDP: IELTS Australia or Cambridge University Press & Assessment. The bundled demo content is original material written for this project, not official IELTS content. Practice results are estimates, not official scores.
 
@@ -45,7 +45,7 @@ IELTSLab is a complete practice-test website for the four IELTS skills — **Lis
 | --- | --- |
 | Frontend | React 19 + TypeScript, bundled with esbuild, hash routing, plain CSS with design tokens |
 | Backend | Node.js 22 `node:http` server, written in TypeScript and run with `tsx` |
-| Database | Built-in `node:sqlite` (no native modules); uploads stored on disk in `DATA_DIR` |
+| Database | Built-in `node:sqlite` file, or a hosted Turso (libSQL) database over HTTPS; uploads are stored in the database |
 | Shared logic | `shared/` — types, validation, scoring, test assembly, demo content (used by both server and browser) |
 | Tests | `node:test` — engine unit tests and an end-to-end API test that boots a real server |
 
@@ -78,6 +78,21 @@ npm run typecheck         # TypeScript for the browser and the server
 npm run build:demo        # dist-demo/ieltslab-demo.html — one self-contained page, browser-only mode
 ```
 
+## Put it online for free (Render + Turso)
+
+Render runs the server and website; Turso stores the database and every uploaded file, so nothing is lost when Render restarts or sleeps.
+
+1. **Turso** (turso.tech, free, no card): create a database, copy its URL (`libsql://…turso.io`) and create a read/write token.
+2. **Render** (render.com): New → Web Service → connect this GitHub repository.
+   - Root Directory: the folder that contains `package.json` (leave empty if it is the repository root)
+   - Build Command: `npm install --include=dev && npm run build`
+   - Start Command: `npm start`
+   - Instance type: Free
+   - Environment variables: `TURSO_DATABASE_URL`, `TURSO_AUTH_TOKEN`, `ADMIN_EMAILS` (your email), `FIRST_USER_ADMIN=false`, `NODE_VERSION=22`
+3. Open the `onrender.com` link, register with the email in `ADMIN_EMAILS`, and manage content under **Content**.
+
+On the free plan the site sleeps after 15 minutes without visitors and takes about a minute to wake up. A `render.yaml` Blueprint is included for repositories where this project is at the root.
+
 ## Configuration
 
 All settings are environment variables (or a `.env` file). See `.env.example`.
@@ -86,7 +101,8 @@ All settings are environment variables (or a `.env` file). See `.env.example`.
 | --- | --- |
 | `PORT`, `HOST` | Where the server listens (default `8787`, `0.0.0.0`). |
 | `PUBLIC_URL` | Public address, e.g. `https://ielts.example.com`. Used for Google redirects and secure cookies. |
-| `DATA_DIR` | Folder for the SQLite database and uploaded files (default `./data`). Back this up. |
+| `DATA_DIR` | Folder for the local SQLite database (default `./data`). Back this up. |
+| `TURSO_DATABASE_URL`, `TURSO_AUTH_TOKEN` | Use a hosted Turso database instead of the local file. Uploaded files are stored in the database too. |
 | `ADMIN_EMAILS` | Comma-separated emails that become administrators when they register. |
 | `FIRST_USER_ADMIN` | `true` (default) makes the first registered account an admin if none exists. |
 | `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET` | Enable Google sign-in. |
@@ -109,6 +125,7 @@ Set `ANTHROPIC_API_KEY` (and optionally `ASSESSMENT_MODEL`). Candidates then see
 ## Adding content
 
 - **Forms:** Content → New material. Pick skill, part and test format, then add the passage, audio, prompt or questions. Validation explains anything missing.
+- **Ready-made JSON:** the `content/` folder holds original practice set 3 as JSON files you can import on any server (it is also bundled in the built-in bank).
 - **Import:** Content → Import JSON. The page shows the file format and a copyable template. Items that fail validation are listed and skipped; new ids are generated so nothing is overwritten.
 - **Audio:** MP3, WAV, OGG, M4A/AAC or WEBM up to 25 MB. **Images:** PNG, JPEG, WEBP or GIF up to 5 MB. Images need a text description for accessibility.
 - Use only material you have the right to use. Do not upload copied tests from other websites or books.

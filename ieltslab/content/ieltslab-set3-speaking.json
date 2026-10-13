@@ -1,0 +1,121 @@
+{
+  "materials": [
+    {
+      "skill": "speaking",
+      "part": 1,
+      "title": "Part 1: food and cooking",
+      "status": "active",
+      "tags": [
+        "ieltslab-set3",
+        "food",
+        "familiar topics"
+      ],
+      "instructions": "The examiner asks you some questions about yourself. Answer each question in two to four sentences.",
+      "speakingQuestions": [
+        "What kind of food do you like to eat?",
+        "Do you often cook at home?",
+        "Is there any food you disliked as a child but enjoy now?",
+        "What is a traditional dish from your country?",
+        "Do you prefer eating at home or in restaurants?"
+      ],
+      "responseSeconds": 30
+    },
+    {
+      "skill": "speaking",
+      "part": 1,
+      "title": "Part 1: phones and technology",
+      "status": "active",
+      "tags": [
+        "ieltslab-set3",
+        "technology",
+        "familiar topics"
+      ],
+      "instructions": "The examiner asks you some questions about yourself. Answer each question in two to four sentences.",
+      "speakingQuestions": [
+        "How often do you use your phone each day?",
+        "What do you mainly use your phone for?",
+        "Have you ever tried to spend a day without your phone?",
+        "Do you prefer texting or calling people? Why?",
+        "Would you like to have a newer phone?"
+      ],
+      "responseSeconds": 30
+    },
+    {
+      "skill": "speaking",
+      "part": 2,
+      "title": "Part 2: a teacher who influenced you",
+      "status": "active",
+      "tags": [
+        "ieltslab-set3",
+        "topic:education"
+      ],
+      "instructions": "You will have one minute to prepare. You can make notes. Then talk for one to two minutes.",
+      "prompt": "Describe a teacher who had a strong influence on you.",
+      "bullets": [
+        "who the teacher was",
+        "what subject they taught",
+        "what they were like",
+        "and explain how they influenced you"
+      ],
+      "prepSeconds": 60,
+      "responseSeconds": 120,
+      "scoringGuidance": "A good long turn uses past tenses accurately, gives specific anecdotes (one memorable lesson or comment) and ends with reflection on the lasting effect, rather than listing adjectives."
+    },
+    {
+      "skill": "speaking",
+      "part": 2,
+      "title": "Part 2: a useful piece of technology",
+      "status": "active",
+      "tags": [
+        "ieltslab-set3",
+        "topic:technology"
+      ],
+      "instructions": "You will have one minute to prepare. You can make notes. Then talk for one to two minutes.",
+      "prompt": "Describe a piece of technology (not a phone) that you find useful.",
+      "bullets": [
+        "what it is",
+        "when you got it",
+        "how often you use it",
+        "and explain why it is useful to you"
+      ],
+      "prepSeconds": 60,
+      "responseSeconds": 120
+    },
+    {
+      "skill": "speaking",
+      "part": 3,
+      "title": "Part 3: teachers and learning",
+      "status": "active",
+      "tags": [
+        "ieltslab-set3",
+        "topic:education"
+      ],
+      "instructions": "The examiner asks you more general questions linked to the Part 2 topic. Give developed answers with reasons and examples.",
+      "speakingQuestions": [
+        "What qualities make someone a good teacher?",
+        "Do you think teachers are more or less respected than they were in the past?",
+        "Could online lessons ever completely replace classroom teachers?",
+        "Should teachers be paid according to their students' exam results?"
+      ],
+      "responseSeconds": 60
+    },
+    {
+      "skill": "speaking",
+      "part": 3,
+      "title": "Part 3: technology in daily life",
+      "status": "active",
+      "tags": [
+        "ieltslab-set3",
+        "topic:technology"
+      ],
+      "instructions": "The examiner asks you more general questions linked to the Part 2 topic. Give developed answers with reasons and examples.",
+      "speakingQuestions": [
+        "How has technology changed the way families spend time together?",
+        "Do older people find it harder to adapt to new technology? Why?",
+        "Is it possible to depend too much on technology?",
+        "What kinds of technology do you think will be common in homes in twenty years?"
+      ],
+      "responseSeconds": 60
+    }
+  ]
+}
