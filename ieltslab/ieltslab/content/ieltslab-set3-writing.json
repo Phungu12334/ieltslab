@@ -1,0 +1,130 @@
+{
+  "materials": [
+    {
+      "skill": "writing",
+      "testType": "academic",
+      "part": 1,
+      "title": "Public transport use in four cities (bar chart)",
+      "status": "active",
+      "tags": [
+        "ieltslab-set3",
+        "bar chart"
+      ],
+      "instructions": "You should spend about 20 minutes on this task. Write at least 150 words.",
+      "prompt": "The bar chart below shows the percentage of commuters who used public transport in four cities in 2010 and 2025.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "imageUrl": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20380%22%20font-family%3D%22Arial%2C%20Helvetica%2C%20sans-serif%22%3E%3Crect%20width%3D%22640%22%20height%3D%22380%22%20fill%3D%22%23ffffff%22%2F%3E%3Ctext%20x%3D%22320%22%20y%3D%2226%22%20font-size%3D%2215%22%20font-weight%3D%22bold%22%20text-anchor%3D%22middle%22%20fill%3D%22%2314202e%22%3EPercentage%20of%20commuters%20using%20public%20transport%3C%2Ftext%3E%3Cline%20x1%3D%2260%22%20x2%3D%22620%22%20y1%3D%22315%22%20y2%3D%22315%22%20stroke%3D%22%23d5dbe3%22%2F%3E%3Ctext%20x%3D%2250%22%20y%3D%22319%22%20font-size%3D%2212%22%20text-anchor%3D%22end%22%20fill%3D%22%233d4a5a%22%3E0%25%3C%2Ftext%3E%3Cline%20x1%3D%2260%22%20x2%3D%22620%22%20y1%3D%22263%22%20y2%3D%22263%22%20stroke%3D%22%23d5dbe3%22%2F%3E%3Ctext%20x%3D%2250%22%20y%3D%22267%22%20font-size%3D%2212%22%20text-anchor%3D%22end%22%20fill%3D%22%233d4a5a%22%3E10%25%3C%2Ftext%3E%3Cline%20x1%3D%2260%22%20x2%3D%22620%22%20y1%3D%22211%22%20y2%3D%22211%22%20stroke%3D%22%23d5dbe3%22%2F%3E%3Ctext%20x%3D%2250%22%20y%3D%22215%22%20font-size%3D%2212%22%20text-anchor%3D%22end%22%20fill%3D%22%233d4a5a%22%3E20%25%3C%2Ftext%3E%3Cline%20x1%3D%2260%22%20x2%3D%22620%22%20y1%3D%22159%22%20y2%3D%22159%22%20stroke%3D%22%23d5dbe3%22%2F%3E%3Ctext%20x%3D%2250%22%20y%3D%22163%22%20font-size%3D%2212%22%20text-anchor%3D%22end%22%20fill%3D%22%233d4a5a%22%3E30%25%3C%2Ftext%3E%3Cline%20x1%3D%2260%22%20x2%3D%22620%22%20y1%3D%22107%22%20y2%3D%22107%22%20stroke%3D%22%23d5dbe3%22%2F%3E%3Ctext%20x%3D%2250%22%20y%3D%22111%22%20font-size%3D%2212%22%20text-anchor%3D%22end%22%20fill%3D%22%233d4a5a%22%3E40%25%3C%2Ftext%3E%3Cline%20x1%3D%2260%22%20x2%3D%22620%22%20y1%3D%2255%22%20y2%3D%2255%22%20stroke%3D%22%23d5dbe3%22%2F%3E%3Ctext%20x%3D%2250%22%20y%3D%2259%22%20font-size%3D%2212%22%20text-anchor%3D%22end%22%20fill%3D%22%233d4a5a%22%3E50%25%3C%2Ftext%3E%3Crect%20x%3D%2284.75%22%20y%3D%22148.6%22%20width%3D%2240%22%20height%3D%22166.4%22%20fill%3D%22%237d93ad%22%2F%3E%3Crect%20x%3D%22130.75%22%20y%3D%22101.80000000000001%22%20width%3D%2240%22%20height%3D%22213.2%22%20fill%3D%22%231b4f8a%22%2F%3E%3Ctext%20x%3D%22104.75%22%20y%3D%22142.6%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20fill%3D%22%2314202e%22%3E32%3C%2Ftext%3E%3Ctext%20x%3D%22150.75%22%20y%3D%2295.80000000000001%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20fill%3D%22%2314202e%22%3E41%3C%2Ftext%3E%3Ctext%20x%3D%22127.75%22%20y%3D%22337%22%20font-size%3D%2213%22%20text-anchor%3D%22middle%22%20fill%3D%22%2314202e%22%3ENorthport%3C%2Ftext%3E%3Crect%20x%3D%22222.25%22%20y%3D%22221.4%22%20width%3D%2240%22%20height%3D%2293.6%22%20fill%3D%22%237d93ad%22%2F%3E%3Crect%20x%3D%22268.25%22%20y%3D%22133%22%20width%3D%2240%22%20height%3D%22182%22%20fill%3D%22%231b4f8a%22%2F%3E%3Ctext%20x%3D%22242.25%22%20y%3D%22215.4%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20fill%3D%22%2314202e%22%3E18%3C%2Ftext%3E%3Ctext%20x%3D%22288.25%22%20y%3D%22127%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20fill%3D%22%2314202e%22%3E35%3C%2Ftext%3E%3Ctext%20x%3D%22265.25%22%20y%3D%22337%22%20font-size%3D%2213%22%20text-anchor%3D%22middle%22%20fill%3D%22%2314202e%22%3ELakeside%3C%2Ftext%3E%3Crect%20x%3D%22359.75%22%20y%3D%2281%22%20width%3D%2240%22%20height%3D%22234%22%20fill%3D%22%237d93ad%22%2F%3E%3Crect%20x%3D%22405.75%22%20y%3D%2291.4%22%20width%3D%2240%22%20height%3D%22223.6%22%20fill%3D%22%231b4f8a%22%2F%3E%3Ctext%20x%3D%22379.75%22%20y%3D%2275%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20fill%3D%22%2314202e%22%3E45%3C%2Ftext%3E%3Ctext%20x%3D%22425.75%22%20y%3D%2285.4%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20fill%3D%22%2314202e%22%3E43%3C%2Ftext%3E%3Ctext%20x%3D%22402.75%22%20y%3D%22337%22%20font-size%3D%2213%22%20text-anchor%3D%22middle%22%20fill%3D%22%2314202e%22%3EHillton%3C%2Ftext%3E%3Crect%20x%3D%22497.25%22%20y%3D%22185%22%20width%3D%2240%22%20height%3D%22130%22%20fill%3D%22%237d93ad%22%2F%3E%3Crect%20x%3D%22543.25%22%20y%3D%22200.6%22%20width%3D%2240%22%20height%3D%22114.4%22%20fill%3D%22%231b4f8a%22%2F%3E%3Ctext%20x%3D%22517.25%22%20y%3D%22179%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20fill%3D%22%2314202e%22%3E25%3C%2Ftext%3E%3Ctext%20x%3D%22563.25%22%20y%3D%22194.6%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20fill%3D%22%2314202e%22%3E22%3C%2Ftext%3E%3Ctext%20x%3D%22540.25%22%20y%3D%22337%22%20font-size%3D%2213%22%20text-anchor%3D%22middle%22%20fill%3D%22%2314202e%22%3EBayview%3C%2Ftext%3E%3Crect%20x%3D%22450%22%20y%3D%22356%22%20width%3D%2212%22%20height%3D%2212%22%20fill%3D%22%237d93ad%22%2F%3E%3Ctext%20x%3D%22468%22%20y%3D%22366%22%20font-size%3D%2212%22%20fill%3D%22%2314202e%22%3E2010%3C%2Ftext%3E%3Crect%20x%3D%22520%22%20y%3D%22356%22%20width%3D%2212%22%20height%3D%2212%22%20fill%3D%22%231b4f8a%22%2F%3E%3Ctext%20x%3D%22538%22%20y%3D%22366%22%20font-size%3D%2212%22%20fill%3D%22%2314202e%22%3E2025%3C%2Ftext%3E%3C%2Fsvg%3E",
+      "imageAlt": "Bar chart of commuters using public transport. Northport: 32% in 2010, 41% in 2025. Lakeside: 18% and 35%. Hillton: 45% and 43%. Bayview: 25% and 22%.",
+      "minWords": 150,
+      "scoringGuidance": "Overview: public transport use rose clearly in Northport and Lakeside (Lakeside almost doubled, from 18% to 35%) but fell slightly in Hillton and Bayview. Hillton had the highest share in both years, although by 2025 Northport (41%) had almost caught up with it (43%), and Bayview ended with the lowest share (22%). Strong answers group the rising and falling cities rather than describing each bar separately."
+    },
+    {
+      "skill": "writing",
+      "testType": "academic",
+      "part": 1,
+      "title": "Food consumption in four countries (table)",
+      "status": "active",
+      "tags": [
+        "ieltslab-set3",
+        "table"
+      ],
+      "instructions": "You should spend about 20 minutes on this task. Write at least 150 words.",
+      "prompt": "The table below shows the average amount of four types of food consumed per person each day in four countries in 2025.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "imageUrl": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20630%20310%22%20font-family%3D%22Arial%2C%20Helvetica%2C%20sans-serif%22%3E%3Crect%20width%3D%22630%22%20height%3D%22310%22%20fill%3D%22%23ffffff%22%2F%3E%3Ctext%20x%3D%22315%22%20y%3D%2232%22%20font-size%3D%2215%22%20font-weight%3D%22bold%22%20text-anchor%3D%22middle%22%20fill%3D%22%2314202e%22%3EDaily%20food%20consumption%20per%20person%20in%20four%20countries%2C%202025%3C%2Ftext%3E%3Crect%20x%3D%2220%22%20y%3D%2260%22%20width%3D%22590%22%20height%3D%2240%22%20fill%3D%22%231b4f8a%22%20stroke%3D%22%23c9d3de%22%2F%3E%3Ctext%20x%3D%2230%22%20y%3D%2285%22%20font-size%3D%2213%22%20font-weight%3D%22bold%22%20fill%3D%22%23ffffff%22%20text-anchor%3D%22start%22%3ECountry%3C%2Ftext%3E%3Ctext%20x%3D%22220%22%20y%3D%2285%22%20font-size%3D%2213%22%20font-weight%3D%22bold%22%20fill%3D%22%23ffffff%22%20text-anchor%3D%22middle%22%3EFruit%20%26amp%3B%20vegetables%3C%2Ftext%3E%3Ctext%20x%3D%22335%22%20y%3D%2285%22%20font-size%3D%2213%22%20font-weight%3D%22bold%22%20fill%3D%22%23ffffff%22%20text-anchor%3D%22middle%22%3EMeat%3C%2Ftext%3E%3Ctext%20x%3D%22440%22%20y%3D%2285%22%20font-size%3D%2213%22%20font-weight%3D%22bold%22%20fill%3D%22%23ffffff%22%20text-anchor%3D%22middle%22%3ESugary%20drinks%3C%2Ftext%3E%3Ctext%20x%3D%22555%22%20y%3D%2285%22%20font-size%3D%2213%22%20font-weight%3D%22bold%22%20fill%3D%22%23ffffff%22%20text-anchor%3D%22middle%22%3EReady%20meals%3C%2Ftext%3E%3Crect%20x%3D%2220%22%20y%3D%22100%22%20width%3D%22590%22%20height%3D%2240%22%20fill%3D%22%23ffffff%22%20stroke%3D%22%23c9d3de%22%2F%3E%3Ctext%20x%3D%2230%22%20y%3D%22125%22%20font-size%3D%2213%22%20fill%3D%22%2314202e%22%20text-anchor%3D%22start%22%3ECountry%20A%3C%2Ftext%3E%3Ctext%20x%3D%22220%22%20y%3D%22125%22%20font-size%3D%2213%22%20fill%3D%22%2314202e%22%20text-anchor%3D%22middle%22%3E410%3C%2Ftext%3E%3Ctext%20x%3D%22335%22%20y%3D%22125%22%20font-size%3D%2213%22%20fill%3D%22%2314202e%22%20text-anchor%3D%22middle%22%3E160%3C%2Ftext%3E%3Ctext%20x%3D%22440%22%20y%3D%22125%22%20font-size%3D%2213%22%20fill%3D%22%2314202e%22%20text-anchor%3D%22middle%22%3E95%3C%2Ftext%3E%3Ctext%20x%3D%22555%22%20y%3D%22125%22%20font-size%3D%2213%22%20fill%3D%22%2314202e%22%20text-anchor%3D%22middle%22%3E60%3C%2Ftext%3E%3Crect%20x%3D%2220%22%20y%3D%22140%22%20width%3D%22590%22%20height%3D%2240%22%20fill%3D%22%23eef2f6%22%20stroke%3D%22%23c9d3de%22%2F%3E%3Ctext%20x%3D%2230%22%20y%3D%22165%22%20font-size%3D%2213%22%20fill%3D%22%2314202e%22%20text-anchor%3D%22start%22%3ECountry%20B%3C%2Ftext%3E%3Ctext%20x%3D%22220%22%20y%3D%22165%22%20font-size%3D%2213%22%20fill%3D%22%2314202e%22%20text-anchor%3D%22middle%22%3E520%3C%2Ftext%3E%3Ctext%20x%3D%22335%22%20y%3D%22165%22%20font-size%3D%2213%22%20fill%3D%22%2314202e%22%20text-anchor%3D%22middle%22%3E110%3C%2Ftext%3E%3Ctext%20x%3D%22440%22%20y%3D%22165%22%20font-size%3D%2213%22%20fill%3D%22%2314202e%22%20text-anchor%3D%22middle%22%3E40%3C%2Ftext%3E%3Ctext%20x%3D%22555%22%20y%3D%22165%22%20font-size%3D%2213%22%20fill%3D%22%2314202e%22%20text-anchor%3D%22middle%22%3E25%3C%2Ftext%3E%3Crect%20x%3D%2220%22%20y%3D%22180%22%20width%3D%22590%22%20height%3D%2240%22%20fill%3D%22%23ffffff%22%20stroke%3D%22%23c9d3de%22%2F%3E%3Ctext%20x%3D%2230%22%20y%3D%22205%22%20font-size%3D%2213%22%20fill%3D%22%2314202e%22%20text-anchor%3D%22start%22%3ECountry%20C%3C%2Ftext%3E%3Ctext%20x%3D%22220%22%20y%3D%22205%22%20font-size%3D%2213%22%20fill%3D%22%2314202e%22%20text-anchor%3D%22middle%22%3E300%3C%2Ftext%3E%3Ctext%20x%3D%22335%22%20y%3D%22205%22%20font-size%3D%2213%22%20fill%3D%22%2314202e%22%20text-anchor%3D%22middle%22%3E210%3C%2Ftext%3E%3Ctext%20x%3D%22440%22%20y%3D%22205%22%20font-size%3D%2213%22%20fill%3D%22%2314202e%22%20text-anchor%3D%22middle%22%3E150%3C%2Ftext%3E%3Ctext%20x%3D%22555%22%20y%3D%22205%22%20font-size%3D%2213%22%20fill%3D%22%2314202e%22%20text-anchor%3D%22middle%22%3E120%3C%2Ftext%3E%3Crect%20x%3D%2220%22%20y%3D%22220%22%20width%3D%22590%22%20height%3D%2240%22%20fill%3D%22%23eef2f6%22%20stroke%3D%22%23c9d3de%22%2F%3E%3Ctext%20x%3D%2230%22%20y%3D%22245%22%20font-size%3D%2213%22%20fill%3D%22%2314202e%22%20text-anchor%3D%22start%22%3ECountry%20D%3C%2Ftext%3E%3Ctext%20x%3D%22220%22%20y%3D%22245%22%20font-size%3D%2213%22%20fill%3D%22%2314202e%22%20text-anchor%3D%22middle%22%3E460%3C%2Ftext%3E%3Ctext%20x%3D%22335%22%20y%3D%22245%22%20font-size%3D%2213%22%20fill%3D%22%2314202e%22%20text-anchor%3D%22middle%22%3E140%3C%2Ftext%3E%3Ctext%20x%3D%22440%22%20y%3D%22245%22%20font-size%3D%2213%22%20fill%3D%22%2314202e%22%20text-anchor%3D%22middle%22%3E70%3C%2Ftext%3E%3Ctext%20x%3D%22555%22%20y%3D%22245%22%20font-size%3D%2213%22%20fill%3D%22%2314202e%22%20text-anchor%3D%22middle%22%3E85%3C%2Ftext%3E%3Ctext%20x%3D%2220%22%20y%3D%22292%22%20font-size%3D%2212%22%20fill%3D%22%233d4a5a%22%3EFigures%3A%20average%20grams%20per%20person%20per%20day.%3C%2Ftext%3E%3C%2Fsvg%3E",
+      "imageAlt": "Table, grams per person per day. Country A: fruit and vegetables 410, meat 160, sugary drinks 95, ready meals 60. Country B: 520, 110, 40, 25. Country C: 300, 210, 150, 120. Country D: 460, 140, 70, 85.",
+      "minWords": 150,
+      "scoringGuidance": "Key features: fruit and vegetables were the largest category everywhere; Country B had the healthiest pattern (most fruit and vegetables, least of every other category) and Country C the least healthy (least fruit and vegetables, most meat, sugary drinks and ready meals). Group A and D as intermediate. Avoid listing every number.",
+      "modelAnswer": "The table compares how much of four kinds of food people in four countries consumed on an average day in 2025.\n\nOverall, fruit and vegetables made up the largest share of the diet in every country. Country B had the healthiest pattern, with the highest intake of fruit and vegetables and the lowest figures for every other category, whereas Country C showed the opposite picture.\n\nPeople in Country B ate 520 grams of fruit and vegetables a day, compared with 460 grams in Country D and 410 grams in Country A. Country C was well behind, at just 300 grams. Meat consumption followed a different pattern: it was highest in Country C, at 210 grams, and lowest in Country B, at only 110 grams, with the other two countries in between.\n\nThe figures for less healthy foods varied even more widely. Residents of Country C drank 150 grams of sugary drinks and ate 120 grams of ready meals daily, roughly four times as much as people in Country B (40 and 25 grams respectively). Countries A and D occupied the middle ground, although Country D consumed more ready meals than Country A (85 grams versus 60) and fewer sugary drinks (70 grams versus 95)."
+    },
+    {
+      "skill": "writing",
+      "testType": "general",
+      "part": 1,
+      "title": "Letter: asking your landlord for a repair",
+      "status": "active",
+      "tags": [
+        "ieltslab-set3",
+        "letter",
+        "formal"
+      ],
+      "instructions": "You should spend about 20 minutes on this task. Write at least 150 words. You do NOT need to write any addresses. Begin your letter as follows: Dear Mr Patel,",
+      "prompt": "The heating in the flat you rent has stopped working properly.\n\nWrite a letter to your landlord, Mr Patel. In your letter:",
+      "bullets": [
+        "describe the problem with the heating",
+        "explain how it is affecting you",
+        "say what you would like him to do and when"
+      ],
+      "minWords": 150,
+      "scoringGuidance": "Polite but firm, semi-formal register (\"Yours sincerely\" because the recipient is named). The problem should be described specifically (radiators cold, boiler noise, since when), effects should be concrete (working from home, health, cold nights), and the request should include a clear timeframe."
+    },
+    {
+      "skill": "writing",
+      "testType": "general",
+      "part": 1,
+      "title": "Letter: thanking a friend for their help",
+      "status": "active",
+      "tags": [
+        "ieltslab-set3",
+        "letter",
+        "informal"
+      ],
+      "instructions": "You should spend about 20 minutes on this task. Write at least 150 words. You do NOT need to write any addresses. Begin your letter as follows: Dear …,",
+      "prompt": "A friend recently helped you when you moved to a new home.\n\nWrite a letter to your friend. In your letter:",
+      "bullets": [
+        "thank your friend for their help",
+        "describe your new home",
+        "invite your friend to visit"
+      ],
+      "minWords": 150,
+      "scoringGuidance": "Warm, informal tone with natural phrasing (I can't thank you enough, you saved the day). Each bullet should be developed with details: what exactly the friend did, specific features of the new home, and a concrete invitation with a suggested date.",
+      "modelAnswer": "Dear Jamie,\n\nI just wanted to say a huge thank you for all your help last weekend. I honestly don't know how I would have managed the move without you. Carrying that enormous sofa up three flights of stairs was no joke, and you even stayed late to help me put the bed together!\n\nThe new place is finally starting to feel like home. It's a two-bedroom flat on the top floor of an old building, so the ceilings are really high and there's loads of natural light. My favourite part is the small balcony off the kitchen, which looks over a park. I've already bought a couple of chairs and some plants, so it's the perfect spot for a morning coffee.\n\nNow that I've unpacked most of the boxes, I'd love you to come over so I can thank you properly. How about dinner here on Saturday the 14th? I'll cook that Thai curry you liked, and you're welcome to stay the night in the spare room.\n\nLet me know if that works for you.\n\nLots of love,\nMai"
+    },
+    {
+      "skill": "writing",
+      "testType": "both",
+      "part": 2,
+      "title": "Essay: advertising aimed at children",
+      "status": "active",
+      "tags": [
+        "ieltslab-set3",
+        "media",
+        "opinion"
+      ],
+      "instructions": "You should spend about 40 minutes on this task. Write at least 250 words.",
+      "prompt": "Some people believe that advertising aimed at children should be banned completely.\n\nTo what extent do you agree or disagree?\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      "minWords": 250,
+      "scoringGuidance": "A clear position on \"banned completely\" is essential; a partial agreement (restrict rather than ban) is acceptable if stated consistently. Typical ideas: children cannot recognise persuasion, unhealthy food and pressure on parents versus freedom of business, funding of children's media, and the role of parents."
+    },
+    {
+      "skill": "writing",
+      "testType": "both",
+      "part": 2,
+      "title": "Essay: studying abroad",
+      "status": "active",
+      "tags": [
+        "ieltslab-set3",
+        "education",
+        "advantages and disadvantages"
+      ],
+      "instructions": "You should spend about 40 minutes on this task. Write at least 250 words.",
+      "prompt": "More and more students choose to study at universities in other countries.\n\nDo the advantages of this outweigh the disadvantages?\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      "minWords": 250,
+      "scoringGuidance": "The question asks for a judgement, not just a list: the conclusion must say which side is stronger. Develop advantages (language, independence, career prospects, access to programmes) and disadvantages (cost, homesickness, brain drain) with examples, and keep the position consistent."
+    },
+    {
+      "skill": "writing",
+      "testType": "both",
+      "part": 2,
+      "title": "Essay: are zoos still needed?",
+      "status": "active",
+      "tags": [
+        "ieltslab-set3",
+        "animals",
+        "discuss both views"
+      ],
+      "instructions": "You should spend about 40 minutes on this task. Write at least 250 words.",
+      "prompt": "Some people think that zoos are cruel and should be closed. Others believe that zoos play an important role in protecting animals.\n\nDiscuss both these views and give your own opinion.\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      "minWords": 250,
+      "scoringGuidance": "Both views need balanced development. Strong answers distinguish between kinds of zoos (modern conservation zoos versus poorly run attractions) and support opinions with examples such as breeding programmes for endangered species or the stress of confinement for large animals."
+    }
+  ]
+}

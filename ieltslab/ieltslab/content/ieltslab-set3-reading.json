@@ -1,0 +1,686 @@
+{
+  "materials": [
+    {
+      "skill": "reading",
+      "testType": "academic",
+      "part": 1,
+      "title": "The story of the pencil",
+      "status": "active",
+      "tags": [
+        "ieltslab-set3",
+        "history",
+        "science"
+      ],
+      "instructions": "You should spend about 20 minutes on the questions based on this passage.",
+      "passage": "A Few objects are as ordinary as the pencil, yet its history involves geology, chemistry and international politics. The story begins in the 1560s, when a large deposit of unusually pure graphite was discovered in Borrowdale, in the north of England. Local shepherds reportedly used it to mark their sheep, and it was soon being cut into sticks and wrapped in string or sheepskin for writing.\n\nB At the time, nobody understood what the material was. Because it left a dark mark, it was believed to be a form of lead, and the name \"lead pencil\" has survived ever since, even though pencils have never contained lead. It was not until 1779 that a Swedish chemist showed that graphite is a form of carbon.\n\nC The Borrowdale mine was so valuable that it was guarded by armed men, and at times it was flooded deliberately to prevent theft. The English government also restricted exports, which created a problem for other countries. France, cut off from English graphite during its wars with Britain in the 1790s, needed an alternative.\n\nD The solution came from a French officer and engineer, Nicolas-Jacques Conté. He mixed powdered graphite of poorer quality with clay, shaped the mixture into rods and baked them in a kiln. Conté's method had a major advantage: by changing the proportion of clay, manufacturers could control how hard or soft the pencil was. More clay produced a harder pencil and a lighter line; more graphite produced a softer pencil and a darker one. The grading system used today, from hard \"H\" pencils to soft \"B\" pencils, follows directly from this idea.\n\nE The wooden case also developed over time. Early pencils were made by cutting a groove in a piece of wood, inserting a graphite stick and gluing a second piece on top. In the nineteenth century, cedar became the preferred wood because it is soft enough to sharpen easily and does not split. Factories in Germany and the United States began producing pencils in enormous quantities, and the addition of an eraser to the end of the pencil was patented in 1858.\n\nF Despite the arrival of the ballpoint pen and the computer, billions of pencils are still made every year. They remain popular with artists, engineers and carpenters because a pencil line can be erased, works at any angle and does not smudge easily in the rain.",
+      "groups": [
+        {
+          "type": "tfng",
+          "instructions": "Do the following statements agree with the information given in the passage? Choose TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this.",
+          "questions": [
+            {
+              "prompt": "Local shepherds are said to have marked their sheep with Borrowdale graphite.",
+              "answers": [
+                "TRUE"
+              ],
+              "explanation": "Paragraph A: local shepherds \"reportedly used it to mark their sheep\"."
+            },
+            {
+              "prompt": "Pencils once contained small amounts of lead.",
+              "answers": [
+                "FALSE"
+              ],
+              "explanation": "Paragraph B: pencils have never contained lead."
+            },
+            {
+              "prompt": "The Borrowdale mine was sometimes flooded on purpose.",
+              "answers": [
+                "TRUE"
+              ],
+              "explanation": "Paragraph C: flooded deliberately to prevent theft."
+            },
+            {
+              "prompt": "Conté was paid by the French government to develop his method.",
+              "answers": [
+                "NOT GIVEN"
+              ],
+              "explanation": "The passage does not mention payment."
+            },
+            {
+              "prompt": "Adding more clay makes a pencil softer.",
+              "answers": [
+                "FALSE"
+              ],
+              "explanation": "Paragraph D: more clay produced a harder pencil."
+            }
+          ]
+        },
+        {
+          "type": "completion",
+          "maxWords": 1,
+          "instructions": "Complete the sentences. Choose ONE WORD ONLY from the passage for each answer.",
+          "questions": [
+            {
+              "prompt": "In 1779 graphite was shown to be a form of ______.",
+              "answers": [
+                "carbon"
+              ],
+              "explanation": "Paragraph B."
+            },
+            {
+              "prompt": "Conté baked his graphite and clay rods in a ______.",
+              "answers": [
+                "kiln"
+              ],
+              "explanation": "Paragraph D."
+            },
+            {
+              "prompt": "______ became the preferred wood because it sharpens easily.",
+              "answers": [
+                "cedar"
+              ],
+              "explanation": "Paragraph E."
+            },
+            {
+              "prompt": "Pencil lines do not smudge easily in the ______.",
+              "answers": [
+                "rain"
+              ],
+              "explanation": "Paragraph F."
+            }
+          ]
+        },
+        {
+          "type": "matching",
+          "options": [
+            "Paragraph A",
+            "Paragraph B",
+            "Paragraph C",
+            "Paragraph D",
+            "Paragraph E",
+            "Paragraph F"
+          ],
+          "instructions": "Which paragraph contains the following information? Choose the correct letter, A–F.",
+          "questions": [
+            {
+              "prompt": "the origin of a grading system still in use",
+              "answers": [
+                "D"
+              ],
+              "explanation": "H and B grades follow from Conté's clay proportions."
+            },
+            {
+              "prompt": "reasons why certain workers still prefer pencils",
+              "answers": [
+                "F"
+              ],
+              "explanation": "Artists, engineers and carpenters."
+            },
+            {
+              "prompt": "how a political conflict created a need for a new product",
+              "answers": [
+                "C"
+              ],
+              "explanation": "France was cut off from English graphite during the wars."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "testType": "academic",
+      "part": 2,
+      "title": "The psychology of queuing",
+      "status": "active",
+      "tags": [
+        "ieltslab-set3",
+        "psychology",
+        "business"
+      ],
+      "instructions": "You should spend about 20 minutes on the questions based on this passage.",
+      "passage": "A Most people dislike waiting in queues, but researchers who study queuing have found that our frustration depends less on the actual length of the wait than on how the wait feels. A five-minute wait can seem trivial in one situation and unbearable in another, and businesses have become increasingly interested in the reasons why.\n\nB One of the most important factors is whether time is occupied. Unoccupied time feels longer than occupied time. A frequently told story concerns an office building whose tenants complained about slow lifts. Rather than installing faster lifts, the building's managers put mirrors beside the lift doors. People spent the waiting time looking at themselves, and the complaints largely stopped, even though the wait itself was unchanged.\n\nC Uncertainty also makes waiting harder. A wait of unknown length is more stressful than one whose duration is known, which is why many transport systems now display the number of minutes until the next train. Similarly, people who are given an explanation for a delay tend to be more patient than those who are not, even when the explanation does not shorten the wait.\n\nD Fairness matters too. Customers are often more upset by seeing someone who arrived later being served first than by the wait itself. For this reason, many banks and post offices have replaced multiple lines, one in front of each counter, with a single line that feeds all counters. A single line is not necessarily faster on average, but it guarantees that people are served in order of arrival, and it removes the frustration of choosing the \"wrong\" line.\n\nE Finally, the end of a wait has a powerful effect on how it is remembered. Several studies suggest that people judge an experience largely by its final moments. Theme parks make use of this by overestimating the waiting times displayed at the entrance to their rides, so that visitors are pleasantly surprised when they reach the front sooner than expected.\n\nF Some critics argue that such techniques are simply ways of manipulating customers rather than improving service. Supporters respond that when a wait cannot be avoided, there is nothing wrong with making it less unpleasant. Either way, the psychology of queuing shows that how we feel about time is often more important than the time itself.",
+      "groups": [
+        {
+          "type": "matching",
+          "options": [
+            "Making the end of a wait feel better",
+            "Why the actual wait matters less than the experience",
+            "The cost of building faster systems",
+            "Keeping people busy while they wait",
+            "Is it right to influence customers?",
+            "Knowing how long and why",
+            "The importance of being served in order",
+            "Queues in different cultures"
+          ],
+          "instructions": "The passage has six paragraphs, A–F. Choose the correct heading for each paragraph from the list of headings.",
+          "questions": [
+            {
+              "prompt": "Paragraph A",
+              "answers": [
+                "B"
+              ],
+              "explanation": "Frustration depends on how the wait feels, not its length."
+            },
+            {
+              "prompt": "Paragraph B",
+              "answers": [
+                "D"
+              ],
+              "explanation": "Mirrors give people something to do: occupied time."
+            },
+            {
+              "prompt": "Paragraph C",
+              "answers": [
+                "F"
+              ],
+              "explanation": "Uncertainty and explanations for delays."
+            },
+            {
+              "prompt": "Paragraph D",
+              "answers": [
+                "G"
+              ],
+              "explanation": "Single lines guarantee order of arrival."
+            },
+            {
+              "prompt": "Paragraph E",
+              "answers": [
+                "A"
+              ],
+              "explanation": "Final moments shape memory; theme parks overestimate times."
+            },
+            {
+              "prompt": "Paragraph F",
+              "answers": [
+                "E"
+              ],
+              "explanation": "Critics call the techniques manipulation."
+            }
+          ]
+        },
+        {
+          "type": "tfng",
+          "instructions": "Do the following statements agree with the information given in the passage? Choose TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this.",
+          "questions": [
+            {
+              "prompt": "The office building eventually installed faster lifts.",
+              "answers": [
+                "FALSE"
+              ],
+              "explanation": "Mirrors were installed instead; the wait was unchanged."
+            },
+            {
+              "prompt": "A single queue is always faster on average than several queues.",
+              "answers": [
+                "FALSE"
+              ],
+              "explanation": "\"Not necessarily faster on average.\""
+            },
+            {
+              "prompt": "Some theme parks show waiting times that are longer than the real wait.",
+              "answers": [
+                "TRUE"
+              ],
+              "explanation": "They overestimate displayed waiting times."
+            },
+            {
+              "prompt": "Explanations for delays are more effective in banks than on trains.",
+              "answers": [
+                "NOT GIVEN"
+              ],
+              "explanation": "No such comparison is made."
+            }
+          ]
+        },
+        {
+          "type": "mcq",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            {
+              "prompt": "According to paragraph D, what upsets customers most?",
+              "options": [
+                "long queues",
+                "being served by slow staff",
+                "seeing later arrivals served first",
+                "having too few counters"
+              ],
+              "answers": [
+                "C"
+              ],
+              "explanation": "Customers are more upset by unfairness than by the wait itself."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "testType": "academic",
+      "part": 3,
+      "title": "Car-free city centres",
+      "status": "active",
+      "tags": [
+        "ieltslab-set3",
+        "cities",
+        "opinion"
+      ],
+      "instructions": "You should spend about 20 minutes on the questions based on this passage.",
+      "passage": "In the past decade, a growing number of European cities have removed private cars from their central districts. Streets once filled with traffic have been turned over to pedestrians, cyclists, trees and outdoor cafés. Supporters see these schemes as one of the most effective ways to improve urban life; opponents regard them as an attack on personal freedom that harms businesses and people who depend on their cars. Having followed several of these schemes closely, I believe the benefits clearly outweigh the costs, provided that the changes are planned carefully.\n\nThe evidence on air quality and safety is the easiest to assess. When traffic is removed from a district, levels of nitrogen dioxide usually fall sharply within months, and serious road injuries decline. Less obvious, but in my view equally important, is the effect on how people use streets. Where cars dominate, streets are places people pass through as quickly as possible. Without them, the same streets become places where people stop, meet and spend time.\n\nThe most common objection comes from shopkeepers, who fear that customers who cannot drive to their door will go elsewhere. These fears are understandable, but shopkeepers consistently overestimate how many of their customers arrive by car. In many city centres, most shoppers walk, cycle or use public transport, and studies have often found that retail spending rises after streets are pedestrianised, although the effect varies between types of business.\n\nA more serious concern, I think, is fairness. Elderly and disabled residents, as well as workers who make deliveries or carry tools, may genuinely depend on vehicles. A scheme that ignores these groups is not only unjust but likely to lose public support. The successful schemes I have seen allow access for residents, deliveries at set hours and blue-badge holders, while removing through traffic.\n\nIt is also important not to assume that what works in one city will work everywhere. Compact historic centres with good public transport are far easier to convert than sprawling cities where distances are large and buses are infrequent. In such places, improving public transport must come first; otherwise, removing cars will simply make people's lives harder.\n\nCar-free centres, then, are not a universal solution. But where they are introduced gradually, with genuine consultation and sensible exceptions, they can make cities cleaner, safer and more pleasant places to live.",
+      "groups": [
+        {
+          "type": "ynng",
+          "instructions": "Do the following statements agree with the views of the writer? Choose YES if the statement agrees with the views of the writer, NO if the statement contradicts the views of the writer, or NOT GIVEN if it is impossible to say what the writer thinks about this.",
+          "questions": [
+            {
+              "prompt": "The advantages of car-free centres are greater than the disadvantages if schemes are well planned.",
+              "answers": [
+                "YES"
+              ],
+              "explanation": "\"The benefits clearly outweigh the costs, provided that the changes are planned carefully.\""
+            },
+            {
+              "prompt": "The change in how people use streets is less important than improvements in air quality.",
+              "answers": [
+                "NO"
+              ],
+              "explanation": "The writer calls it \"equally important\"."
+            },
+            {
+              "prompt": "Shopkeepers usually underestimate how many customers arrive by car.",
+              "answers": [
+                "NO"
+              ],
+              "explanation": "They \"consistently overestimate\" it."
+            },
+            {
+              "prompt": "All types of shops benefit equally from pedestrianisation.",
+              "answers": [
+                "NO"
+              ],
+              "explanation": "\"The effect varies between types of business.\""
+            },
+            {
+              "prompt": "Car-free schemes are cheaper to introduce than new public transport.",
+              "answers": [
+                "NOT GIVEN"
+              ],
+              "explanation": "Costs of the two are not compared."
+            }
+          ]
+        },
+        {
+          "type": "matching",
+          "options": [
+            "through traffic",
+            "residents",
+            "consultation",
+            "public transport",
+            "freedom",
+            "historic",
+            "delivery drivers",
+            "pollution"
+          ],
+          "instructions": "Complete the summary using the list of words, A–H.",
+          "questions": [
+            {
+              "prompt": "Successful schemes still allow access for ______ …",
+              "answers": [
+                "B"
+              ],
+              "explanation": "Residents, deliveries at set hours and blue-badge holders."
+            },
+            {
+              "prompt": "… but remove ______.",
+              "answers": [
+                "A"
+              ],
+              "explanation": "\"While removing through traffic.\""
+            },
+            {
+              "prompt": "Compact ______ centres are easiest to convert.",
+              "answers": [
+                "F"
+              ],
+              "explanation": "\"Compact historic centres with good public transport.\""
+            },
+            {
+              "prompt": "In sprawling cities, better ______ must come first.",
+              "answers": [
+                "D"
+              ],
+              "explanation": "\"Improving public transport must come first.\""
+            }
+          ]
+        },
+        {
+          "type": "mcq",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            {
+              "prompt": "Which best describes the writer's overall position?",
+              "options": [
+                "Car-free centres should be introduced in every city.",
+                "Car-free centres can work well if introduced with care.",
+                "The problems of car-free centres outweigh the benefits.",
+                "Shopkeepers should decide whether cars are banned."
+              ],
+              "answers": [
+                "B"
+              ],
+              "explanation": "Final paragraph: not universal, but valuable when introduced gradually with consultation and exceptions."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "testType": "general",
+      "part": 1,
+      "title": "Choosing a mobile phone plan",
+      "status": "active",
+      "tags": [
+        "ieltslab-set3",
+        "everyday",
+        "advertisements"
+      ],
+      "instructions": "Read the text and answer the questions.",
+      "passage": "Choosing a mobile phone plan: five options from Townlink Mobile\n\nA Basic Talk\n£6 per month. Unlimited calls and texts, 2 GB of data. No contract: cancel at any time with one month's notice. Ideal if you mainly use your phone for calls.\n\nB Student Saver\n£10 per month. Unlimited calls and texts, 30 GB of data. Available only to full-time students with a valid student card. 12-month contract. Free access to a music streaming service for the first six months.\n\nC Family Share\n£35 per month for up to four SIM cards. Unlimited calls and texts on every SIM, with 100 GB of data shared between all users. 24-month contract. Parents can set limits on children's data use through the app.\n\nD Traveller\n£18 per month. Unlimited calls and texts, 40 GB of data, which can also be used in 50 countries at no extra cost. 12-month contract.\n\nE Unlimited Plus\n£25 per month. Unlimited calls, texts and data. 24-month contract. Includes a free phone upgrade after 12 months.",
+      "groups": [
+        {
+          "type": "matching",
+          "options": [
+            "Basic Talk",
+            "Student Saver",
+            "Family Share",
+            "Traveller",
+            "Unlimited Plus"
+          ],
+          "instructions": "Look at the five plans, A–E. Which plan matches each statement? You may use any letter more than once.",
+          "questions": [
+            {
+              "prompt": "You can leave without a long contract.",
+              "answers": [
+                "A"
+              ],
+              "explanation": "No contract; one month's notice."
+            },
+            {
+              "prompt": "You must prove your status to join.",
+              "answers": [
+                "B"
+              ],
+              "explanation": "Valid student card required."
+            },
+            {
+              "prompt": "Data can be used abroad without extra charges.",
+              "answers": [
+                "D"
+              ],
+              "explanation": "Usable in 50 countries at no extra cost."
+            },
+            {
+              "prompt": "It includes a free entertainment service for a limited time.",
+              "answers": [
+                "B"
+              ],
+              "explanation": "Music streaming for six months."
+            },
+            {
+              "prompt": "It offers a new handset partway through the contract.",
+              "answers": [
+                "E"
+              ],
+              "explanation": "Free upgrade after 12 months."
+            },
+            {
+              "prompt": "Data use can be controlled for some users.",
+              "answers": [
+                "C"
+              ],
+              "explanation": "Parents can set limits on children's data."
+            }
+          ]
+        },
+        {
+          "type": "tfng",
+          "instructions": "Do the following statements agree with the information given in the passage? Choose TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this.",
+          "questions": [
+            {
+              "prompt": "The Family Share plan costs £35 for each SIM card.",
+              "answers": [
+                "FALSE"
+              ],
+              "explanation": "£35 per month for up to four SIM cards."
+            },
+            {
+              "prompt": "The Traveller plan has a 12-month contract.",
+              "answers": [
+                "TRUE"
+              ],
+              "explanation": "Stated in plan D."
+            },
+            {
+              "prompt": "Townlink Mobile has the best network coverage in the country.",
+              "answers": [
+                "NOT GIVEN"
+              ],
+              "explanation": "Coverage is not mentioned."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "testType": "general",
+      "part": 2,
+      "title": "Information for new food bank volunteers",
+      "status": "active",
+      "tags": [
+        "ieltslab-set3",
+        "workplace",
+        "volunteering"
+      ],
+      "instructions": "Read the text and answer the questions.",
+      "passage": "Volunteering at Eastside Food Bank: information for new volunteers\n\nThank you for offering your time. Please read this information before your first session.\n\nShifts\nVolunteers usually work one three-hour shift per week. Morning shifts run from 9 a.m. to 12 noon and are mainly spent sorting donations. Afternoon shifts, from 1 p.m. to 4 p.m., involve packing food parcels and helping visitors. You can swap shifts with another volunteer, but please let the coordinator know by email at least 24 hours beforehand.\n\nBefore you start\nAll new volunteers attend a one-hour induction session, which covers food hygiene and how we treat visitors with respect and confidentiality. Volunteers who will drive our van must also hold a full driving licence and complete a short driving assessment.\n\nWhat to wear\nWear comfortable clothes and closed shoes, as boxes can be heavy and the warehouse floor can be slippery. Aprons and gloves are provided. Please do not wear jewellery when handling food.\n\nFood safety\nCheck the date on every item. Items past their \"use by\" date must be thrown away, but items past their \"best before\" date may be kept if the packaging is undamaged. If you are unsure, ask a team leader.\n\nVisitors\nMany visitors find it difficult to ask for help. Please be friendly and never ask why someone needs a food parcel. Personal information must not be discussed outside the food bank.\n\nExpenses\nWe can refund reasonable travel costs. Keep your receipts and submit them to the coordinator by the end of each month.",
+      "groups": [
+        {
+          "type": "completion",
+          "maxWords": 2,
+          "instructions": "Complete the sentences. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questions": [
+            {
+              "prompt": "Morning volunteers mainly spend their time sorting ______.",
+              "answers": [
+                "donations"
+              ],
+              "explanation": "Shifts section."
+            },
+            {
+              "prompt": "To swap a shift, email the coordinator at least ______ in advance.",
+              "answers": [
+                "24 hours",
+                "twenty-four hours"
+              ],
+              "explanation": "At least 24 hours beforehand."
+            },
+            {
+              "prompt": "The induction covers food hygiene and respect and ______ for visitors.",
+              "answers": [
+                "confidentiality"
+              ],
+              "explanation": "Before you start."
+            },
+            {
+              "prompt": "Van drivers must complete a short driving ______.",
+              "answers": [
+                "assessment"
+              ],
+              "explanation": "Before you start."
+            },
+            {
+              "prompt": "Volunteers should wear comfortable clothes and ______.",
+              "answers": [
+                "closed shoes"
+              ],
+              "explanation": "What to wear."
+            },
+            {
+              "prompt": "Travel receipts must be submitted by the end of each ______.",
+              "answers": [
+                "month"
+              ],
+              "explanation": "Expenses."
+            }
+          ]
+        },
+        {
+          "type": "tfng",
+          "instructions": "Do the following statements agree with the information given in the passage? Choose TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this.",
+          "questions": [
+            {
+              "prompt": "Volunteers must bring their own gloves.",
+              "answers": [
+                "FALSE"
+              ],
+              "explanation": "Aprons and gloves are provided."
+            },
+            {
+              "prompt": "Food past its \"best before\" date can sometimes be kept.",
+              "answers": [
+                "TRUE"
+              ],
+              "explanation": "If the packaging is undamaged."
+            },
+            {
+              "prompt": "Volunteers should ask visitors why they need help.",
+              "answers": [
+                "FALSE"
+              ],
+              "explanation": "\"Never ask why someone needs a food parcel.\""
+            },
+            {
+              "prompt": "Most volunteers work more than one shift a week.",
+              "answers": [
+                "FALSE"
+              ],
+              "explanation": "Volunteers usually work one shift per week."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "testType": "general",
+      "part": 3,
+      "title": "The working life of lighthouses",
+      "status": "active",
+      "tags": [
+        "ieltslab-set3",
+        "history",
+        "engineering"
+      ],
+      "instructions": "Read the passage and answer the questions.",
+      "passage": "A For centuries, lighthouses guided ships safely past rocks and into harbours. Their basic purpose was simple: to provide a fixed, recognisable light at night. Yet building and running them involved some of the most demanding engineering and some of the loneliest jobs ever created.\n\nB Early lighthouses burned wood or coal in open fires, and later oil lamps. The light was weak, and much of it escaped upwards or sideways. A major improvement came in the 1820s, when the French physicist Augustin Fresnel designed a lens made of many glass rings arranged around a central bulb. His lens concentrated the light into a powerful beam that could be seen more than thirty kilometres away, and versions of it were installed around the world.\n\nC To help sailors identify each lighthouse, engineers gave them different patterns of light. One might flash once every five seconds, another twice every ten seconds. Lighthouses were also painted with distinctive stripes or colours, so that they could be recognised during the day.\n\nD Building a lighthouse on a rock in the open sea was extraordinarily difficult. Workers could often reach the site only at low tide and in calm weather, sometimes for just a few hours each week. Stone blocks were shaped on land, carefully numbered and then fixed together on the rock like the pieces of a puzzle, so that the tower could resist enormous waves.\n\nE For most of their history, lighthouses needed keepers to light the lamps, wind the clockwork that rotated the lens and keep the glass clean. On remote rocks, keepers worked in teams of two or three and could be cut off for weeks by storms. The job required patience and reliability rather than physical strength, and in some countries keepers' families lived with them on shore stations.\n\nF During the twentieth century, electric lights and automatic controls gradually replaced keepers, and today almost every lighthouse is automated. Satellite navigation has also reduced the importance of lights for many ships. Some former lighthouses have been converted into museums, holiday homes or bird observatories, while others continue to operate as a back-up in case electronic systems fail.",
+      "groups": [
+        {
+          "type": "matching",
+          "options": [
+            "Telling one light from another",
+            "A better way to direct light",
+            "Lighthouse tourism today",
+            "Construction in difficult conditions",
+            "A life of isolation",
+            "Simple purpose, hard work",
+            "New roles for old towers",
+            "Famous shipwrecks"
+          ],
+          "instructions": "The passage has six paragraphs, A–F. Choose the correct heading for each paragraph from the list.",
+          "questions": [
+            {
+              "prompt": "Paragraph A",
+              "answers": [
+                "F"
+              ],
+              "explanation": "Simple purpose, but demanding engineering and lonely jobs."
+            },
+            {
+              "prompt": "Paragraph B",
+              "answers": [
+                "B"
+              ],
+              "explanation": "Fresnel's lens concentrated the light."
+            },
+            {
+              "prompt": "Paragraph C",
+              "answers": [
+                "A"
+              ],
+              "explanation": "Different light patterns and paint."
+            },
+            {
+              "prompt": "Paragraph D",
+              "answers": [
+                "D"
+              ],
+              "explanation": "Working only at low tide in calm weather."
+            },
+            {
+              "prompt": "Paragraph E",
+              "answers": [
+                "E"
+              ],
+              "explanation": "Keepers cut off for weeks by storms."
+            },
+            {
+              "prompt": "Paragraph F",
+              "answers": [
+                "G"
+              ],
+              "explanation": "Museums, holiday homes, bird observatories, back-up lights."
+            }
+          ]
+        },
+        {
+          "type": "completion",
+          "maxWords": 2,
+          "instructions": "Complete the sentences. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the passage for each answer.",
+          "questions": [
+            {
+              "prompt": "Fresnel's light could be seen more than ______ kilometres away.",
+              "answers": [
+                "thirty",
+                "30"
+              ],
+              "explanation": "Paragraph B."
+            },
+            {
+              "prompt": "Stone blocks were numbered and fitted together like a ______.",
+              "answers": [
+                "puzzle"
+              ],
+              "explanation": "Paragraph D."
+            },
+            {
+              "prompt": "Keepers wound the ______ that turned the lens.",
+              "answers": [
+                "clockwork"
+              ],
+              "explanation": "Paragraph E."
+            },
+            {
+              "prompt": "Today almost every lighthouse is ______.",
+              "answers": [
+                "automated"
+              ],
+              "explanation": "Paragraph F."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

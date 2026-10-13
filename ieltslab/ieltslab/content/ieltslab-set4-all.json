@@ -1,0 +1,1300 @@
+{
+  "materials": [
+    {
+      "skill": "listening",
+      "part": 1,
+      "title": "Reporting lost luggage",
+      "status": "active",
+      "tags": [
+        "ieltslab-set4",
+        "travel"
+      ],
+      "instructions": "You will hear a passenger reporting a missing suitcase at an airport.",
+      "audioScript": "OFFICER: Good evening, baggage services. How can I help?\nPASSENGER: Hi. I've just arrived from Singapore and my suitcase didn't come out on the belt.\nOFFICER: I'm sorry to hear that. Let me take some details. What's your flight number?\nPASSENGER: It's SQ two-one-eight.\nOFFICER: Thank you. And your full name?\nPASSENGER: Arjun Mehta. That's M-E-H-T-A.\nOFFICER: Could you describe the suitcase?\nPASSENGER: It's a large hard-shell case, dark green, with four wheels. There's a yellow ribbon tied to the handle.\nOFFICER: Any name tag?\nPASSENGER: Yes, a leather one with my address on it.\nOFFICER: Good, that helps. What's in the case, roughly?\nPASSENGER: Mostly clothes, and some books. Oh, and my laptop charger, which I really need.\nOFFICER: OK. Where are you staying in the city?\nPASSENGER: At the Riverside Hotel, on Albert Street.\nOFFICER: And a phone number?\nPASSENGER: It's 07700 913 482.\nOFFICER: Thank you. Most delayed bags arrive on the next flight from the same city, which lands tomorrow at eleven a.m. If it's on that flight, we'll deliver it to your hotel by the evening, free of charge.\nPASSENGER: That's a relief. Can I buy anything I need tonight?\nOFFICER: Yes. The airline will refund up to sixty pounds for essential items, such as toiletries. Just keep your receipts and send them with the claim form.\nPASSENGER: And how do I check progress?\nOFFICER: Use this reference number on our website: GT four-seven-five-nine.",
+      "transcript": "OFFICER: Good evening, baggage services. How can I help?\nPASSENGER: Hi. I've just arrived from Singapore and my suitcase didn't come out on the belt.\nOFFICER: I'm sorry to hear that. Let me take some details. What's your flight number?\nPASSENGER: It's SQ two-one-eight.\nOFFICER: Thank you. And your full name?\nPASSENGER: Arjun Mehta. That's M-E-H-T-A.\nOFFICER: Could you describe the suitcase?\nPASSENGER: It's a large hard-shell case, dark green, with four wheels. There's a yellow ribbon tied to the handle.\nOFFICER: Any name tag?\nPASSENGER: Yes, a leather one with my address on it.\nOFFICER: Good, that helps. What's in the case, roughly?\nPASSENGER: Mostly clothes, and some books. Oh, and my laptop charger, which I really need.\nOFFICER: OK. Where are you staying in the city?\nPASSENGER: At the Riverside Hotel, on Albert Street.\nOFFICER: And a phone number?\nPASSENGER: It's 07700 913 482.\nOFFICER: Thank you. Most delayed bags arrive on the next flight from the same city, which lands tomorrow at eleven a.m. If it's on that flight, we'll deliver it to your hotel by the evening, free of charge.\nPASSENGER: That's a relief. Can I buy anything I need tonight?\nOFFICER: Yes. The airline will refund up to sixty pounds for essential items, such as toiletries. Just keep your receipts and send them with the claim form.\nPASSENGER: And how do I check progress?\nOFFICER: Use this reference number on our website: GT four-seven-five-nine.",
+      "groups": [
+        {
+          "type": "completion",
+          "maxWords": 2,
+          "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questions": [
+            {
+              "prompt": "Flight number: SQ ______",
+              "answers": [
+                "218"
+              ],
+              "explanation": "\"SQ two-one-eight.\""
+            },
+            {
+              "prompt": "Surname: ______",
+              "answers": [
+                "Mehta"
+              ],
+              "explanation": "Spelled M-E-H-T-A."
+            },
+            {
+              "prompt": "Colour of suitcase: ______",
+              "answers": [
+                "dark green",
+                "green"
+              ],
+              "explanation": "A large, dark green hard-shell case."
+            },
+            {
+              "prompt": "Tied to the handle: a yellow ______",
+              "answers": [
+                "ribbon"
+              ],
+              "explanation": "\"A yellow ribbon tied to the handle.\""
+            },
+            {
+              "prompt": "Important item inside: laptop ______",
+              "answers": [
+                "charger"
+              ],
+              "explanation": "\"My laptop charger, which I really need.\""
+            },
+            {
+              "prompt": "Hotel: Riverside Hotel, ______ Street",
+              "answers": [
+                "Albert"
+              ],
+              "explanation": "On Albert Street."
+            },
+            {
+              "prompt": "Refund for essentials: up to £______",
+              "answers": [
+                "60",
+                "sixty"
+              ],
+              "explanation": "Up to sixty pounds."
+            },
+            {
+              "prompt": "Reference number: GT ______",
+              "answers": [
+                "4759"
+              ],
+              "explanation": "\"GT four-seven-five-nine.\""
+            }
+          ]
+        },
+        {
+          "type": "mcq",
+          "instructions": "Choose the correct letter, A, B or C.",
+          "questions": [
+            {
+              "prompt": "When will the bag probably be delivered?",
+              "options": [
+                "tonight",
+                "tomorrow evening",
+                "the day after tomorrow"
+              ],
+              "answers": [
+                "B"
+              ],
+              "explanation": "The next flight lands at 11 a.m.; delivery to the hotel by the evening."
+            },
+            {
+              "prompt": "What must the passenger keep to claim money back?",
+              "options": [
+                "his boarding pass",
+                "his receipts",
+                "his baggage tag"
+              ],
+              "answers": [
+                "B"
+              ],
+              "explanation": "\"Just keep your receipts.\""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "part": 2,
+      "title": "Marathon volunteer briefing",
+      "status": "active",
+      "tags": [
+        "ieltslab-set4",
+        "events"
+      ],
+      "instructions": "You will hear a coordinator briefing volunteers for a city marathon.",
+      "audioScript": "COORDINATOR: Good morning, everyone, and thank you for volunteering at this year's City Marathon. I'll explain where the main stations are and what each team will be doing on race day.\nCOORDINATOR: The race starts in Victoria Park. Runners collect their numbers from the registration tents at the north gate, and that's where Team A will be working from six in the morning. Your main job is checking runners' identification, so please be patient, because queues build up quickly.\nCOORDINATOR: Team B will be at the first water station, which is beside the old bridge, about five kilometres into the course. You'll be handing out water in paper cups. We've stopped using plastic bottles this year, so please make sure runners drop their cups into the recycling bins.\nCOORDINATOR: Team C will be at the medical tent near the finish line in Market Square. You won't be treating anyone yourselves; that's the job of the paramedics. Instead, you'll be helping to keep the area clear and directing family members to the waiting area.\nCOORDINATOR: Team D is the baggage team. You'll be at the sports centre, where runners leave their bags before the start. Each bag gets a coloured label matching the runner's number, and runners collect them after the race.\nCOORDINATOR: A couple of general points. Every volunteer receives an orange jacket, which you must wear at all times, and a free lunch voucher, which you can use at any café on the high street. Please arrive at least thirty minutes before your shift. If you can't come, ring the volunteer hotline rather than sending an email, because nobody will be checking emails on the day.",
+      "transcript": "COORDINATOR: Good morning, everyone, and thank you for volunteering at this year's City Marathon. I'll explain where the main stations are and what each team will be doing on race day.\nCOORDINATOR: The race starts in Victoria Park. Runners collect their numbers from the registration tents at the north gate, and that's where Team A will be working from six in the morning. Your main job is checking runners' identification, so please be patient, because queues build up quickly.\nCOORDINATOR: Team B will be at the first water station, which is beside the old bridge, about five kilometres into the course. You'll be handing out water in paper cups. We've stopped using plastic bottles this year, so please make sure runners drop their cups into the recycling bins.\nCOORDINATOR: Team C will be at the medical tent near the finish line in Market Square. You won't be treating anyone yourselves; that's the job of the paramedics. Instead, you'll be helping to keep the area clear and directing family members to the waiting area.\nCOORDINATOR: Team D is the baggage team. You'll be at the sports centre, where runners leave their bags before the start. Each bag gets a coloured label matching the runner's number, and runners collect them after the race.\nCOORDINATOR: A couple of general points. Every volunteer receives an orange jacket, which you must wear at all times, and a free lunch voucher, which you can use at any café on the high street. Please arrive at least thirty minutes before your shift. If you can't come, ring the volunteer hotline rather than sending an email, because nobody will be checking emails on the day.",
+      "groups": [
+        {
+          "type": "matching",
+          "options": [
+            "Team A",
+            "Team B",
+            "Team C",
+            "Team D"
+          ],
+          "instructions": "Which team will do each of the following? Choose the correct letter, A–D.",
+          "questions": [
+            {
+              "prompt": "look after runners’ belongings",
+              "answers": [
+                "D"
+              ],
+              "explanation": "The baggage team at the sports centre."
+            },
+            {
+              "prompt": "check identification",
+              "answers": [
+                "A"
+              ],
+              "explanation": "Registration tents at the north gate."
+            },
+            {
+              "prompt": "direct relatives to a waiting area",
+              "answers": [
+                "C"
+              ],
+              "explanation": "At the medical tent."
+            },
+            {
+              "prompt": "make sure cups are recycled",
+              "answers": [
+                "B"
+              ],
+              "explanation": "At the first water station."
+            }
+          ]
+        },
+        {
+          "type": "mcq",
+          "instructions": "Choose the correct letter, A, B or C.",
+          "questions": [
+            {
+              "prompt": "Where is the first water station?",
+              "options": [
+                "in Victoria Park",
+                "next to the old bridge",
+                "in Market Square"
+              ],
+              "answers": [
+                "B"
+              ],
+              "explanation": "Beside the old bridge, about 5 km in."
+            },
+            {
+              "prompt": "What does the coordinator say about the medical tent volunteers?",
+              "options": [
+                "They will treat minor injuries.",
+                "They will not give medical treatment.",
+                "They must have first aid training."
+              ],
+              "answers": [
+                "B"
+              ],
+              "explanation": "\"You won't be treating anyone yourselves.\""
+            },
+            {
+              "prompt": "How should volunteers report that they cannot come?",
+              "options": [
+                "by email",
+                "by phone",
+                "by text message"
+              ],
+              "answers": [
+                "B"
+              ],
+              "explanation": "Ring the hotline; emails will not be checked."
+            }
+          ]
+        },
+        {
+          "type": "completion",
+          "maxWords": 2,
+          "instructions": "Complete the sentences. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questions": [
+            {
+              "prompt": "All volunteers must wear an orange ______.",
+              "answers": [
+                "jacket"
+              ],
+              "explanation": "At all times."
+            },
+            {
+              "prompt": "Volunteers should arrive at least ______ minutes early.",
+              "answers": [
+                "30",
+                "thirty"
+              ],
+              "explanation": "Thirty minutes before the shift."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "part": 3,
+      "title": "Presentation on social media and sleep",
+      "status": "active",
+      "tags": [
+        "ieltslab-set4",
+        "university",
+        "health"
+      ],
+      "instructions": "You will hear two students, Noor and Felix, discussing their presentation with their tutor.",
+      "audioScript": "TUTOR: So, Noor and Felix, you're presenting on social media and sleep. How's the research going?\nNOOR: Quite well. We've read about a dozen studies. Most of them found that teenagers who use their phones in the hour before bed sleep less, but the effect is smaller than the headlines suggest.\nTUTOR: Interesting. What did you find surprising?\nFELIX: That it isn't mainly the light from the screen. Several studies suggest the bigger problem is that the content keeps people awake, like messages they feel they have to reply to.\nTUTOR: Good. And how are you going to present that?\nNOOR: We were going to show a long table of all the studies, but it's probably too much detail for a ten-minute presentation.\nTUTOR: I agree. A simple chart comparing two or three key studies would work better. You can put the full table in the handout.\nFELIX: OK. We also ran our own small survey of students in our hall.\nTUTOR: How many responses?\nFELIX: Forty-two. Most said they check their phone after midnight at least three times a week.\nTUTOR: That's useful, but be careful. Forty-two students in one hall isn't a representative sample, so you'll need to mention that limitation.\nNOOR: Right. And for the ending, we thought we'd give some practical advice.\nTUTOR: Such as?\nNOOR: Charging phones outside the bedroom. One study found that was more effective than using night-mode settings.\nTUTOR: That's a strong way to finish. Who's speaking first?\nFELIX: I'll introduce the topic, Noor will cover the research, and I'll come back for our survey and the advice.\nTUTOR: Fine. Practise with a timer. Last year many groups went over the limit.",
+      "transcript": "TUTOR: So, Noor and Felix, you're presenting on social media and sleep. How's the research going?\nNOOR: Quite well. We've read about a dozen studies. Most of them found that teenagers who use their phones in the hour before bed sleep less, but the effect is smaller than the headlines suggest.\nTUTOR: Interesting. What did you find surprising?\nFELIX: That it isn't mainly the light from the screen. Several studies suggest the bigger problem is that the content keeps people awake, like messages they feel they have to reply to.\nTUTOR: Good. And how are you going to present that?\nNOOR: We were going to show a long table of all the studies, but it's probably too much detail for a ten-minute presentation.\nTUTOR: I agree. A simple chart comparing two or three key studies would work better. You can put the full table in the handout.\nFELIX: OK. We also ran our own small survey of students in our hall.\nTUTOR: How many responses?\nFELIX: Forty-two. Most said they check their phone after midnight at least three times a week.\nTUTOR: That's useful, but be careful. Forty-two students in one hall isn't a representative sample, so you'll need to mention that limitation.\nNOOR: Right. And for the ending, we thought we'd give some practical advice.\nTUTOR: Such as?\nNOOR: Charging phones outside the bedroom. One study found that was more effective than using night-mode settings.\nTUTOR: That's a strong way to finish. Who's speaking first?\nFELIX: I'll introduce the topic, Noor will cover the research, and I'll come back for our survey and the advice.\nTUTOR: Fine. Practise with a timer. Last year many groups went over the limit.",
+      "groups": [
+        {
+          "type": "mcq",
+          "instructions": "Choose the correct letter, A, B or C.",
+          "questions": [
+            {
+              "prompt": "What did the students find about the studies they read?",
+              "options": [
+                "They showed no effect on sleep.",
+                "The effect was smaller than reported in the media.",
+                "The effect was larger for adults."
+              ],
+              "answers": [
+                "B"
+              ],
+              "explanation": "\"The effect is smaller than the headlines suggest.\""
+            },
+            {
+              "prompt": "According to Felix, the main cause of lost sleep is",
+              "options": [
+                "light from screens.",
+                "the content people see.",
+                "noise from notifications."
+              ],
+              "answers": [
+                "B"
+              ],
+              "explanation": "Content keeps people awake, e.g. messages they feel they must answer."
+            },
+            {
+              "prompt": "What does the tutor suggest for the presentation?",
+              "options": [
+                "a long table of studies",
+                "a chart comparing a few studies",
+                "no visuals at all"
+              ],
+              "answers": [
+                "B"
+              ],
+              "explanation": "A simple chart; the full table goes in the handout."
+            },
+            {
+              "prompt": "What does the tutor say about the survey?",
+              "options": [
+                "Its limitations must be mentioned.",
+                "It should be left out.",
+                "It needs more questions."
+              ],
+              "answers": [
+                "A"
+              ],
+              "explanation": "Not representative, so mention the limitation."
+            },
+            {
+              "prompt": "Which advice will they give at the end?",
+              "options": [
+                "use night-mode settings",
+                "charge phones outside the bedroom",
+                "stop using social media"
+              ],
+              "answers": [
+                "B"
+              ],
+              "explanation": "One study found it more effective than night mode."
+            }
+          ]
+        },
+        {
+          "type": "completion",
+          "maxWords": 1,
+          "instructions": "Complete the sentence. Write ONE WORD AND/OR A NUMBER.",
+          "questions": [
+            {
+              "prompt": "The students received ______ responses to their survey.",
+              "answers": [
+                "42",
+                "forty-two"
+              ],
+              "explanation": "Forty-two responses."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "part": 4,
+      "title": "Lecture: how desert plants survive",
+      "status": "active",
+      "tags": [
+        "ieltslab-set4",
+        "biology",
+        "environment"
+      ],
+      "instructions": "You will hear part of a lecture about desert plants.",
+      "audioScript": "LECTURER: Today we're looking at how plants survive in deserts, where rain may fall only a few times a year and temperatures on the ground can exceed sixty degrees.\nLECTURER: Broadly, desert plants use three strategies. The first is to avoid the drought altogether. Many desert annuals spend most of their lives as seeds, which can lie in the soil for years. When heavy rain finally falls, they germinate, flower and produce new seeds within a few weeks, before the ground dries out again.\nLECTURER: The second strategy is to store water. Cacti are the best-known example. Their thick stems hold water, and a waxy coating on the surface reduces evaporation. Instead of leaves, most cacti have spines, which lose far less water and also protect the plant from animals. Some cacti can expand their stems like an accordion after rain.\nLECTURER: The third strategy is to reach water that other plants cannot. The mesquite tree, for example, has roots that can grow more than forty metres deep to reach groundwater. Other plants do the opposite: they have shallow but very wide root systems that absorb light rain before it evaporates.\nLECTURER: Many desert plants also have a special form of photosynthesis. Normally plants open small pores in their leaves during the day to take in carbon dioxide, but this lets water escape. Cacti and some other species open their pores only at night, when it is cooler, store the carbon dioxide, and use it for photosynthesis the following day. This can reduce water loss by as much as ninety per cent.\nLECTURER: These adaptations are attracting interest from agricultural scientists, who hope to develop crops that need less irrigation as droughts become more common.",
+      "transcript": "LECTURER: Today we're looking at how plants survive in deserts, where rain may fall only a few times a year and temperatures on the ground can exceed sixty degrees.\nLECTURER: Broadly, desert plants use three strategies. The first is to avoid the drought altogether. Many desert annuals spend most of their lives as seeds, which can lie in the soil for years. When heavy rain finally falls, they germinate, flower and produce new seeds within a few weeks, before the ground dries out again.\nLECTURER: The second strategy is to store water. Cacti are the best-known example. Their thick stems hold water, and a waxy coating on the surface reduces evaporation. Instead of leaves, most cacti have spines, which lose far less water and also protect the plant from animals. Some cacti can expand their stems like an accordion after rain.\nLECTURER: The third strategy is to reach water that other plants cannot. The mesquite tree, for example, has roots that can grow more than forty metres deep to reach groundwater. Other plants do the opposite: they have shallow but very wide root systems that absorb light rain before it evaporates.\nLECTURER: Many desert plants also have a special form of photosynthesis. Normally plants open small pores in their leaves during the day to take in carbon dioxide, but this lets water escape. Cacti and some other species open their pores only at night, when it is cooler, store the carbon dioxide, and use it for photosynthesis the following day. This can reduce water loss by as much as ninety per cent.\nLECTURER: These adaptations are attracting interest from agricultural scientists, who hope to develop crops that need less irrigation as droughts become more common.",
+      "groups": [
+        {
+          "type": "completion",
+          "maxWords": 1,
+          "instructions": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questions": [
+            {
+              "prompt": "Desert annuals spend most of their lives as ______.",
+              "answers": [
+                "seeds"
+              ],
+              "explanation": "Seeds can lie in the soil for years."
+            },
+            {
+              "prompt": "After rain, they flower within a few ______.",
+              "answers": [
+                "weeks"
+              ],
+              "explanation": "\"Within a few weeks.\""
+            },
+            {
+              "prompt": "A ______ coating on cacti reduces evaporation.",
+              "answers": [
+                "waxy"
+              ],
+              "explanation": "A waxy coating on the surface."
+            },
+            {
+              "prompt": "Instead of leaves, most cacti have ______.",
+              "answers": [
+                "spines"
+              ],
+              "explanation": "Spines lose less water and deter animals."
+            },
+            {
+              "prompt": "Some cactus stems expand like an ______.",
+              "answers": [
+                "accordion"
+              ],
+              "explanation": "\"Like an accordion after rain.\""
+            },
+            {
+              "prompt": "Mesquite roots can reach ______ more than forty metres down.",
+              "answers": [
+                "groundwater"
+              ],
+              "explanation": "Roots grow deep to reach groundwater."
+            },
+            {
+              "prompt": "Other plants have shallow but very ______ roots.",
+              "answers": [
+                "wide"
+              ],
+              "explanation": "Shallow but very wide root systems."
+            },
+            {
+              "prompt": "Cacti open their pores only at ______.",
+              "answers": [
+                "night"
+              ],
+              "explanation": "When it is cooler."
+            },
+            {
+              "prompt": "Scientists hope to develop crops needing less ______.",
+              "answers": [
+                "irrigation"
+              ],
+              "explanation": "As droughts become more common."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "testType": "academic",
+      "part": 1,
+      "title": "The story of paper money",
+      "status": "active",
+      "tags": [
+        "ieltslab-set4",
+        "history",
+        "economics"
+      ],
+      "instructions": "You should spend about 20 minutes on the questions based on this passage.",
+      "passage": "A For most of history, money meant objects with value of their own: grain, cattle, shells, and above all, precious metals. Coins made of gold, silver or bronze could be weighed and tested, and their worth did not depend on trusting the person who handed them over. The idea that a piece of paper might be accepted as payment would have seemed strange to most people in the ancient world.\n\nB Paper money first appeared in China. During the Tang dynasty, in the ninth century, merchants who travelled long distances began leaving their heavy iron and copper coins with trusted agents and receiving written certificates in return. These certificates, sometimes called \"flying money\" because they could travel more easily than coins, could be exchanged for coins in another city.\n\nC In the early eleventh century, the government of the Song dynasty took control of this system and began issuing official paper notes. At first, the notes could be exchanged for coins at any time. Over time, however, governments printed more notes than they could support, especially to pay for wars, and the value of the notes fell sharply. Later dynasties experienced similar problems, and by the fifteenth century China had largely stopped using paper money.\n\nD European travellers were astonished by Chinese paper money. In Europe, paper banknotes developed much later, in the seventeenth century, when banks in Sweden and England began issuing notes that represented deposits of gold or silver. A holder could, in principle, take the note to the bank and receive the metal. This link to precious metal gave people confidence that the paper was worth something.\n\nE During the twentieth century, this link was gradually broken. Most countries abandoned the gold standard, and today the value of a banknote depends on public confidence in the government and central bank that issue it. Economists call this \"fiat money\", from a Latin word meaning \"let it be done\". The system works as long as people trust that the money will be accepted by others and will not lose its value too quickly.\n\nF Today, paper money itself is declining. In several countries, a large majority of payments are made by card or phone, and some shops no longer accept cash at all. Yet the basic principle that first appeared in China more than a thousand years ago remains the same: money is valuable because people agree that it is.",
+      "groups": [
+        {
+          "type": "matching",
+          "options": [
+            "Paragraph A",
+            "Paragraph B",
+            "Paragraph C",
+            "Paragraph D",
+            "Paragraph E",
+            "Paragraph F"
+          ],
+          "instructions": "Which paragraph contains the following information? Choose the correct letter, A–F.",
+          "questions": [
+            {
+              "prompt": "an explanation of a term for money not backed by metal",
+              "answers": [
+                "E"
+              ],
+              "explanation": "\"Fiat money\", from a Latin word."
+            },
+            {
+              "prompt": "the reason early paper certificates were given a particular name",
+              "answers": [
+                "B"
+              ],
+              "explanation": "\"Flying money\" because it travelled more easily than coins."
+            },
+            {
+              "prompt": "a reference to the reaction of visitors from another region",
+              "answers": [
+                "D"
+              ],
+              "explanation": "European travellers were astonished."
+            },
+            {
+              "prompt": "a cause of the loss of value of paper notes",
+              "answers": [
+                "C"
+              ],
+              "explanation": "Governments printed more notes than they could support."
+            }
+          ]
+        },
+        {
+          "type": "tfng",
+          "instructions": "Do the following statements agree with the information given in the passage? Choose TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this.",
+          "questions": [
+            {
+              "prompt": "Merchants in the Tang dynasty left their coins with agents.",
+              "answers": [
+                "TRUE"
+              ],
+              "explanation": "Paragraph B."
+            },
+            {
+              "prompt": "Song dynasty notes could never be exchanged for coins.",
+              "answers": [
+                "FALSE"
+              ],
+              "explanation": "At first they could be exchanged at any time."
+            },
+            {
+              "prompt": "Swedish banknotes were more widely trusted than English ones.",
+              "answers": [
+                "NOT GIVEN"
+              ],
+              "explanation": "The two are not compared."
+            },
+            {
+              "prompt": "Some shops today refuse to accept cash.",
+              "answers": [
+                "TRUE"
+              ],
+              "explanation": "Paragraph F."
+            }
+          ]
+        },
+        {
+          "type": "completion",
+          "maxWords": 1,
+          "instructions": "Complete the sentences. Choose ONE WORD ONLY from the passage for each answer.",
+          "questions": [
+            {
+              "prompt": "Governments often printed extra notes to pay for ______.",
+              "answers": [
+                "wars"
+              ],
+              "explanation": "Paragraph C."
+            },
+            {
+              "prompt": "Today the value of money depends on public ______.",
+              "answers": [
+                "confidence",
+                "trust"
+              ],
+              "explanation": "Paragraph E: \"public confidence\"."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "testType": "academic",
+      "part": 2,
+      "title": "Why do we yawn?",
+      "status": "active",
+      "tags": [
+        "ieltslab-set4",
+        "biology",
+        "psychology"
+      ],
+      "instructions": "You should spend about 20 minutes on the questions based on this passage.",
+      "passage": "A Everyone yawns, and almost everyone finds it hard not to yawn when they see someone else do it. Yet despite its familiarity, yawning is still not fully understood. Humans begin yawning before birth, as early as eleven weeks after conception, and the behaviour is found in almost all vertebrates, from fish to birds to mammals.\n\nB For a long time, the most popular explanation was that yawning increases the amount of oxygen in the blood. This idea has largely been abandoned. In experiments in the 1980s, people who breathed air with extra oxygen yawned no less often than usual, and those who breathed air with extra carbon dioxide yawned no more often.\n\nC A more recent theory proposes that yawning helps to cool the brain. A deep yawn draws in a large amount of air and increases blood flow in the face and skull. Supporting this idea, one study found that people yawned less often when they held a cold pack to their forehead than when they held a warm one. Other research has found that people yawn more in moderate temperatures than in very hot or very cold conditions.\n\nD Yawning is also linked to changes in alertness. People yawn most often shortly after waking and before going to sleep, and athletes and performers are often seen yawning just before an important event. Some researchers suggest that yawning helps the brain shift from one state to another, for example from boredom to alertness.\n\nE Perhaps the most intriguing feature of yawning is that it is contagious. Simply seeing, hearing or even reading about yawning can trigger a yawn. Studies have found that people are more likely to catch a yawn from a family member or friend than from a stranger, which has led some scientists to link contagious yawning to empathy. Children under about four years old rarely catch yawns, which may reflect the gradual development of social awareness.\n\nF Contagious yawning has also been seen in some other animals, including chimpanzees and dogs. In one study, dogs yawned more often after watching their owners yawn than after watching strangers. Whether this reflects true empathy or simply a reaction to familiar faces remains a matter of debate.",
+      "groups": [
+        {
+          "type": "matching",
+          "options": [
+            "A link to understanding others",
+            "A widespread but puzzling habit",
+            "An explanation that failed the test",
+            "Yawning and sleep disorders",
+            "A possible role in temperature control",
+            "Moving between states of mind",
+            "Evidence beyond humans",
+            "Why babies yawn more"
+          ],
+          "instructions": "The passage has six paragraphs, A–F. Choose the correct heading for each paragraph from the list of headings.",
+          "questions": [
+            {
+              "prompt": "Paragraph A",
+              "answers": [
+                "B"
+              ],
+              "explanation": "Familiar, found in almost all vertebrates, still not understood."
+            },
+            {
+              "prompt": "Paragraph B",
+              "answers": [
+                "C"
+              ],
+              "explanation": "The oxygen theory was not supported by experiments."
+            },
+            {
+              "prompt": "Paragraph C",
+              "answers": [
+                "E"
+              ],
+              "explanation": "Brain cooling theory."
+            },
+            {
+              "prompt": "Paragraph D",
+              "answers": [
+                "F"
+              ],
+              "explanation": "Shift from one state to another."
+            },
+            {
+              "prompt": "Paragraph E",
+              "answers": [
+                "A"
+              ],
+              "explanation": "Contagious yawning linked to empathy."
+            },
+            {
+              "prompt": "Paragraph F",
+              "answers": [
+                "G"
+              ],
+              "explanation": "Chimpanzees and dogs."
+            }
+          ]
+        },
+        {
+          "type": "tfng",
+          "instructions": "Do the following statements agree with the information given in the passage? Choose TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this.",
+          "questions": [
+            {
+              "prompt": "Humans start yawning before they are born.",
+              "answers": [
+                "TRUE"
+              ],
+              "explanation": "As early as eleven weeks after conception."
+            },
+            {
+              "prompt": "Breathing extra carbon dioxide made people yawn more.",
+              "answers": [
+                "FALSE"
+              ],
+              "explanation": "They yawned no more often."
+            },
+            {
+              "prompt": "People yawn most in very hot weather.",
+              "answers": [
+                "FALSE"
+              ],
+              "explanation": "More in moderate temperatures than very hot or cold."
+            },
+            {
+              "prompt": "Young children often catch yawns from their parents.",
+              "answers": [
+                "FALSE"
+              ],
+              "explanation": "Children under about four rarely catch yawns."
+            }
+          ]
+        },
+        {
+          "type": "completion",
+          "maxWords": 2,
+          "instructions": "Complete the sentence. Choose NO MORE THAN TWO WORDS from the passage.",
+          "questions": [
+            {
+              "prompt": "People yawned less when holding a ______ to the forehead.",
+              "answers": [
+                "cold pack"
+              ],
+              "explanation": "Paragraph C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "testType": "academic",
+      "part": 3,
+      "title": "The homework question",
+      "status": "active",
+      "tags": [
+        "ieltslab-set4",
+        "education",
+        "opinion"
+      ],
+      "instructions": "You should spend about 20 minutes on the questions based on this passage.",
+      "passage": "Every few years, the debate about homework returns. Some parents complain that their children spend whole evenings on worksheets, while others worry that schools are not demanding enough. Several schools have abolished homework altogether for younger pupils, and their example is often cited as evidence that homework is unnecessary. In my view, this conclusion goes too far, but the critics have a point.\n\nThe research on homework is more mixed than either side tends to admit. For secondary school students, there is reasonable evidence that moderate amounts of homework are associated with better results. For primary school children, however, the evidence of any academic benefit is weak. This does not prove that homework is useless for young children, but it does suggest that hours of written exercises are hard to justify.\n\nWhat matters more than quantity is the type of work. Homework that asks students to practise something they have already learned in class, such as reading or recalling vocabulary, is likely to help. Homework that requires them to learn new material alone, without the teacher's support, is far less effective, and it disadvantages children whose parents cannot help them. In this sense, poorly designed homework can widen the gap between children from different backgrounds.\n\nThere is also the question of time. Children need time to play, rest and pursue their own interests, and these activities have value that is not measured in test scores. A ten-year-old who spends two hours every evening on homework may be losing something important. Yet abolishing homework entirely would also remove a useful opportunity for older students to develop habits of independent study, which they will need at university and work.\n\nThe most sensible approach, I believe, is to set limits and to focus on purpose. A short daily period of reading for younger children, and carefully designed practice tasks for older students, would keep the benefits of homework while reducing its costs. Schools should also explain to parents why particular tasks are set. Homework that has a clear purpose is far easier to defend than homework that is set simply because it always has been.",
+      "groups": [
+        {
+          "type": "ynng",
+          "instructions": "Do the following statements agree with the views of the writer? Choose YES if the statement agrees with the views of the writer, NO if the statement contradicts the views of the writer, or NOT GIVEN if it is impossible to say what the writer thinks about this.",
+          "questions": [
+            {
+              "prompt": "Schools that have abolished homework prove that it is unnecessary.",
+              "answers": [
+                "NO"
+              ],
+              "explanation": "\"This conclusion goes too far.\""
+            },
+            {
+              "prompt": "There is little evidence that homework improves results for primary school children.",
+              "answers": [
+                "YES"
+              ],
+              "explanation": "\"The evidence of any academic benefit is weak.\""
+            },
+            {
+              "prompt": "Homework that introduces new topics is more useful than practice tasks.",
+              "answers": [
+                "NO"
+              ],
+              "explanation": "Learning new material alone is far less effective."
+            },
+            {
+              "prompt": "Teachers spend too much time marking homework.",
+              "answers": [
+                "NOT GIVEN"
+              ],
+              "explanation": "Marking is not discussed."
+            },
+            {
+              "prompt": "Activities such as play have value even if they do not raise test scores.",
+              "answers": [
+                "YES"
+              ],
+              "explanation": "Paragraph 4."
+            }
+          ]
+        },
+        {
+          "type": "mcq",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            {
+              "prompt": "Why can poorly designed homework widen the gap between children?",
+              "options": [
+                "Some children are naturally faster learners.",
+                "Some parents cannot help their children.",
+                "Some schools set more homework than others.",
+                "Some children do not have computers."
+              ],
+              "answers": [
+                "B"
+              ],
+              "explanation": "It disadvantages children whose parents cannot help them."
+            },
+            {
+              "prompt": "What is the writer's main recommendation?",
+              "options": [
+                "Abolish homework for all ages.",
+                "Increase homework for older students.",
+                "Limit homework and give it a clear purpose.",
+                "Let parents decide how much homework to set."
+              ],
+              "answers": [
+                "C"
+              ],
+              "explanation": "Final paragraph: set limits and focus on purpose."
+            }
+          ]
+        },
+        {
+          "type": "completion",
+          "maxWords": 2,
+          "instructions": "Complete the sentence. Choose NO MORE THAN TWO WORDS from the passage.",
+          "questions": [
+            {
+              "prompt": "Homework helps older students develop habits of ______.",
+              "answers": [
+                "independent study"
+              ],
+              "explanation": "Paragraph 4."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "testType": "general",
+      "part": 1,
+      "title": "Swimming pool information",
+      "status": "active",
+      "tags": [
+        "ieltslab-set4",
+        "everyday",
+        "notices"
+      ],
+      "instructions": "Read the text and answer the questions.",
+      "passage": "Hillside Leisure Centre: Swimming Pool Information\n\nOpening times\nMonday to Friday: 6.30 a.m. to 9.30 p.m.\nSaturday and Sunday: 8 a.m. to 6 p.m.\nThe pool closes for cleaning every Wednesday from 1 p.m. to 3 p.m.\n\nSessions\nLane swimming (adults only): weekdays 6.30 a.m. to 9 a.m. and 7 p.m. to 9.30 p.m. Lanes are marked slow, medium and fast; please choose the lane that suits your speed.\nFamily swim: Saturday and Sunday mornings, 8 a.m. to 11 a.m. Inflatable toys are allowed during these sessions only.\nWomen-only swim: Tuesday evenings, 7 p.m. to 9 p.m., with female lifeguards.\nAqua aerobics: Monday and Thursday at 11 a.m. Booking is required as the class is limited to 20 people.\n\nPrices\nAdults £5.20; children under 16 £3.10; children under 3 free. A family ticket (two adults and up to three children) costs £14.\n\nRules\nChildren under 8 must be accompanied in the water by an adult. Swimming caps are recommended but not required. Lockers take a £1 coin, which is returned when you open the locker.",
+      "groups": [
+        {
+          "type": "tfng",
+          "instructions": "Do the following statements agree with the information given in the passage? Choose TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this.",
+          "questions": [
+            {
+              "prompt": "The pool opens earlier on weekdays than at weekends.",
+              "answers": [
+                "TRUE"
+              ],
+              "explanation": "6.30 a.m. on weekdays; 8 a.m. at weekends."
+            },
+            {
+              "prompt": "Children can take part in lane swimming sessions.",
+              "answers": [
+                "FALSE"
+              ],
+              "explanation": "Lane swimming is for adults only."
+            },
+            {
+              "prompt": "Inflatable toys can be used during family swim sessions.",
+              "answers": [
+                "TRUE"
+              ],
+              "explanation": "During these sessions only."
+            },
+            {
+              "prompt": "The women-only session has a female instructor teaching swimming.",
+              "answers": [
+                "NOT GIVEN"
+              ],
+              "explanation": "Only female lifeguards are mentioned."
+            },
+            {
+              "prompt": "Swimmers must wear a swimming cap.",
+              "answers": [
+                "FALSE"
+              ],
+              "explanation": "Recommended but not required."
+            }
+          ]
+        },
+        {
+          "type": "completion",
+          "maxWords": 2,
+          "instructions": "Complete the sentences. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questions": [
+            {
+              "prompt": "The pool is cleaned every ______ afternoon.",
+              "answers": [
+                "Wednesday"
+              ],
+              "explanation": "1 p.m. to 3 p.m. on Wednesdays."
+            },
+            {
+              "prompt": "Aqua aerobics must be booked because places are limited to ______.",
+              "answers": [
+                "20",
+                "twenty"
+              ],
+              "explanation": "Limited to 20 people."
+            },
+            {
+              "prompt": "Children under ______ must have an adult with them in the water.",
+              "answers": [
+                "8",
+                "eight"
+              ],
+              "explanation": "Rules section."
+            },
+            {
+              "prompt": "A family ticket costs £______.",
+              "answers": [
+                "14"
+              ],
+              "explanation": "Prices section."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "testType": "general",
+      "part": 2,
+      "title": "New employee FAQ: pay and benefits",
+      "status": "active",
+      "tags": [
+        "ieltslab-set4",
+        "workplace"
+      ],
+      "instructions": "Read the text and answer the questions.",
+      "passage": "New employee FAQ: pay and benefits\n\nWhen will I be paid?\nSalaries are paid on the last working day of each month directly into your bank account. Your first payment may be smaller or larger than usual, depending on the date you started.\n\nWhere can I see my payslip?\nPayslips are not sent by post. You can view and download them from the staff portal two days before each payday.\n\nWhat if my pay is wrong?\nContact the payroll team within ten working days of payday. Please include your employee number in all messages.\n\nDo you offer a pension?\nYes. All employees are enrolled in the company pension scheme automatically after three months. You contribute 5% of your salary and the company adds 7%. You can choose to leave the scheme, but you will lose the company's contribution.\n\nWhat other benefits are there?\nStaff receive a discount of 20% in the company's shops and cafés. After six months, you can join the cycle-to-work scheme, which lets you buy a bicycle and spread the cost over twelve months. We also offer free, confidential counselling through an external provider.\n\nCan I work flexible hours?\nRequests for flexible working can be made after you have completed your probation period of six months. Speak to your line manager first.",
+      "groups": [
+        {
+          "type": "completion",
+          "maxWords": 2,
+          "instructions": "Complete the sentences. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questions": [
+            {
+              "prompt": "Salaries are paid on the last ______ of each month.",
+              "answers": [
+                "working day"
+              ],
+              "explanation": "Paid on the last working day."
+            },
+            {
+              "prompt": "Payslips can be seen on the staff ______.",
+              "answers": [
+                "portal"
+              ],
+              "explanation": "Not sent by post."
+            },
+            {
+              "prompt": "Messages to payroll must include your ______.",
+              "answers": [
+                "employee number"
+              ],
+              "explanation": "Include your employee number."
+            },
+            {
+              "prompt": "Staff join the pension scheme automatically after ______.",
+              "answers": [
+                "three months",
+                "3 months"
+              ],
+              "explanation": "After three months."
+            },
+            {
+              "prompt": "The company adds ______% to the pension.",
+              "answers": [
+                "7",
+                "seven"
+              ],
+              "explanation": "You pay 5%, the company adds 7%."
+            }
+          ]
+        },
+        {
+          "type": "mcq",
+          "instructions": "Choose the correct letter, A, B or C.",
+          "questions": [
+            {
+              "prompt": "What happens if you leave the pension scheme?",
+              "options": [
+                "You get your money back.",
+                "You lose the company’s contribution.",
+                "You must pay a fee."
+              ],
+              "answers": [
+                "B"
+              ],
+              "explanation": "\"You will lose the company's contribution.\""
+            },
+            {
+              "prompt": "When can you join the cycle-to-work scheme?",
+              "options": [
+                "immediately",
+                "after three months",
+                "after six months"
+              ],
+              "answers": [
+                "C"
+              ],
+              "explanation": "After six months."
+            },
+            {
+              "prompt": "Who should you speak to first about flexible hours?",
+              "options": [
+                "your line manager",
+                "the payroll team",
+                "a counsellor"
+              ],
+              "answers": [
+                "A"
+              ],
+              "explanation": "Speak to your line manager first."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "reading",
+      "testType": "general",
+      "part": 3,
+      "title": "The return of the tram",
+      "status": "active",
+      "tags": [
+        "ieltslab-set4",
+        "transport",
+        "cities"
+      ],
+      "instructions": "Read the passage and answer the questions.",
+      "passage": "A In the first half of the twentieth century, trams ran through the streets of hundreds of cities around the world. By the 1960s, many of these systems had disappeared. Cars and buses seemed more modern and flexible, and tram tracks were seen as an obstacle to traffic. In Britain, for example, almost every city tram system had closed by the early 1960s.\n\nB Over the past forty years, however, the tram has returned. Cities across Europe, as well as in Asia, Australia and North America, have built new tram networks, often reusing the routes of the old ones. The modern versions are usually called light rail or simply trams, and they differ considerably from their predecessors.\n\nC Today's trams are quieter, faster and much more comfortable. Most have low floors, so passengers with wheelchairs, buggies or heavy shopping can board easily from the platform without steps. Many routes have their own lanes or tracks, separated from other traffic, which makes journeys more reliable than bus services that can be delayed by congestion.\n\nD Environmental concerns have been an important reason for their revival. Trams run on electricity, so they produce no exhaust fumes in city streets, and if the power comes from renewable sources, their overall emissions are low. Planners also hope that a high-quality tram service will persuade drivers to leave their cars at home in a way that buses often fail to do.\n\nE Trams are not without drawbacks. Building a new line is expensive and can cause years of disruption to businesses along the route. Critics argue that the same money could provide a much larger network of buses. Supporters reply that trams attract more passengers and encourage investment in the areas they serve, and that a tram line, unlike a bus route, gives businesses confidence that the service is permanent.\n\nF Some cities are now testing a compromise: battery-powered trams that can run without overhead wires on certain sections, and \"trackless trams\", which look like trams but run on rubber tyres along painted lines. Whether these will replace traditional trams remains to be seen.",
+      "groups": [
+        {
+          "type": "matching",
+          "options": [
+            "Arguments for and against",
+            "A rapid decline",
+            "Cleaner streets",
+            "Experiments with new designs",
+            "Better for every passenger",
+            "The cost of tickets",
+            "A worldwide comeback",
+            "Trams and tourism"
+          ],
+          "instructions": "The passage has six paragraphs, A–F. Choose the correct heading for each paragraph from the list.",
+          "questions": [
+            {
+              "prompt": "Paragraph A",
+              "answers": [
+                "B"
+              ],
+              "explanation": "Systems disappeared by the 1960s."
+            },
+            {
+              "prompt": "Paragraph B",
+              "answers": [
+                "G"
+              ],
+              "explanation": "New networks across several continents."
+            },
+            {
+              "prompt": "Paragraph C",
+              "answers": [
+                "E"
+              ],
+              "explanation": "Low floors and reliable journeys."
+            },
+            {
+              "prompt": "Paragraph D",
+              "answers": [
+                "C"
+              ],
+              "explanation": "No exhaust fumes."
+            },
+            {
+              "prompt": "Paragraph E",
+              "answers": [
+                "A"
+              ],
+              "explanation": "Critics and supporters."
+            },
+            {
+              "prompt": "Paragraph F",
+              "answers": [
+                "D"
+              ],
+              "explanation": "Battery trams and trackless trams."
+            }
+          ]
+        },
+        {
+          "type": "tfng",
+          "instructions": "Do the following statements agree with the information given in the passage? Choose TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this.",
+          "questions": [
+            {
+              "prompt": "Most British city tram systems had closed by the early 1960s.",
+              "answers": [
+                "TRUE"
+              ],
+              "explanation": "Paragraph A."
+            },
+            {
+              "prompt": "New tram lines never follow old routes.",
+              "answers": [
+                "FALSE"
+              ],
+              "explanation": "They often reuse the routes of the old ones."
+            },
+            {
+              "prompt": "Trackless trams run on rubber tyres.",
+              "answers": [
+                "TRUE"
+              ],
+              "explanation": "Paragraph F."
+            },
+            {
+              "prompt": "Tram fares are usually higher than bus fares.",
+              "answers": [
+                "NOT GIVEN"
+              ],
+              "explanation": "Fares are not mentioned."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "writing",
+      "testType": "academic",
+      "part": 1,
+      "title": "International students in three countries (line graph)",
+      "status": "active",
+      "tags": [
+        "ieltslab-set4",
+        "line graph"
+      ],
+      "instructions": "You should spend about 20 minutes on this task. Write at least 150 words.",
+      "prompt": "The graph below shows the number of international students enrolled at universities in three countries between 2005 and 2025.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "imageUrl": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20380%22%20font-family%3D%22Arial%2C%20Helvetica%2C%20sans-serif%22%3E%3Crect%20width%3D%22640%22%20height%3D%22380%22%20fill%3D%22%23ffffff%22%2F%3E%3Ctext%20x%3D%22320%22%20y%3D%2226%22%20font-size%3D%2215%22%20font-weight%3D%22bold%22%20text-anchor%3D%22middle%22%20fill%3D%22%2314202e%22%3EInternational%20students%20enrolled%20in%20three%20countries%20(thousands)%3C%2Ftext%3E%3Ctext%20x%3D%2218%22%20y%3D%22175%22%20font-size%3D%2212%22%20fill%3D%22%233d4a5a%22%20transform%3D%22rotate(-90%2018%20175)%22%20text-anchor%3D%22middle%22%3EStudents%20(000s)%3C%2Ftext%3E%3Cline%20x1%3D%2264%22%20x2%3D%22610%22%20y1%3D%22300%22%20y2%3D%22300%22%20stroke%3D%22%23d5dbe3%22%2F%3E%3Ctext%20x%3D%2254%22%20y%3D%22304%22%20font-size%3D%2212%22%20text-anchor%3D%22end%22%20fill%3D%22%233d4a5a%22%3E0%3C%2Ftext%3E%3Cline%20x1%3D%2264%22%20x2%3D%22610%22%20y1%3D%22258.3333333333333%22%20y2%3D%22258.3333333333333%22%20stroke%3D%22%23d5dbe3%22%2F%3E%3Ctext%20x%3D%2254%22%20y%3D%22262.3333333333333%22%20font-size%3D%2212%22%20text-anchor%3D%22end%22%20fill%3D%22%233d4a5a%22%3E50%3C%2Ftext%3E%3Cline%20x1%3D%2264%22%20x2%3D%22610%22%20y1%3D%22216.66666666666669%22%20y2%3D%22216.66666666666669%22%20stroke%3D%22%23d5dbe3%22%2F%3E%3Ctext%20x%3D%2254%22%20y%3D%22220.66666666666669%22%20font-size%3D%2212%22%20text-anchor%3D%22end%22%20fill%3D%22%233d4a5a%22%3E100%3C%2Ftext%3E%3Cline%20x1%3D%2264%22%20x2%3D%22610%22%20y1%3D%22175%22%20y2%3D%22175%22%20stroke%3D%22%23d5dbe3%22%2F%3E%3Ctext%20x%3D%2254%22%20y%3D%22179%22%20font-size%3D%2212%22%20text-anchor%3D%22end%22%20fill%3D%22%233d4a5a%22%3E150%3C%2Ftext%3E%3Cline%20x1%3D%2264%22%20x2%3D%22610%22%20y1%3D%22133.33333333333334%22%20y2%3D%22133.33333333333334%22%20stroke%3D%22%23d5dbe3%22%2F%3E%3Ctext%20x%3D%2254%22%20y%3D%22137.33333333333334%22%20font-size%3D%2212%22%20text-anchor%3D%22end%22%20fill%3D%22%233d4a5a%22%3E200%3C%2Ftext%3E%3Cline%20x1%3D%2264%22%20x2%3D%22610%22%20y1%3D%2291.66666666666666%22%20y2%3D%2291.66666666666666%22%20stroke%3D%22%23d5dbe3%22%2F%3E%3Ctext%20x%3D%2254%22%20y%3D%2295.66666666666666%22%20font-size%3D%2212%22%20text-anchor%3D%22end%22%20fill%3D%22%233d4a5a%22%3E250%3C%2Ftext%3E%3Cline%20x1%3D%2264%22%20x2%3D%22610%22%20y1%3D%2250%22%20y2%3D%2250%22%20stroke%3D%22%23d5dbe3%22%2F%3E%3Ctext%20x%3D%2254%22%20y%3D%2254%22%20font-size%3D%2212%22%20text-anchor%3D%22end%22%20fill%3D%22%233d4a5a%22%3E300%3C%2Ftext%3E%3Ctext%20x%3D%2264%22%20y%3D%22320%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20fill%3D%22%2314202e%22%3E2005%3C%2Ftext%3E%3Ctext%20x%3D%22200.5%22%20y%3D%22320%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20fill%3D%22%2314202e%22%3E2010%3C%2Ftext%3E%3Ctext%20x%3D%22337%22%20y%3D%22320%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20fill%3D%22%2314202e%22%3E2015%3C%2Ftext%3E%3Ctext%20x%3D%22473.5%22%20y%3D%22320%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20fill%3D%22%2314202e%22%3E2020%3C%2Ftext%3E%3Ctext%20x%3D%22610%22%20y%3D%22320%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20fill%3D%22%2314202e%22%3E2025%3C%2Ftext%3E%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%231b4f8a%22%20stroke-width%3D%223%22%20stroke-dasharray%3D%22%22%20points%3D%2264%2C200%20200.5%2C162.5%20337%2C125%20473.5%2C141.66666666666666%20610%2C83.33333333333334%22%2F%3E%3Ccircle%20cx%3D%2264%22%20cy%3D%22200%22%20r%3D%224%22%20fill%3D%22%231b4f8a%22%2F%3E%3Ccircle%20cx%3D%22200.5%22%20cy%3D%22162.5%22%20r%3D%224%22%20fill%3D%22%231b4f8a%22%2F%3E%3Ccircle%20cx%3D%22337%22%20cy%3D%22125%22%20r%3D%224%22%20fill%3D%22%231b4f8a%22%2F%3E%3Ccircle%20cx%3D%22473.5%22%20cy%3D%22141.66666666666666%22%20r%3D%224%22%20fill%3D%22%231b4f8a%22%2F%3E%3Ccircle%20cx%3D%22610%22%20cy%3D%2283.33333333333334%22%20r%3D%224%22%20fill%3D%22%231b4f8a%22%2F%3E%3Cline%20x1%3D%2264%22%20x2%3D%2292%22%20y1%3D%22356%22%20y2%3D%22356%22%20stroke%3D%22%231b4f8a%22%20stroke-width%3D%223%22%20stroke-dasharray%3D%22%22%2F%3E%3Ctext%20x%3D%22100%22%20y%3D%22360%22%20font-size%3D%2212%22%20fill%3D%22%2314202e%22%3ECountry%20P%3C%2Ftext%3E%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%23b26b00%22%20stroke-width%3D%223%22%20stroke-dasharray%3D%226%204%22%20points%3D%2264%2C225%20200.5%2C216.66666666666669%20337%2C191.66666666666669%20473.5%2C175%20610%2C154.16666666666666%22%2F%3E%3Ccircle%20cx%3D%2264%22%20cy%3D%22225%22%20r%3D%224%22%20fill%3D%22%23b26b00%22%2F%3E%3Ccircle%20cx%3D%22200.5%22%20cy%3D%22216.66666666666669%22%20r%3D%224%22%20fill%3D%22%23b26b00%22%2F%3E%3Ccircle%20cx%3D%22337%22%20cy%3D%22191.66666666666669%22%20r%3D%224%22%20fill%3D%22%23b26b00%22%2F%3E%3Ccircle%20cx%3D%22473.5%22%20cy%3D%22175%22%20r%3D%224%22%20fill%3D%22%23b26b00%22%2F%3E%3Ccircle%20cx%3D%22610%22%20cy%3D%22154.16666666666666%22%20r%3D%224%22%20fill%3D%22%23b26b00%22%2F%3E%3Cline%20x1%3D%22244%22%20x2%3D%22272%22%20y1%3D%22356%22%20y2%3D%22356%22%20stroke%3D%22%23b26b00%22%20stroke-width%3D%223%22%20stroke-dasharray%3D%226%204%22%2F%3E%3Ctext%20x%3D%22280%22%20y%3D%22360%22%20font-size%3D%2212%22%20fill%3D%22%2314202e%22%3ECountry%20Q%3C%2Ftext%3E%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%231e7a46%22%20stroke-width%3D%223%22%20stroke-dasharray%3D%222%203%22%20points%3D%2264%2C266.6666666666667%20200.5%2C241.66666666666666%20337%2C204.16666666666669%20473.5%2C212.5%20610%2C175%22%2F%3E%3Ccircle%20cx%3D%2264%22%20cy%3D%22266.6666666666667%22%20r%3D%224%22%20fill%3D%22%231e7a46%22%2F%3E%3Ccircle%20cx%3D%22200.5%22%20cy%3D%22241.66666666666666%22%20r%3D%224%22%20fill%3D%22%231e7a46%22%2F%3E%3Ccircle%20cx%3D%22337%22%20cy%3D%22204.16666666666669%22%20r%3D%224%22%20fill%3D%22%231e7a46%22%2F%3E%3Ccircle%20cx%3D%22473.5%22%20cy%3D%22212.5%22%20r%3D%224%22%20fill%3D%22%231e7a46%22%2F%3E%3Ccircle%20cx%3D%22610%22%20cy%3D%22175%22%20r%3D%224%22%20fill%3D%22%231e7a46%22%2F%3E%3Cline%20x1%3D%22424%22%20x2%3D%22452%22%20y1%3D%22356%22%20y2%3D%22356%22%20stroke%3D%22%231e7a46%22%20stroke-width%3D%223%22%20stroke-dasharray%3D%222%203%22%2F%3E%3Ctext%20x%3D%22460%22%20y%3D%22360%22%20font-size%3D%2212%22%20fill%3D%22%2314202e%22%3ECountry%20R%3C%2Ftext%3E%3C%2Fsvg%3E",
+      "imageAlt": "Line graph, thousands of international students. Country P: 120, 165, 210, 190, 260 (2005, 2010, 2015, 2020, 2025). Country Q: 90, 100, 130, 150, 175. Country R: 40, 70, 115, 105, 150.",
+      "minWords": 150,
+      "scoringGuidance": "Overview: all three countries ended with more students than they started; Country P remained the largest throughout, and Country R grew fastest proportionally (almost four-fold). P and R dipped in 2020 while Q rose steadily every period. Good answers use accurate figures to support these trends without listing every point."
+    },
+    {
+      "skill": "writing",
+      "testType": "academic",
+      "part": 1,
+      "title": "Smartphone ownership by age (bar chart)",
+      "status": "active",
+      "tags": [
+        "ieltslab-set4",
+        "bar chart"
+      ],
+      "instructions": "You should spend about 20 minutes on this task. Write at least 150 words.",
+      "prompt": "The chart below shows the percentage of people in different age groups who owned a smartphone in one country in 2012 and 2024.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "imageUrl": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20380%22%20font-family%3D%22Arial%2C%20Helvetica%2C%20sans-serif%22%3E%3Crect%20width%3D%22640%22%20height%3D%22380%22%20fill%3D%22%23ffffff%22%2F%3E%3Ctext%20x%3D%22320%22%20y%3D%2226%22%20font-size%3D%2215%22%20font-weight%3D%22bold%22%20text-anchor%3D%22middle%22%20fill%3D%22%2314202e%22%3ESmartphone%20ownership%20by%20age%20group%2C%20Country%20Z%3C%2Ftext%3E%3Cline%20x1%3D%2260%22%20x2%3D%22620%22%20y1%3D%22315%22%20y2%3D%22315%22%20stroke%3D%22%23d5dbe3%22%2F%3E%3Ctext%20x%3D%2250%22%20y%3D%22319%22%20font-size%3D%2212%22%20text-anchor%3D%22end%22%20fill%3D%22%233d4a5a%22%3E0%25%3C%2Ftext%3E%3Cline%20x1%3D%2260%22%20x2%3D%22620%22%20y1%3D%22263%22%20y2%3D%22263%22%20stroke%3D%22%23d5dbe3%22%2F%3E%3Ctext%20x%3D%2250%22%20y%3D%22267%22%20font-size%3D%2212%22%20text-anchor%3D%22end%22%20fill%3D%22%233d4a5a%22%3E20%25%3C%2Ftext%3E%3Cline%20x1%3D%2260%22%20x2%3D%22620%22%20y1%3D%22211%22%20y2%3D%22211%22%20stroke%3D%22%23d5dbe3%22%2F%3E%3Ctext%20x%3D%2250%22%20y%3D%22215%22%20font-size%3D%2212%22%20text-anchor%3D%22end%22%20fill%3D%22%233d4a5a%22%3E40%25%3C%2Ftext%3E%3Cline%20x1%3D%2260%22%20x2%3D%22620%22%20y1%3D%22159%22%20y2%3D%22159%22%20stroke%3D%22%23d5dbe3%22%2F%3E%3Ctext%20x%3D%2250%22%20y%3D%22163%22%20font-size%3D%2212%22%20text-anchor%3D%22end%22%20fill%3D%22%233d4a5a%22%3E60%25%3C%2Ftext%3E%3Cline%20x1%3D%2260%22%20x2%3D%22620%22%20y1%3D%22107%22%20y2%3D%22107%22%20stroke%3D%22%23d5dbe3%22%2F%3E%3Ctext%20x%3D%2250%22%20y%3D%22111%22%20font-size%3D%2212%22%20text-anchor%3D%22end%22%20fill%3D%22%233d4a5a%22%3E80%25%3C%2Ftext%3E%3Cline%20x1%3D%2260%22%20x2%3D%22620%22%20y1%3D%2255%22%20y2%3D%2255%22%20stroke%3D%22%23d5dbe3%22%2F%3E%3Ctext%20x%3D%2250%22%20y%3D%2259%22%20font-size%3D%2212%22%20text-anchor%3D%22end%22%20fill%3D%22%233d4a5a%22%3E100%25%3C%2Ftext%3E%3Crect%20x%3D%2277%22%20y%3D%22112.19999999999999%22%20width%3D%2234%22%20height%3D%22202.8%22%20fill%3D%22%237d93ad%22%2F%3E%3Crect%20x%3D%22117%22%20y%3D%2262.80000000000001%22%20width%3D%2234%22%20height%3D%22252.2%22%20fill%3D%22%231b4f8a%22%2F%3E%3Ctext%20x%3D%2294%22%20y%3D%22106.19999999999999%22%20font-size%3D%2211%22%20text-anchor%3D%22middle%22%20fill%3D%22%2314202e%22%3E78%3C%2Ftext%3E%3Ctext%20x%3D%22134%22%20y%3D%2256.80000000000001%22%20font-size%3D%2211%22%20text-anchor%3D%22middle%22%20fill%3D%22%2314202e%22%3E97%3C%2Ftext%3E%3Ctext%20x%3D%22114%22%20y%3D%22337%22%20font-size%3D%2213%22%20text-anchor%3D%22middle%22%20fill%3D%22%2314202e%22%3E16%E2%80%9324%3C%2Ftext%3E%3Crect%20x%3D%22187%22%20y%3D%22133%22%20width%3D%2234%22%20height%3D%22182%22%20fill%3D%22%237d93ad%22%2F%3E%3Crect%20x%3D%22227%22%20y%3D%2265.4%22%20width%3D%2234%22%20height%3D%22249.6%22%20fill%3D%22%231b4f8a%22%2F%3E%3Ctext%20x%3D%22204%22%20y%3D%22127%22%20font-size%3D%2211%22%20text-anchor%3D%22middle%22%20fill%3D%22%2314202e%22%3E70%3C%2Ftext%3E%3Ctext%20x%3D%22244%22%20y%3D%2259.400000000000006%22%20font-size%3D%2211%22%20text-anchor%3D%22middle%22%20fill%3D%22%2314202e%22%3E96%3C%2Ftext%3E%3Ctext%20x%3D%22224%22%20y%3D%22337%22%20font-size%3D%2213%22%20text-anchor%3D%22middle%22%20fill%3D%22%2314202e%22%3E25%E2%80%9334%3C%2Ftext%3E%3Crect%20x%3D%22297%22%20y%3D%22179.8%22%20width%3D%2234%22%20height%3D%22135.2%22%20fill%3D%22%237d93ad%22%2F%3E%3Crect%20x%3D%22337%22%20y%3D%2275.80000000000001%22%20width%3D%2234%22%20height%3D%22239.2%22%20fill%3D%22%231b4f8a%22%2F%3E%3Ctext%20x%3D%22314%22%20y%3D%22173.8%22%20font-size%3D%2211%22%20text-anchor%3D%22middle%22%20fill%3D%22%2314202e%22%3E52%3C%2Ftext%3E%3Ctext%20x%3D%22354%22%20y%3D%2269.80000000000001%22%20font-size%3D%2211%22%20text-anchor%3D%22middle%22%20fill%3D%22%2314202e%22%3E92%3C%2Ftext%3E%3Ctext%20x%3D%22334%22%20y%3D%22337%22%20font-size%3D%2213%22%20text-anchor%3D%22middle%22%20fill%3D%22%2314202e%22%3E35%E2%80%9354%3C%2Ftext%3E%3Crect%20x%3D%22407%22%20y%3D%22237%22%20width%3D%2234%22%20height%3D%2278%22%20fill%3D%22%237d93ad%22%2F%3E%3Crect%20x%3D%22447%22%20y%3D%22104.4%22%20width%3D%2234%22%20height%3D%22210.6%22%20fill%3D%22%231b4f8a%22%2F%3E%3Ctext%20x%3D%22424%22%20y%3D%22231%22%20font-size%3D%2211%22%20text-anchor%3D%22middle%22%20fill%3D%22%2314202e%22%3E30%3C%2Ftext%3E%3Ctext%20x%3D%22464%22%20y%3D%2298.4%22%20font-size%3D%2211%22%20text-anchor%3D%22middle%22%20fill%3D%22%2314202e%22%3E81%3C%2Ftext%3E%3Ctext%20x%3D%22444%22%20y%3D%22337%22%20font-size%3D%2213%22%20text-anchor%3D%22middle%22%20fill%3D%22%2314202e%22%3E55%E2%80%9364%3C%2Ftext%3E%3Crect%20x%3D%22517%22%20y%3D%22283.8%22%20width%3D%2234%22%20height%3D%2231.19999999999999%22%20fill%3D%22%237d93ad%22%2F%3E%3Crect%20x%3D%22557%22%20y%3D%22151.2%22%20width%3D%2234%22%20height%3D%22163.8%22%20fill%3D%22%231b4f8a%22%2F%3E%3Ctext%20x%3D%22534%22%20y%3D%22277.8%22%20font-size%3D%2211%22%20text-anchor%3D%22middle%22%20fill%3D%22%2314202e%22%3E12%3C%2Ftext%3E%3Ctext%20x%3D%22574%22%20y%3D%22145.2%22%20font-size%3D%2211%22%20text-anchor%3D%22middle%22%20fill%3D%22%2314202e%22%3E63%3C%2Ftext%3E%3Ctext%20x%3D%22554%22%20y%3D%22337%22%20font-size%3D%2213%22%20text-anchor%3D%22middle%22%20fill%3D%22%2314202e%22%3E65%2B%3C%2Ftext%3E%3Ctext%20x%3D%2260%22%20y%3D%22368%22%20font-size%3D%2212%22%20fill%3D%22%233d4a5a%22%3EAge%20group%3C%2Ftext%3E%3Crect%20x%3D%22450%22%20y%3D%22356%22%20width%3D%2212%22%20height%3D%2212%22%20fill%3D%22%237d93ad%22%2F%3E%3Ctext%20x%3D%22468%22%20y%3D%22366%22%20font-size%3D%2212%22%20fill%3D%22%2314202e%22%3E2012%3C%2Ftext%3E%3Crect%20x%3D%22520%22%20y%3D%22356%22%20width%3D%2212%22%20height%3D%2212%22%20fill%3D%22%231b4f8a%22%2F%3E%3Ctext%20x%3D%22538%22%20y%3D%22366%22%20font-size%3D%2212%22%20fill%3D%22%2314202e%22%3E2024%3C%2Ftext%3E%3C%2Fsvg%3E",
+      "imageAlt": "Bar chart, smartphone ownership 2012 and 2024. Ages 16–24: 78% and 97%. 25–34: 70% and 96%. 35–54: 52% and 92%. 55–64: 30% and 81%. 65 and over: 12% and 63%.",
+      "minWords": 150,
+      "scoringGuidance": "Overview: ownership rose in every age group, and the gap between young and old narrowed considerably; ownership falls with age in both years. The biggest increases were among older groups (65+ rose more than five-fold). Strong answers compare the gap between the youngest and oldest groups in each year.",
+      "modelAnswer": "The bar chart compares the proportion of people in five age groups who owned a smartphone in one country in 2012 and 2024.\n\nOverall, smartphone ownership increased in every age group over the period, and although younger people were more likely to own one in both years, the gap between the youngest and oldest groups narrowed considerably.\n\nIn 2012, ownership was highest among 16 to 24-year-olds, at 78%, and fell steadily with age, to 52% of those aged 35 to 54 and only 12% of people aged 65 and over. By 2024, almost all young adults owned a smartphone, with figures of 97% and 96% for the two youngest groups, and the figure for 35 to 54-year-olds had risen to 92%.\n\nThe most dramatic growth occurred among older people. Ownership among 55 to 64-year-olds increased from 30% to 81%, while the proportion of people aged 65 and over rose more than five-fold, to 63%. As a result, the difference between the youngest and oldest groups fell from 66 percentage points in 2012 to 34 points in 2024."
+    },
+    {
+      "skill": "writing",
+      "testType": "general",
+      "part": 1,
+      "title": "Letter: complaint to a gym",
+      "status": "active",
+      "tags": [
+        "ieltslab-set4",
+        "letter",
+        "formal"
+      ],
+      "instructions": "You should spend about 20 minutes on this task. Write at least 150 words. You do NOT need to write any addresses. Begin your letter as follows: Dear Sir or Madam,",
+      "prompt": "You are a member of a gym, but you are unhappy with some recent changes.\n\nWrite a letter to the manager of the gym. In your letter:",
+      "bullets": [
+        "explain how long you have been a member and why you joined",
+        "describe the changes you are unhappy about",
+        "say what you would like the manager to do"
+      ],
+      "minWords": 150,
+      "scoringGuidance": "Formal register (Dear Sir or Madam / Yours faithfully). Changes should be specific (reduced opening hours, fewer classes, higher fees) and linked to the reason the writer joined. The request should be realistic, for example restoring a class or offering a partial refund."
+    },
+    {
+      "skill": "writing",
+      "testType": "general",
+      "part": 1,
+      "title": "Letter: organising a farewell for a colleague",
+      "status": "active",
+      "tags": [
+        "ieltslab-set4",
+        "letter",
+        "semi-formal"
+      ],
+      "instructions": "You should spend about 20 minutes on this task. Write at least 150 words. You do NOT need to write any addresses. Begin your letter as follows: Dear …,",
+      "prompt": "A colleague who has worked with you for many years is leaving the company. You are organising a farewell event.\n\nWrite a letter to another colleague. In your letter:",
+      "bullets": [
+        "explain why you want to organise the event",
+        "describe your plans for the event",
+        "ask your colleague to help in a particular way"
+      ],
+      "minWords": 150,
+      "scoringGuidance": "Semi-formal or friendly tone between colleagues. The plan should include practical details (date, place, what will happen) and the request should be specific (collecting money for a gift, preparing a speech, contacting former staff)."
+    },
+    {
+      "skill": "writing",
+      "testType": "both",
+      "part": 2,
+      "title": "Essay: a four-day working week",
+      "status": "active",
+      "tags": [
+        "ieltslab-set4",
+        "work",
+        "opinion"
+      ],
+      "instructions": "You should spend about 40 minutes on this task. Write at least 250 words.",
+      "prompt": "Some people believe that a four-day working week would be better for both employees and businesses.\n\nTo what extent do you agree or disagree?\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      "minWords": 250,
+      "scoringGuidance": "Both \"employees and businesses\" should be addressed. Possible ideas: well-being and productivity, recruitment advantages, versus industries that need continuous cover, customer service and pay concerns. A partly agree position must still be clear and consistent."
+    },
+    {
+      "skill": "writing",
+      "testType": "both",
+      "part": 2,
+      "title": "Essay: online learning or the classroom?",
+      "status": "active",
+      "tags": [
+        "ieltslab-set4",
+        "education",
+        "discuss both views"
+      ],
+      "instructions": "You should spend about 40 minutes on this task. Write at least 250 words.",
+      "prompt": "Some people think that online courses are as effective as learning in a classroom. Others believe that face-to-face teaching is essential.\n\nDiscuss both these views and give your own opinion.\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      "minWords": 250,
+      "scoringGuidance": "Balanced development of both views with a clear opinion. Strong answers distinguish between kinds of learners and subjects (self-motivated adults versus young children; theory versus practical skills such as laboratory work)."
+    },
+    {
+      "skill": "writing",
+      "testType": "both",
+      "part": 2,
+      "title": "Essay: who should reduce plastic packaging?",
+      "status": "active",
+      "tags": [
+        "ieltslab-set4",
+        "environment",
+        "two-part question"
+      ],
+      "instructions": "You should spend about 40 minutes on this task. Write at least 250 words.",
+      "prompt": "The amount of plastic packaging used for food and other products is increasing.\n\nWhy is this happening? Who should be responsible for reducing it: governments, companies or individuals?\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      "minWords": 250,
+      "scoringGuidance": "Both questions must be answered. Causes might include convenience, food safety and online shopping. The second answer needs a clear allocation of responsibility (it may be shared, but the writer should say who should lead and why)."
+    },
+    {
+      "skill": "speaking",
+      "part": 1,
+      "title": "Part 1: weekends and free time",
+      "status": "active",
+      "tags": [
+        "ieltslab-set4",
+        "free time",
+        "familiar topics"
+      ],
+      "instructions": "The examiner asks you some questions about yourself. Answer each question in two to four sentences.",
+      "speakingQuestions": [
+        "What did you do last weekend?",
+        "Do you usually plan your weekends or decide at the last minute?",
+        "Is there anything new you would like to try at the weekend?",
+        "Do you prefer spending free time indoors or outdoors?",
+        "How did you spend weekends when you were a child?"
+      ],
+      "responseSeconds": 30
+    },
+    {
+      "skill": "speaking",
+      "part": 1,
+      "title": "Part 1: shopping",
+      "status": "active",
+      "tags": [
+        "ieltslab-set4",
+        "shopping",
+        "familiar topics"
+      ],
+      "instructions": "The examiner asks you some questions about yourself. Answer each question in two to four sentences.",
+      "speakingQuestions": [
+        "Do you enjoy shopping?",
+        "Do you prefer shopping online or in shops? Why?",
+        "What was the last thing you bought for yourself?",
+        "Are there any big shopping centres near where you live?",
+        "Do you ever buy second-hand things?"
+      ],
+      "responseSeconds": 30
+    },
+    {
+      "skill": "speaking",
+      "part": 2,
+      "title": "Part 2: a memorable journey",
+      "status": "active",
+      "tags": [
+        "ieltslab-set4",
+        "topic:travel"
+      ],
+      "instructions": "You will have one minute to prepare. You can make notes. Then talk for one to two minutes.",
+      "prompt": "Describe a journey you remember well.",
+      "bullets": [
+        "where you went",
+        "how you travelled",
+        "who you travelled with",
+        "and explain why you remember this journey"
+      ],
+      "prepSeconds": 60,
+      "responseSeconds": 120,
+      "scoringGuidance": "Narrative tenses (past simple, past continuous, past perfect) and sequencing language support Grammatical Range and Coherence. Focus on one or two vivid moments rather than a full itinerary."
+    },
+    {
+      "skill": "speaking",
+      "part": 2,
+      "title": "Part 2: an achievement you are proud of",
+      "status": "active",
+      "tags": [
+        "ieltslab-set4",
+        "topic:goals"
+      ],
+      "instructions": "You will have one minute to prepare. You can make notes. Then talk for one to two minutes.",
+      "prompt": "Describe something you achieved that made you proud.",
+      "bullets": [
+        "what you achieved",
+        "when you achieved it",
+        "how you achieved it",
+        "and explain why it made you proud"
+      ],
+      "prepSeconds": 60,
+      "responseSeconds": 120
+    },
+    {
+      "skill": "speaking",
+      "part": 3,
+      "title": "Part 3: travel and tourism",
+      "status": "active",
+      "tags": [
+        "ieltslab-set4",
+        "topic:travel"
+      ],
+      "instructions": "The examiner asks you more general questions linked to the Part 2 topic. Give developed answers with reasons and examples.",
+      "speakingQuestions": [
+        "Why do people enjoy travelling to other countries?",
+        "How has tourism changed the place where you live?",
+        "Should tourists pay extra taxes to visit popular places?",
+        "Do you think people will travel more or less in the future?"
+      ],
+      "responseSeconds": 60
+    },
+    {
+      "skill": "speaking",
+      "part": 3,
+      "title": "Part 3: success and ambition",
+      "status": "active",
+      "tags": [
+        "ieltslab-set4",
+        "topic:goals"
+      ],
+      "instructions": "The examiner asks you more general questions linked to the Part 2 topic. Give developed answers with reasons and examples.",
+      "speakingQuestions": [
+        "How do people in your country usually define success?",
+        "Is it better to set ambitious goals or realistic ones?",
+        "Do young people today face more pressure to succeed than in the past?",
+        "Should schools reward effort as well as results?"
+      ],
+      "responseSeconds": 60
+    }
+  ]
+}
